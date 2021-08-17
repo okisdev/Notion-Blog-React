@@ -1,6 +1,6 @@
 {
     "name": "notion-blog-react",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "A Serverless Blog Powered By Notion.",
     "repository": "https://github.com/Harry-Yep/Notion-Blog-React",
     "author": "Harry Yep",

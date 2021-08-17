@@ -55,7 +55,7 @@ const BlogPost: FC<{ recordMap: ExtendedRecordMap; notionPost: PostContent }> = 
                 <div className='container mx-auto px-6 sm:px-8'>
                     <div id='notion-blog-post-body-content' className='my-6 md:my-20 leading-6'>
                         <article id='notion-blog-post-article'>
-                            <NotionRenderer recordMap={recordMap} fullPage={true} components={{ code: Code, equation: Equation }}></NotionRenderer>
+                            <NotionRenderer recordMap={recordMap} fullPage={true} showTableOfContents={true} components={{ code: Code, equation: Equation }}></NotionRenderer>
                         </article>
                     </div>
                 </div>

@@ -187,6 +187,10 @@
     overflow: hidden auto;
     min-width: 222px;
     overflow: auto;
+    /* Changed */
+    background-color: #e5e7eb;
+    border-radius: 40px 40px 40px 40px;
+    padding: 2rem;
 }
 
 .notion-aside-table-of-contents-header {
