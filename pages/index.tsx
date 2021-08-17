@@ -9,7 +9,11 @@ import { PostContent } from '../utils/PostContent';
 import { getNotionPosts } from '../utils/getNotionPosts';
 
 export const getStaticProps = async () => {
-    const posts = (await getNotionPosts()).filter((posts) => posts.published);
+    const unSortedPosts = (await getNotionPosts()).filter((posts) => posts.published);
+
+    const posts = unSortedPosts.sort(function (a, b) {
+        return Date.parse(b.date) - Date.parse(a.date);
+    });
 
     return {
         props: {
