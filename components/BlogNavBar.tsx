@@ -22,7 +22,7 @@ const BlogNavBar = () => {
                             </Link>
                         </div>
                         <div className='mx-3'>
-                            <Link href='/'>
+                            <Link href='/tags'>
                                 <a>
                                     <FaTags className='h-6 w-6' />
                                 </a>

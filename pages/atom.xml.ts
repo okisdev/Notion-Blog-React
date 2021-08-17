@@ -1,5 +1,6 @@
 import { GetServerSideProps } from 'next';
 import { FC } from 'react';
+
 import { getNotionPosts } from '../utils/getNotionPosts';
 import getNotionPostsRSS from '../utils/getNotionPostsRSS';
 

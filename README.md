@@ -2,12 +2,11 @@
 
 > A fast serverless Blog powered by Notion.
 
-A Blog powered by [Notion](https://notion.so), built with [React](https://reactjs.org), [Next.js](https://nextjs.org), [tailwindcss](https://tailwindcss.com), [TypeScript](https://www.typescriptlang.org/), [Notion-Api-Worker](https://github.com/splitbee/notion-api-worker), [React-Notion](https://github.com/splitbee/react-notion) and more.
-
+A Blog powered by [Notion](https://notion.so), built with [React](https://reactjs.org), [Next.js](https://nextjs.org), [tailwindcss](https://tailwindcss.com), [TypeScript](https://www.typescriptlang.org/), [Notion-Api-Worker](https://github.com/splitbee/notion-api-worker), [React-Notion-X](https://github.com/NotionX/react-notion-x/) and more.
 
 ## Features
 
-Please see the **[features section](https://github.com/splitbee/react-notion#features)** on react-notion by [Splitbee](https://github.com/splitbee).
+Please see the **[features section](https://github.com/NotionX/react-notion-x#features)** on React-Notion-X by [NotionX](https://github.com/NotionX/).
 
 And also, you can...
 
@@ -28,21 +27,23 @@ And also, you can...
 
 ## Known Issues
 
-* ❌ Some Notion blocks is not supported. (Please see [here](https://github.com/splitbee/react-notion#supported-blocks) for more info.)
+* ❌ Some Notion blocks is not supported. (Please see [here](https://github.com/NotionX/react-notion-x#supported-blocks) for more info.)
 
 
 ## Improvement / Plans
 
-* [ ] Add [React-Notion-X](https://github.com/NotionX/react-notion-x) supported or Mix current api with [React-Notion-X](https://github.com/NotionX/react-notion-x).
+* [x] Add [React-Notion-X](https://github.com/NotionX/react-notion-x) supported or Mix current api with [React-Notion-X](https://github.com/NotionX/react-notion-x).
 * [ ] Add PostView.
 * [ ] Using [Notion Official API](https://developers.notion.com/).
+* [ ] Add Tag.
 
 
 ## Related (Examples or Technology being used)
 
-* [Splitee Blog](https://splitbee.io/blog) (using React-Notion)
-* [timo.sh](https://timo.sh/) (using React-Notion)
-* [Spencerwoo's Blog](https://blog.spencerwoo.com/) (using React-Notion)
+* [Splitee Blog](https://splitbee.io/blog) (using React-Notion, contributor of React-Notion)
+* [timo.sh](https://timo.sh/) (using React-Notion, contributor of React-Notion)
+* [TransitiveBullsh.it](https://transitivebullsh.it/) (using React-Notion-X, contributor of React-Notion-X)
+* [Spencerwoo's Blog](https://blog.spencerwoo.com/) (using React-Notion-X)
 * [Vercel](https://vercel.com)
 * [Cloudflare Workers](https://workers.dev)
 * [React](https://reactjs.org)
@@ -50,7 +51,7 @@ And also, you can...
 * [tailwindcss](https://tailwindcss.com)
 * [TypeScript](https://www.typescriptlang.org/)
 * [Notion-Api-Worker](https://github.com/splitbee/notion-api-worker)
-* [React-Notion](https://github.com/splitbee/react-notion)
+* [React-Notion-X](https://github.com/NotionX/react-notion-x)
 * [Google Analytics](https://analytics.google.com/)
 * [Splitee](https://splitbee.io/)
 
@@ -59,6 +60,7 @@ And also, you can...
 
 > Turn Notion to Blog/Page
 
+* [React-Notion](https://github.com/splitbee/react-notion)
 * [React-Notion-X](https://github.com/NotionX/react-notion-x)
 * [Super.so](https://super.so/)
 * [Fruition](https://fruitionsite.com/)
