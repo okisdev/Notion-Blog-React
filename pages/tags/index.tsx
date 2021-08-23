@@ -27,6 +27,7 @@ const BlogTagsPage = () => {
                 <meta name='description' content="Harry Yep's Blog | Harrly" />
                 <meta httpEquiv='Content-Type' content='text/html' />
                 <meta httpEquiv='X-UA-Compatible' content='IE=Edge' />
+                <meta httpEquiv='x-dns-prefetch-control' content='on' />
                 <meta name='description' content="Harry Yep's Personal Website | Harrly" />
                 <meta name='viewport' content='width=device-width, initial-scale=1' />
             </Head>
@@ -38,7 +39,7 @@ const BlogTagsPage = () => {
                     <div id='notion-blog-tags-body-content' className='my-6 md:my-36 leading-6'>
                         <div>
                             <h1 className='text-3xl text-center my-20 md:my-56'>Tags</h1>
-                            <div className='item-center mx-auto px-6 sm:px-8'>This page is still in development.</div>
+                            <div className='flex justify-center'>This page is still in development.</div>
                         </div>
                     </div>
                 </div>

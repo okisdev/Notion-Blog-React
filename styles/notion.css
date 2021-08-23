@@ -61,7 +61,8 @@
     --notion-item-gray: rgba(155, 154, 151, 0.4);
 
     --notion-max-width: 720px;
-    --notion-header-height: 45px;
+    /* --notion-header-height: 45px; */
+    --notion-header-height: 48px; /* Changed*/
 }
 
 .dark-mode {
@@ -468,9 +469,9 @@
     display: block;
     object-fit: cover;
     width: 100%;
-    height: 40vh;
+    height: 30vh;
     min-height: 30vh;
-    max-height: 50vh;
+    max-height: 30vh;
     padding: 0;
 }
 
@@ -584,7 +585,8 @@
     border-left: 3px solid currentcolor;
     padding: 0.2em 0.9em;
     margin: 6px 0;
-    font-size: 1.2em;
+    /* font-size: 1.2em; */ /* Changed */
+    font-size: 0.95em;
 }
 
 .notion-hr {
@@ -974,9 +976,7 @@ svg.notion-page-icon {
     margin-left: 8px;
     white-space: pre-wrap;
     word-break: break-word;
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start;
+    width: 100%;
 }
 
 .notion-toggle {
@@ -1586,6 +1586,7 @@ svg.notion-page-icon {
 }
 
 .notion-table-of-contents-item:hover {
+    color: #000; /* Changed*/
     background: var(--bg-color-0);
 }
 
@@ -1878,6 +1879,11 @@ svg.notion-page-icon {
     font-weight: 500;
 }
 
+/* removes double underline with links */
+.notion-link .notion-page-title-text {
+    border-bottom: 0px;
+}
+
 .notion-collection-row {
     width: 100%;
     padding: 4px 0 8px;
@@ -2084,11 +2090,15 @@ svg.notion-page-icon {
     width: 100% !important;
 }
 
+/* Changed*/
 .notion-header {
-    position: sticky;
-    top: 0;
+    /* position: sticky; */
+    position: relative;
+    /* top: 45px; */
+    top: 48px;
     left: 0;
-    z-index: 200;
+    /* z-index: 200; */
+    z-index: 10;
 
     width: 100%;
     max-width: 100vw;
@@ -2114,7 +2124,7 @@ svg.notion-page-icon {
     line-height: 1.5;
     line-height: 1.2;
     font-size: 14px;
-    background-color: #fff;
+    background-color: #fff; /* Changed */
 }
 
 .notion-header .breadcrumbs {
@@ -2362,4 +2372,8 @@ svg.notion-page-icon {
 
 .notion-search .resultsPane .result:active {
     background: rgba(55, 53, 47, 0.16) !important;
+}
+
+.notion-sync-block {
+    width: 100%;
 }
