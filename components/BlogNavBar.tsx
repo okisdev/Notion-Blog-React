@@ -11,8 +11,8 @@ import { FaTags } from 'react-icons/fa';
 const BlogNavBar = () => {
     return (
         <div id='notion-blog-navbar' className='sticky top-0 z-50'>
-            <div className='flex bg-white dark:bg-gray-500'>
-                <div className='container mx-auto justify-center my-3 md:mr-6'>
+            <div className='bg-white dark:bg-gray-500'>
+                <div className='flex justify-center py-3'>
                     <nav className='flex'>
                         <div id='notion-blog-navbar-start' className='flex items-start mr-20 md:mr-80'>
                             <div className='mx-3'>
