@@ -47,9 +47,11 @@ const BlogPost: FC<{ recordMap: ExtendedRecordMap; notionPost: PostContent }> = 
         <div>
             <Head>
                 <title>{notionPost.title} - Harry Yep&apos;s Blog | Harrly</title>
+                <meta name='description' content={`${notionPost.description} - Harry Yep's Blog | Harrly`} />
+                <meta name='keywords' content={`${notionPost.tag}, Harry Yep, Blog, Harry Yep's Blog, Harrly`} />
             </Head>
 
-            <div id='notion-blog-post' className='min-h-screen flex flex-col bg-gray-100 dark:bg-gray-400 font-Rubik'>
+            <div id='notion-blog-post' className='min-h-screen flex flex-col dark:bg-gray-400 font-Rubik'>
                 <BlogNavBar></BlogNavBar>
 
                 <div className='container mx-auto px-6 sm:px-8'>

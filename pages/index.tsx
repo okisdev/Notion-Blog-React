@@ -37,12 +37,12 @@ const BlogHomePage = ({ posts }: { posts: PostContent[] }) => {
                 <meta name='description' content="Harry Yep's Personal Website | Harrly" />
                 <meta name='viewport' content='width=device-width, initial-scale=1' />
 
-                <meta content="Harry Yep's Blog | Harrly" property='og:title' />
-                <meta content="Harry Yep's Blog | Harrly" property='og:site_name' />
-                <meta content='https://blog.harrly.com/' property='og:url' />
+                <meta property='og:title' content="Harry Yep's Blog | Harrly" />
+                <meta property='og:site_name' content="Harry Yep's Blog | Harrly" />
+                <meta property='og:url' content='https://blog.harrly.com/' />
             </Head>
 
-            <div id='notion-blog-homepage' className='min-h-screen flex flex-col bg-gray-100 dark:bg-gray-400 font-Rubik'>
+            <div id='notion-blog-homepage' className='min-h-screen flex flex-col dark:bg-gray-400 font-Rubik'>
                 <BlogNavBar></BlogNavBar>
 
                 <div className='container mx-auto px-4 sm:px-6 justify-center flex-grow max-w-3xl'>

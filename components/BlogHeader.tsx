@@ -1,7 +1,7 @@
 function BlogHeader() {
     return (
         <div id='notion-blog-header' className='flex flex-row justify-center items-center my-10 space-x-2 md:space-x-8'>
-            <div id='notion-blog-header-avatar' className='rounded-full border-2 ring-2 ring-offset-4 w-28 md:w-40'>
+            <div id='notion-blog-header-avatar' className='rounded-full border-2 ring-2 ring-offset-4 w-20 md:w-28'>
                 <img src='https://cdn.harrly.com/private/Avatar/Avatar@Memoji.center.png' id='Avatar' alt='avatar' />
             </div>
             <div id='notion-blog-header-content'>

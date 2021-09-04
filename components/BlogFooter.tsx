@@ -6,9 +6,23 @@ const BlogFooter = () => {
                 <p>
                     Made by Harry Yep with <span className='text-red-600'>♥</span>
                 </p>
-                <p id='notion-blog-footer-built-with' className='text-sm text-gray-400 dark:text-white md:px-52'>
-                    Built with <a href='https://reactjs.org'>React</a> & <a href='https://nextjs.org'>Next.js</a> & <a href='https://tailwindcss.com'>tailwindcss</a> &{' '}
-                    <a href='https://www.typescriptlang.org/'>TypeScript</a>
+                <p id='notion-blog-footer-built-with' className='text-sm md:px-52'>
+                    Built with{' '}
+                    <a className='transition duration-500 underline hover:bg-yellow-500' href='https://reactjs.org'>
+                        React
+                    </a>{' '}
+                    &{' '}
+                    <a className='transition duration-500 underline hover:bg-yellow-500' href='https://nextjs.org'>
+                        Next.js
+                    </a>{' '}
+                    &{' '}
+                    <a className='transition duration-500 underline hover:bg-yellow-500' href='https://tailwindcss.com'>
+                        tailwindcss
+                    </a>{' '}
+                    &{' '}
+                    <a className='transition duration-500 underline hover:bg-yellow-500' href='https://www.typescriptlang.org/'>
+                        TypeScript
+                    </a>
                 </p>
             </div>
         </div>

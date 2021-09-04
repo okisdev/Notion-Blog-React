@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import { IoMdPricetags } from 'react-icons/io';
+import { IoMdPricetags, IoIosPaper } from 'react-icons/io';
 import { MdDateRange } from 'react-icons/md';
 import { BsPeople } from 'react-icons/bs';
 
@@ -12,7 +12,8 @@ const BlogCard = ({ post }: { post: PostContent }) => {
     return (
         <div id='notion-blog-body-card' className='transition duration-500 ease-in-out p-3 my-5 border-2 rounded-lg bg-white dark:bg-gray-500 hover:shadow-2xl'>
             <div id='notion-blog-body-card-content'>
-                <div id='notion-blog-body-card-title' className='flex font-bold text-xl mb-2 md:mb-3 space-x-3 dark:text-white'>
+                <div id='notion-blog-body-card-title' className='flex items-center font-bold text-xl mb-2 md:mb-3 space-x-3 dark:text-blue-100 transition duration-500 ease-in-out hover:text-blue-400'>
+                    <IoIosPaper />
                     <Link href='/posts/[slug]' as={getNotionPostSlug(post.slug)} passHref>
                         {post.title}
                     </Link>

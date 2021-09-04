@@ -15,12 +15,8 @@ a {
     text-decoration: none;
 } */
 
-* {
-    box-sizing: border-box;
-}
-
-a {
-    /* color: #d9d9d9; */
+/* a {
+    color: #d9d9d9;
     cursor: pointer;
     color: inherit;
     word-wrap: break-word;
@@ -28,8 +24,8 @@ a {
     border-bottom: 0.05em solid;
     border-color: rgba(55, 53, 47, 0.4);
     opacity: 0.7;
-}
+} */
 
-a:hover {
+/* a:hover {
     color: #d9d9d9;
-}
+} */
