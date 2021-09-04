@@ -13,7 +13,7 @@
         "lint": "next lint"
     },
     "dependencies": {
-        "axios": "0.21.1",
+        "axios": "0.21.2",
         "feed": "4.2.2",
         "next": "11.1.2",
         "notion-client": "4.8.6",
