@@ -23,7 +23,7 @@
         "react-notion-x": "4.9.8"
     },
     "devDependencies": {
-        "@types/react": "17.0.27",
+        "@types/react": "17.0.28",
         "autoprefixer": "10.3.7",
         "eslint": "8.0.0",
         "eslint-config-next": "11.1.2",
