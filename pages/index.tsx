@@ -1,5 +1,7 @@
 import Head from 'next/head';
 
+import { Toaster } from 'react-hot-toast';
+
 import BlogNavBar from '../components/BlogNavBar';
 import BlogHeader from '../components/BlogHeader';
 import BlogCard from '../components/BlogCard';
@@ -43,6 +45,8 @@ const BlogHomePage = ({ posts }: { posts: PostContent[] }) => {
             </Head>
 
             <div id='notion-blog-homepage' className='min-h-screen flex flex-col dark:bg-gray-400 font-Rubik'>
+                <Toaster />
+
                 <BlogNavBar></BlogNavBar>
 
                 <div className='container mx-auto px-4 sm:px-6 justify-center flex-grow max-w-3xl'>
