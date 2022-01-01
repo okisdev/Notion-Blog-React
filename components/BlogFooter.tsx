@@ -1,8 +1,10 @@
 const BlogFooter = () => {
+    const currentYear = new Date().getFullYear();
+    
     return (
         <div id='notion-blog-footer' className='leading-10 h-36 px-8'>
             <div className='text-center'>
-                <p className='text-base'>Copyright © 2021 Harry Yep. All rights reserved.</p>
+                <p className='text-base'>Copyright &#169; {currentYear} Harry Yep. All rights reserved.</p>
                 <p>
                     Made by Harry Yep with <span className='text-red-600'>♥</span>
                 </p>
