@@ -189,7 +189,7 @@
     min-width: 222px;
     overflow: auto;
     /* Changed */
-    background-color: #e5e7eb;
+    /* background-color: #e5e7eb;s */
     border-radius: 40px 40px 40px 40px;
     padding: 2rem;
 }
@@ -197,7 +197,8 @@
 .notion-aside-table-of-contents-header {
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 1.1em;
+    /* Changed */
+    font-size: 0.75rem;
     word-break: break-word;
 }
 
@@ -223,6 +224,9 @@
 
 .notion-aside-table-of-contents .notion-table-of-contents-item-body {
     border: 0 none;
+    /* Changed */
+    color: #000;
+    font-size: 0.5em;
 }
 
 .notion-table-of-contents-active-item {
