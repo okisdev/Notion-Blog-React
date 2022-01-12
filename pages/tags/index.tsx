@@ -20,15 +20,15 @@ const BlogTagsPage = () => {
     return (
         <div>
             <Head>
-                <title>Tags - Harry Yep&apos;s Blog | Harrly</title>
+                <title>Tags - Notion Blog React Example</title>
 
                 <meta charSet='UTF-8' />
                 <meta name='author' content='Harry Yep' />
-                <meta name='description' content="Harry Yep's Blog | Harrly" />
+                <meta name='description' content='Notion Blog React Example' />
                 <meta httpEquiv='Content-Type' content='text/html' />
                 <meta httpEquiv='X-UA-Compatible' content='IE=Edge' />
                 <meta httpEquiv='x-dns-prefetch-control' content='on' />
-                <meta name='description' content="Harry Yep's Personal Website | Harrly" />
+                <meta name='description' content='Notion Blog React Example' />
                 <meta name='viewport' content='width=device-width, initial-scale=1' />
             </Head>
 

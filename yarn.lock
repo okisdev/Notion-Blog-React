@@ -3088,6 +3088,11 @@ postcss@8.4.5:
     picocolors "^1.0.0"
     source-map-js "^1.0.1"
 
+powered-by-vercel@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/powered-by-vercel/-/powered-by-vercel-1.1.0.tgz#73ca89ef781cc4f70f89dc5d2b0a34f52077767b"
+  integrity sha512-j6Xib6yNtbUKJEEVCPg1D/Pq4cTiisusLo49oJ6TKjK3TVF1ouN5TwfziabGrF1Hx6HcndolqTKpyOgIa6jeEQ==
+
 prelude-ls@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"

@@ -7,7 +7,7 @@ const Error500 = () => {
     return (
         <div>
             <Head>
-                <title>500 - Harry Yep&apos;s Blog | Harrly</title>
+                <title>500 - Notion Blog React Example</title>
             </Head>
 
             <div id='notion-blog-500' className='min-h-screen flex flex-col bg-gray-100 dark:bg-gray-400 font-Rubik'>

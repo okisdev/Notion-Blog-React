@@ -29,19 +29,30 @@ const BlogHomePage = ({ posts }: { posts: PostContent[] }) => {
     return (
         <div>
             <Head>
-                <title>Harry Yep&apos;s Blog</title>
+                <title>Notion Blog React Example</title>
 
                 <meta charSet='UTF-8' />
-                <meta name='author' content='Harry Yep' />
-                <meta name='description' content="Harry Yep's Blog | Harrly" />
-                <meta httpEquiv='Content-Type' content='text/html' />
-                <meta httpEquiv='X-UA-Compatible' content='IE=Edge' />
-                <meta name='description' content="Harry Yep's Personal Website | Harrly" />
                 <meta name='viewport' content='width=device-width, initial-scale=1' />
 
-                <meta property='og:title' content="Harry Yep's Blog | Harrly" />
-                <meta property='og:site_name' content="Harry Yep's Blog | Harrly" />
-                <meta property='og:url' content='https://blog.harrly.com/' />
+                <meta name='author' content='Harry Yep' />
+                <meta name='description' content='Blog built with Notion, React, Next.js, tailwindcss, TypeScript, Notion-Api-Worker and more.' />
+                <meta httpEquiv='Content-Type' content='text/html' />
+                <meta httpEquiv='X-UA-Compatible' content='IE=Edge' />
+
+                <meta property='og:title' content='Notion Blog React Example' />
+                <meta property='og:description' content='Blog built with Notion, React, Next.js, tailwindcss, TypeScript, Notion-Api-Worker and more.' />
+                <meta property='og:url' content='https://react-notion-blog.demo.harisfox.com/' />
+
+                <meta property='og:image' content={`https://cdn.harrly.com/project/GitHub/Notion-Blog-React/img/Notion-Blog-React.Banner.png`} />
+                <meta property='og:url' content={`https://react-notion-blog.demo.harisfox.com/`} />
+                <meta property='og:type' content='website' />
+                <meta property='og:site_name' content='Notion Blog React Example' />
+
+                <meta name='twitter:card' content='summary_large_image' />
+                <meta name='twitter:title' content={`Notion Blog React Example`} />
+                <meta name='twitter:description' content={`Blog built with Notion, React, Next.js, tailwindcss, TypeScript, Notion-Api-Worker and more.`} />
+                <meta name='twitter:image' content={`https://cdn.harrly.com/project/GitHub/Notion-Blog-React/img/Notion-Blog-React.Banner.png`} />
+                <meta name='twitter:url' content={`https://react-notion-blog.demo.harisfox.com/`} />
             </Head>
 
             <div id='notion-blog-homepage' className='min-h-screen flex flex-col dark:bg-gray-400 font-Rubik'>

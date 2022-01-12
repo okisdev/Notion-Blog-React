@@ -46,9 +46,20 @@ const BlogPost: FC<{ recordMap: ExtendedRecordMap; notionPost: PostContent }> = 
     return (
         <div>
             <Head>
-                <title>{notionPost.title} - Harry Yep&apos;s Blog | Harrly</title>
-                <meta name='description' content={`${notionPost.description} - Harry Yep's Blog | Harrly`} />
-                <meta name='keywords' content={`${notionPost.tag}, Harry Yep, Blog, Harry Yep's Blog, Harrly`} />
+                <title>{notionPost.title} - Notion Blog React Example</title>
+                <meta name='description' content={`${notionPost.description} - Notion Blog React Example`} />
+                <meta name='keywords' content={`${notionPost.tag}, Harry Yep, Blog, Notion Blog React Example, Harrly`} />
+
+                <meta property='og:title' content={`${notionPost.title} - Notion Blog React Example`} />
+                <meta property='og:description' content={`${notionPost.title} - Notion Blog React Example`} />
+                <meta property='og:url' content={`https://react-notion-blog.demo.harisfox.com/posts/${notionPost.slug}`} />
+                <meta property='og:type' content='website' />
+                <meta property='og:site_name' content='Notion Blog React Example' />
+
+                <meta name='twitter:card' content='summary_large_image' />
+                <meta name='twitter:title' content={`${notionPost.title} - Notion Blog React Example`} />
+                <meta name='twitter:description' content={`${notionPost.title} - Notion Blog React Example`} />
+                <meta name='twitter:url' content={`https://react-notion-blog.demo.harisfox.com/posts/${notionPost.slug}`} />
             </Head>
 
             <div id='notion-blog-post' className='min-h-screen flex flex-col dark:bg-gray-400 font-Rubik'>

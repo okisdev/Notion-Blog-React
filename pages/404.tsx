@@ -7,7 +7,7 @@ const Error404 = () => {
     return (
         <div>
             <Head>
-                <title>404 - Harry Yep&apos;s Blog | Harrly</title>
+                <title>404 - Notion Blog React Example</title>
             </Head>
 
             <div id='notion-blog-404' className='min-h-screen flex flex-col bg-gray-100 dark:bg-gray-400 font-Rubik'>

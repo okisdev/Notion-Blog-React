@@ -1,3 +1,5 @@
+import PoweredByVercel from 'powered-by-vercel';
+
 const BlogFooter = () => {
     const currentYear = new Date().getFullYear();
 
@@ -29,6 +31,12 @@ const BlogFooter = () => {
                         TypeScript
                     </a>
                 </p>
+                <PoweredByVercel
+                    className='flex items-center justify-center my-1'
+                    svgProps={{
+                        width: 150,
+                    }}
+                />
             </div>
         </div>
     );

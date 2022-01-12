@@ -2,7 +2,6 @@ import Link from 'next/link';
 
 import { RiRssFill } from 'react-icons/ri';
 import { FiGithub } from 'react-icons/fi';
-import { HiOutlineMail } from 'react-icons/hi';
 import { BiHome } from 'react-icons/bi';
 import { AiOutlineSafety } from 'react-icons/ai';
 import { CgHomeAlt } from 'react-icons/cg';
@@ -40,23 +39,16 @@ const BlogNavBar = () => {
                                 </Link>
                             </div>
                             <div className='mx-3'>
-                                <Link href='https://blog.harrly.com/atom.xml'>
+                                <Link href='./atom.xml'>
                                     <a>
                                         <RiRssFill className='h-6 w-6' />
                                     </a>
                                 </Link>
                             </div>
                             <div className='mx-3'>
-                                <Link href='https://github.com/Harry-Yep'>
+                                <Link href='https://github.com/Harry-Yep/Notion-Blog-React'>
                                     <a>
                                         <FiGithub className='h-6 w-6' />
-                                    </a>
-                                </Link>
-                            </div>
-                            <div className='mx-3'>
-                                <Link href='mailto:hi@harrly.com'>
-                                    <a>
-                                        <HiOutlineMail className='h-6 w-6' />
                                     </a>
                                 </Link>
                             </div>
