@@ -1,7 +1,7 @@
 {
     "name": "notion-blog-react",
-    "version": "0.0.3",
-    "description": "A Serverless Blog Powered By Notion.",
+    "version": "1.0.0",
+    "description": "Blog built with Notion, React, Next.js, tailwindcss, TypeScript, Notion-Api-Worker and more.",
     "repository": "https://github.com/Harry-Yep/Notion-Blog-React",
     "author": "Harry Yep",
     "license": "MIT",

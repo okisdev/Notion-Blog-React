@@ -2,7 +2,7 @@ function BlogHeader() {
     return (
         <div id='notion-blog-header' className='flex flex-row justify-center items-center my-10 space-x-2 md:space-x-8'>
             <div id='notion-blog-header-avatar'>
-                <img src='https://cdn.harrly.com/global/assets/icon/android-chrome-256x256.png' id='Avatar' alt='avatar' className='rounded-full border-2 ring-2 ring-offset-4 w-20 md:w-28' />
+                <img src='https://cdn.harrly.com/global/assets/icon/android-chrome-192x192.png' id='Avatar' alt='avatar' className='rounded-full border-2 ring-2 ring-offset-4 w-20 md:w-28' />
             </div>
             <div id='notion-blog-header-content'>
                 <div id='notion-blog-header-title' className='text-center text-2xl font-bold'>
@@ -35,11 +35,11 @@ function BlogHeader() {
                             <a href='https://github.com/splitbee/notion-api-worker' className='transition duration-500 underline hover:bg-yellow-500' target='_blank' rel='noopener noreferrer'>
                                 Notion-Api-Worker
                             </a>{' '}
-                            and{' '}
+                            and more. (Find more on{' '}
                             <a href='https://github.com/Harry-Yep/Notion-Blog-React' className='transition duration-500 underline hover:bg-yellow-500' target='_blank' rel='noopener noreferrer'>
-                                more
+                                GitHub
                             </a>
-                            .
+                            )
                         </span>
                     </div>
                 </div>
