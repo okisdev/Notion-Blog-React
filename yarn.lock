@@ -2585,10 +2585,10 @@ react-modal@^3.14.3:
     react-lifecycles-compat "^3.0.0"
     warning "^4.0.3"
 
-react-notion-x@4.13.1:
-  version "4.13.1"
-  resolved "https://registry.yarnpkg.com/react-notion-x/-/react-notion-x-4.13.1.tgz#afb1f907d411e64716d29719ef7cfb19617244cd"
-  integrity sha512-LfalFogAH+ysgLd6Aonm4vyMiPbtAQgzGTMLW3Ud+QgmuF3C7lBqEnJiye56YR+bKXujwGwMJIJmCDvXB2d/2w==
+react-notion-x@4.13.3:
+  version "4.13.3"
+  resolved "https://registry.yarnpkg.com/react-notion-x/-/react-notion-x-4.13.3.tgz#8ae6731d0d4b15232f9059c4387c62c11a6475f7"
+  integrity sha512-1m618ZfqFFMv4l3xBJaoUmMD7o2NNxEfk+UdzGmM6wuYI9fJTIqaaNTpgRwQ0xm5wqI/npcDV5muEiQPDnNGwQ==
   dependencies:
     "@matejmazur/react-katex" "^3.1.3"
     date-fns "^2.15.0"
@@ -2597,8 +2597,8 @@ react-notion-x@4.13.1:
     katex "^0.13.18"
     lodash.throttle "^4.1.1"
     medium-zoom "^1.0.6"
-    notion-types "^4.10.0"
-    notion-utils "^4.12.0"
+    notion-types "^4.13.2"
+    notion-utils "^4.13.2"
     prismjs "^1.20.0"
     rc-dropdown "^3.1.2"
     rc-menu "^9.0.14"
