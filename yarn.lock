@@ -2065,14 +2065,14 @@ normalize-url@^6.0.1:
   resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-6.1.0.tgz#40d0885b535deffe3f3147bec877d05fe4c5668a"
   integrity sha512-DlL+XwOy3NxAQ8xuC0okPgK46iuVNAK01YN7RueYBqqFeGsBjV9XmCAzAdgt+667bCl5kPh9EqKKDwnaPG1I7A==
 
-notion-client@4.13.2:
-  version "4.13.2"
-  resolved "https://registry.yarnpkg.com/notion-client/-/notion-client-4.13.2.tgz#d97f2064f23352c2fc20a0c90e500088a408cfc1"
-  integrity sha512-gLeIsR6nSuQZanYmAtQgEcZsWoKHw1lluR47w/NLhhvfB0SHMGbe7zJGKUjlNfTShNb+qW1JIPEeer1pc6r/TQ==
+notion-client@4.14.1:
+  version "4.14.1"
+  resolved "https://registry.yarnpkg.com/notion-client/-/notion-client-4.14.1.tgz#def8305b2ca8c3de5dd4b953c478b405b00f5961"
+  integrity sha512-h1h95ZFwXyx+mbr21s54Uc9SfQjev6zU9AmPBLGGRRj/AZsqytYsn681PUv17x7/T2DNzTSSBg/Ifnyr5b/GfA==
   dependencies:
     got "^11.8.1"
-    notion-types "^4.13.2"
-    notion-utils "^4.13.2"
+    notion-types "^4.14.1"
+    notion-utils "^4.14.1"
     p-map "^4.0.0"
 
 notion-types@^4.13.2:
@@ -2080,12 +2080,25 @@ notion-types@^4.13.2:
   resolved "https://registry.yarnpkg.com/notion-types/-/notion-types-4.13.2.tgz#4ccbddfc35d49a48ab1a218a006838c2dc994760"
   integrity sha512-eufaCSq2mYWdbc8PMbP/0UBgSByO6qWlU//euzwImx/LHfcHRwczG3H3ZE8I3YJhkkDvF7oYixDY6dzSL4/cMw==
 
+notion-types@^4.14.1:
+  version "4.14.1"
+  resolved "https://registry.yarnpkg.com/notion-types/-/notion-types-4.14.1.tgz#7879dc29cf4ab6a2f45f3ce3667ed09fd5147e62"
+  integrity sha512-jtWQ353gFIPNAbdTpPkrQKT0M6LEFNYPvg9aPGl21otxh2sSeZI4LQVOSbCMfwPdON0bw/0hhaHEJYp56zQUZA==
+
 notion-utils@^4.13.2:
   version "4.13.2"
   resolved "https://registry.yarnpkg.com/notion-utils/-/notion-utils-4.13.2.tgz#bd3611c32a08d9ba6ed6a401c62f44a5e6c1d770"
   integrity sha512-6megPZx6SGw3jeT3BAa7RSVp80E0LIed4PAhrOHWrOTeEsX3XkMDPQP0o6GWMiMQlTP3UabTVNmSpPxlPlaMiA==
   dependencies:
     notion-types "^4.13.2"
+    p-queue "6"
+
+notion-utils@^4.14.1:
+  version "4.14.1"
+  resolved "https://registry.yarnpkg.com/notion-utils/-/notion-utils-4.14.1.tgz#260c436f47e5ba3c03135b5fe069be1eaf890c02"
+  integrity sha512-iuCALwFk2qg5dgbAoq0Wrfmfl8yn0B69fbcTSNN6DiKeJGEbIvMeCOmtX1MAWqyiWUjY1XDFM2DmJBCZU05uHw==
+  dependencies:
+    notion-types "^4.14.1"
     p-queue "6"
 
 object-assign@^4.1.1:
