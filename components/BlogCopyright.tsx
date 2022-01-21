@@ -1,5 +1,5 @@
 const BlogCopyright = ({ notionPost }) => {
-    const publishDomain = typeof window !== 'undefined' ? window.location.origin : 'https://blog.harrly.com';
+    const publishDomain = typeof window !== 'undefined' ? window.location.origin : 'https://react-notion-blog.demo.harisfox.com';
 
     return (
         <div id='notion-blog-copyright' className='my-3 mx-auto md:w-3/5 leading-relaxed'>
