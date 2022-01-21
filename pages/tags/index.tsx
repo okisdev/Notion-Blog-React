@@ -32,10 +32,10 @@ const BlogTagsPage = () => {
                 <meta name='viewport' content='width=device-width, initial-scale=1' />
             </Head>
 
-            <div id='notion-blog-post' className='min-h-screen flex flex-col bg-gray-100 dark:bg-gray-400 font-Rubik'>
+            <div id='notion-blog-tags' className='min-h-screen flex flex-col dark:bg-[#23272d] font-Rubik'>
                 <BlogNavBar></BlogNavBar>
 
-                <div className='container mx-auto px-6 sm:px-8'>
+                <div className='container mx-auto px-6 sm:px-8 dark:text-[#adbac7]'>
                     <div id='notion-blog-tags-body-content' className='my-6 md:my-36 leading-6'>
                         <div>
                             <h1 className='text-3xl text-center my-20 md:my-56'>Tags</h1>
