@@ -11,7 +11,7 @@ const BlogCopyright = ({ notionPost }) => {
                     <div id='notion-blog-copyright-url'>
                         <span>
                             <a
-                                href={`https://${publishDomain}/posts/${notionPost.slug}`}
+                                href={`${publishDomain}/posts/${notionPost.slug}`}
                                 target='_blank'
                                 rel='noopener noreferrer'
                                 className='transition duration-500 underline hover:bg-yellow-500 dark:hover:bg-yellow-600'
