@@ -55,7 +55,7 @@ const BlogHomePage = ({ posts }: { posts: PostContent[] }) => {
                 <meta name='twitter:url' content={`https://react-notion-blog.demo.harisfox.com/`} />
             </Head>
 
-            <div id='notion-blog-homepage' className='min-h-screen flex flex-col dark:bg-gray-400 font-Rubik'>
+            <div id='notion-blog-homepage' className='min-h-screen flex flex-col dark:bg-[#23272d] font-Rubik primary-text '>
                 <Toaster />
 
                 <BlogNavBar></BlogNavBar>

@@ -63,7 +63,7 @@ const BlogPost: FC<{ recordMap: ExtendedRecordMap; notionPost: PostContent }> = 
                 <meta name='twitter:url' content={`https://react-notion-blog.demo.harisfox.com/posts/${notionPost.slug}`} />
             </Head>
 
-            <div id='notion-blog-post' className='min-h-screen flex flex-col dark:bg-gray-400 font-Rubik'>
+            <div id='notion-blog-post' className='min-h-screen flex flex-col dark:bg-[#23272d] font-Rubik dark:'>
                 <BlogNavBar></BlogNavBar>
 
                 <div className='container mx-auto px-6 sm:px-8'>
