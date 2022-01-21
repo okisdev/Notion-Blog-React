@@ -14,6 +14,7 @@ import BlogNavBar from '../../components/BlogNavBar';
 import BlogFooter from '../../components/BlogFooter';
 
 import { getNotionPosts } from '../../utils/getNotionPosts';
+import BlogBackHome from '../../components/BlogBackHome';
 
 const notionAPI = new NotionAPI();
 
@@ -70,6 +71,7 @@ const BlogPost: FC<{ recordMap: ExtendedRecordMap; notionPost: PostContent }> = 
                         <article id='notion-blog-post-article'>
                             <NotionRenderer recordMap={recordMap} fullPage={true} showTableOfContents={true} components={{ code: Code, equation: Equation }}></NotionRenderer>
                         </article>
+                        <BlogBackHome></BlogBackHome>
                     </div>
                 </div>
 

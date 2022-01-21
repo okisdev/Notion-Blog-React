@@ -198,7 +198,7 @@
     text-transform: uppercase;
     font-weight: 400;
     /* Changed */
-    font-size: 0.75rem;
+    font-size: 1rem;
     word-break: break-word;
 }
 
@@ -226,7 +226,7 @@
     border: 0 none;
     /* Changed */
     color: #000;
-    font-size: 0.5em;
+    font-size: 0.75em;
 }
 
 .notion-table-of-contents-active-item {
