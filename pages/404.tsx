@@ -10,10 +10,10 @@ const Error404 = () => {
                 <title>404 - Notion Blog React Example</title>
             </Head>
 
-            <div id='notion-blog-404' className='min-h-screen flex flex-col bg-gray-100 dark:bg-gray-400 font-Rubik'>
+            <div id='notion-blog-404' className='min-h-screen flex flex-col dark:bg-[#23272d] font-Rubik'>
                 <BlogNavBar></BlogNavBar>
 
-                <div id='notion-blog-404-content' className='mx-auto flex flex-grow leading-10'>
+                <div id='notion-blog-404-content' className='mx-auto flex flex-grow leading-10 dark:text-[#adbac7]'>
                     <div className='container mx-auto flex flex-col justify-center text-center'>
                         <h1 className='text-4xl font-bold'>404 Not Found</h1>
                         <p>This page does not exist.</p>
