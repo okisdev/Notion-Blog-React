@@ -15,6 +15,7 @@ import BlogFooter from '../../components/BlogFooter';
 
 import { getNotionPosts } from '../../utils/getNotionPosts';
 import BlogBackHome from '../../components/BlogBackHome';
+import BlogCopyright from '../../components/BlogCopyright';
 
 const notionAPI = new NotionAPI();
 
@@ -71,6 +72,9 @@ const BlogPost: FC<{ recordMap: ExtendedRecordMap; notionPost: PostContent }> = 
                         <article id='notion-blog-post-article'>
                             <NotionRenderer recordMap={recordMap} fullPage={true} showTableOfContents={true} components={{ code: Code, equation: Equation }}></NotionRenderer>
                         </article>
+
+                        <BlogCopyright notionPost={notionPost}></BlogCopyright>
+
                         <BlogBackHome></BlogBackHome>
                     </div>
                 </div>
