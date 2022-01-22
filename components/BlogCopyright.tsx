@@ -27,18 +27,18 @@ const BlogCopyright = ({ notionPost }) => {
                         {notionPost.author.map((author) => (
                             <div key={author.id}>
                                 <span className='flex flex-col'>
-                                    <span>{author.fullName}</span>
+                                    <span className='font-bold'>{author.fullName}</span>
                                 </span>
                             </div>
                         ))}
                     </div>
                     <div id='notion-blog-copyright-date' className='flex flex-col'>
-                        <span>Published Date</span>
-                        <span>{notionPost.date}</span>
+                        <span>Date</span>
+                        <span className='font-bold'>{notionPost.date}</span>
                     </div>
                     <div id='notion-blog-copyright-license' className='flex flex-col'>
                         <span>License</span>
-                        <span>
+                        <span className='font-bold'>
                             <a
                                 href='https://creativecommons.org/licenses/by-nc-sa/4.0/'
                                 target='_blank'
