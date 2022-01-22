@@ -15,7 +15,7 @@ const BlogCard = ({ post }: { post: PostContent }) => {
     return (
         <div id='notion-blog-body-card' className='transition duration-500 ease-in-out p-3 my-5 border-2 rounded-lg bg-white dark:bg-gray-500 hover:shadow-2xl'>
             <div id='notion-blog-body-card-content'>
-                <div id='notion-blog-body-card-title' className='flex items-center font-bold text-xl mb-2 md:mb-3 space-x-3 dark:text-blue-100 transition duration-500 ease-in-out hover:text-blue-400'>
+                <div id='notion-blog-body-card-title' className='flex items-center font-bold text-lg mb-2 space-x-3 dark:text-blue-100 transition duration-500 ease-in-out hover:text-blue-400'>
                     <IoIosPaper />
                     <div
                         onClick={() => {
@@ -39,15 +39,21 @@ const BlogCard = ({ post }: { post: PostContent }) => {
                     </svg>
                 </div>
 
-                <div id='notion-blog-body-card-description' className='mb-1 md:mb-2'>
-                    {post.description}
-                </div>
+                {post.description == '' ? (
+                    <div id='notion-blog-body-card-description'>
+                        <div id='notion-blog-body-card-description-none'></div>
+                    </div>
+                ) : (
+                    <div id='notion-blog-body-card-description' className='mb-1'>
+                        <span className='text-sm'>{post.description}</span>
+                    </div>
+                )}
 
                 <div id='notion-blog-body-card-intro' className='flex items-center space-x-6 md:space-x-8'>
                     <div id='notion-blog-body-card-date' className='flex items-center'>
                         <span className='flex flex-col'>
                             <MdDateRange className='mb-1' />
-                            <span>{new Date(post.date).toLocaleDateString()}</span>
+                            <span className='text-sm'>{new Date(post.date).toLocaleDateString()}</span>
                         </span>
                     </div>
 
@@ -56,7 +62,7 @@ const BlogCard = ({ post }: { post: PostContent }) => {
                             <div key={author.id}>
                                 <span className='flex flex-col'>
                                     <BsPeople className='mb-1' />
-                                    <span>{author.fullName}</span>
+                                    <span className='text-sm'>{author.fullName}</span>
                                 </span>
                             </div>
                         ))}
@@ -72,7 +78,7 @@ const BlogCard = ({ post }: { post: PostContent }) => {
                                         className='rounded ms:border-2 px-2 py-1 mb-1 mx-1 text-sm text-indigo-500 dark:text-indigo-500 bg-blue-100 dark:bg-blue-100'
                                         key={post.id}
                                     >
-                                        <span>{tag}</span>
+                                        <span className='text-sm'>{tag}</span>
                                     </div>
                                 ))}
                             </span>
