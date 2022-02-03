@@ -32,7 +32,7 @@ And also, you can...
 
 -   [x] Add [React-Notion-X](https://github.com/NotionX/react-notion-x) supported or Mix current api with [React-Notion-X](https://github.com/NotionX/react-notion-x).
 -   [ ] Add PostView.
--   [ ] Using [Notion Official API](https://developers.notion.com/).
+-   [x] Using [Notion Official API](https://developers.notion.com/). (Blogging entirely using Notion's official API is finished and hope to release it soon in the future)
 -   [ ] Add Tag.
 
 ## Related (Examples or Technology being used)
