@@ -64,7 +64,7 @@ const BlogHomePage = ({ posts }: { posts: PostContent[] }) => {
                     <div id='notion-blog-content' className='my-16'>
                         <BlogHeader></BlogHeader>
 
-                        <div id='notion-blog-body' className='mt-12 leading-loose flex flex-col'>
+                        <div id='notion-blog-body' className='flex flex-col mt-12'>
                             {posts.map((post) => post.published && <BlogCard key={post.id} post={post} />)}
                         </div>
                     </div>
