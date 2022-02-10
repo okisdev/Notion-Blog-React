@@ -15,15 +15,15 @@ const BlogNavBar = () => {
                     <nav className='flex'>
                         <div id='notion-blog-navbar-start' className='flex items-start mr-20 md:mr-80'>
                             <div className='mx-3'>
-                                <Link href='/'>
-                                    <a>
+                                <Link href='/' passHref>
+                                    <a title='Homepage'>
                                         <BiHome className='h-6 w-6' />
                                     </a>
                                 </Link>
                             </div>
                             <div className='mx-3'>
-                                <Link href='/tags'>
-                                    <a>
+                                <Link href='/tags' passHref>
+                                    <a title='Tags'>
                                         <FaTags className='h-6 w-6' />
                                     </a>
                                 </Link>
@@ -32,29 +32,29 @@ const BlogNavBar = () => {
 
                         <div id='notion-blog-navbar-end' className='flex items-end'>
                             <div className='mx-3'>
-                                <Link href='https://www.harrly.com'>
-                                    <a>
+                                <Link href='https://www.harrly.com' passHref>
+                                    <a title='Home'>
                                         <CgHomeAlt className='h-6 w-6' />
                                     </a>
                                 </Link>
                             </div>
                             <div className='mx-3'>
-                                <Link href='./atom.xml'>
-                                    <a>
+                                <Link href='./atom.xml' passHref>
+                                    <a title='RSS'>
                                         <RiRssFill className='h-6 w-6' />
                                     </a>
                                 </Link>
                             </div>
                             <div className='mx-3'>
-                                <Link href='https://github.com/Harry-Yep/Notion-Blog-React'>
-                                    <a>
+                                <Link href='https://github.com/Harry-Yep/Notion-Blog-React' passHref>
+                                    <a title='GitHub'>
                                         <FiGithub className='h-6 w-6' />
                                     </a>
                                 </Link>
                             </div>
                             <div className='mx-3'>
                                 <Link href='https://www.harrly.com/privacy-policy'>
-                                    <a>
+                                    <a title='Privacy Policy'>
                                         <AiOutlineSafety className='h-6 w-6' />
                                     </a>
                                 </Link>

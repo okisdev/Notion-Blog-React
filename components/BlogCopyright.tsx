@@ -2,7 +2,7 @@ const BlogCopyright = ({ notionPost }) => {
     const publishDomain = typeof window !== 'undefined' ? window.location.origin : 'https://react-notion-blog.demo.harisfox.com';
 
     return (
-        <div id='notion-blog-copyright' className='my-3 mx-auto md:w-3/5 leading-relaxed'>
+        <div id='notion-blog-copyright' className='my-3 mx-auto md:w-3/5'>
             <div className='rounded border-2 p-3 space-y-3 dark:text-[#adbac7]'>
                 <div id='notion-blog-copyright-header'>
                     <div id='notion-blog-copyright-title'>
@@ -52,7 +52,7 @@ const BlogCopyright = ({ notionPost }) => {
                 </div>
                 <div id='notion-blog-copyright-footer'>
                     <p id='notion-blog-copyright-reminder' className='text-sm'>
-                        When reposting, sharing or citing this article, please abide by the license agreement and indicate the source of the article.
+                        * When reposting, sharing or citing this article, please abide by the license agreement and indicate the source of the article.
                     </p>
                 </div>
             </div>
