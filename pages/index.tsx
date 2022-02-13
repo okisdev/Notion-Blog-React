@@ -9,6 +9,7 @@ import BlogFooter from '../components/BlogFooter';
 
 import { PostContent } from '../utils/PostContent';
 import { getNotionPosts } from '../utils/getNotionPosts';
+import BlogThemeSwither from '../components/BlogThemeSwitcher';
 
 export const getStaticProps = async () => {
     const unSortedPosts = (await getNotionPosts()).filter((posts) => posts.published);
@@ -71,6 +72,8 @@ const BlogHomePage = ({ posts }: { posts: PostContent[] }) => {
                 </div>
 
                 <BlogFooter></BlogFooter>
+
+                <BlogThemeSwither></BlogThemeSwither>
             </div>
         </div>
     );

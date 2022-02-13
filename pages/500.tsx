@@ -2,6 +2,7 @@ import Head from 'next/head';
 
 import BlogNavBar from '../components/BlogNavBar';
 import BlogFooter from '../components/BlogFooter';
+import BlogThemeSwither from '../components/BlogThemeSwitcher';
 
 const Error500 = () => {
     return (
@@ -21,6 +22,8 @@ const Error500 = () => {
                 </div>
 
                 <BlogFooter></BlogFooter>
+
+                <BlogThemeSwither></BlogThemeSwither>
             </div>
         </div>
     );

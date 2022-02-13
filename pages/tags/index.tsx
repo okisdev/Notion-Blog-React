@@ -4,6 +4,7 @@ import BlogNavBar from '../../components/BlogNavBar';
 import BlogFooter from '../../components/BlogFooter';
 
 import { getNotionPosts } from '../../utils/getNotionPosts';
+import BlogThemeSwither from '../../components/BlogThemeSwitcher';
 
 export const getStaticProps = async () => {
     const posts = (await getNotionPosts()).filter((posts) => posts.published);
@@ -45,6 +46,8 @@ const BlogTagsPage = () => {
                 </div>
 
                 <BlogFooter></BlogFooter>
+
+                <BlogThemeSwither></BlogThemeSwither>
             </div>
         </div>
     );
