@@ -16,7 +16,7 @@
         "axios": "0.25.0",
         "feed": "4.2.2",
         "next": "12.0.10",
-        "next-themes": "^0.0.15",
+        "next-themes": "0.0.15",
         "notion-client": "4.15.0",
         "powered-by-vercel": "1.1.0",
         "react": "17.0.2",
