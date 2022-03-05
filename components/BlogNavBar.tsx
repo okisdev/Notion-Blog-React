@@ -7,6 +7,8 @@ import { AiOutlineSafety } from 'react-icons/ai';
 import { CgHomeAlt } from 'react-icons/cg';
 import { FaTags } from 'react-icons/fa';
 
+import siteConfig from '../config/site.config';
+
 const BlogNavBar = () => {
     return (
         <div id='notion-blog-navbar' className='sticky top-0 z-50'>
