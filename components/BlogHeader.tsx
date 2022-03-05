@@ -1,6 +1,6 @@
 import siteConfig from '../config/site.config';
 
-const jsxToString = () => {
+const stringToJSX = () => {
     return {
         __html: siteConfig.global.content.header.description,
     };
@@ -18,7 +18,7 @@ const BlogHeader = () => {
                 </div>
                 <div id='notion-blog-header-description' className='pt-6'>
                     <div className='text-center flex justify-center items-center space-x-2'>
-                        <div dangerouslySetInnerHTML={jsxToString()}></div>
+                        <div dangerouslySetInnerHTML={stringToJSX()}></div>
                     </div>
                 </div>
             </div>
