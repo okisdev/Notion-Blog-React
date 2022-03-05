@@ -30,7 +30,7 @@ And also, you can...
 
 ### Preparation
 
--   **Notion API**: See [here](https://github.com/splitbee/notion-api-worker) for how to deploy a notion-api by yourself. (You can use [https://notion-api.splitbee.io/](https://notion-api.splitbee.io/) instead)
+-   **Notion API**: See [here](https://github.com/splitbee/notion-api-worker) for how to deploy a notion-api by yourself. (You can use `notion-api.splitbee.io` instead)
 -   **Public Notion Table**: Create a notion table with below properties. (You can duplicate a template [here](https://harrly.notion.site/2f01c9cec94d4925b2e9aec68b0e850b). Please make sure you have content inside a property box)
     -   title: Title
     -   tag: Multi-select
