@@ -4,11 +4,13 @@ import BlogNavBar from '../components/BlogNavBar';
 import BlogFooter from '../components/BlogFooter';
 import BlogThemeSwither from '../components/BlogThemeSwitcher';
 
+import siteConfig from '../config/site.config';
+
 const Error404 = () => {
     return (
         <div>
             <Head>
-                <title>404 - Notion Blog React Example</title>
+                <title>404 - {siteConfig.global.site.name}</title>
             </Head>
 
             <div id='notion-blog-404' className='min-h-screen flex flex-col dark:bg-[#23272d] font-Rubik'>

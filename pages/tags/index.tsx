@@ -6,6 +6,8 @@ import BlogFooter from '../../components/BlogFooter';
 import { getNotionPosts } from '../../utils/getNotionPosts';
 import BlogThemeSwither from '../../components/BlogThemeSwitcher';
 
+import siteConfig from '../../config/site.config';
+
 export const getStaticProps = async () => {
     const posts = (await getNotionPosts()).filter((posts) => posts.published);
 
@@ -21,15 +23,15 @@ const BlogTagsPage = () => {
     return (
         <div>
             <Head>
-                <title>Tags - Notion Blog React Example</title>
+                <title>Tags - {siteConfig.global.site.name}</title>
 
                 <meta charSet='UTF-8' />
-                <meta name='author' content='Harry Yep' />
-                <meta name='description' content='Notion Blog React Example' />
+                <meta name='author' content={siteConfig.global.author} />
+                <meta name='description' content={siteConfig.global.site.name} />
                 <meta httpEquiv='Content-Type' content='text/html' />
                 <meta httpEquiv='X-UA-Compatible' content='IE=Edge' />
                 <meta httpEquiv='x-dns-prefetch-control' content='on' />
-                <meta name='description' content='Notion Blog React Example' />
+                <meta name='description' content={siteConfig.global.site.name} />
                 <meta name='viewport' content='width=device-width, initial-scale=1' />
             </Head>
 

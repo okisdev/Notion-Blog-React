@@ -6,17 +6,18 @@ import { NotionAPI } from 'notion-client';
 import { ExtendedRecordMap } from 'notion-types';
 import { NotionRenderer, Code, Equation } from 'react-notion-x';
 
-import { PostContent } from '../../utils/PostContent';
-
 import Error404 from '../404';
 
 import BlogNavBar from '../../components/BlogNavBar';
 import BlogFooter from '../../components/BlogFooter';
-
-import { getNotionPosts } from '../../utils/getNotionPosts';
 import BlogBackHome from '../../components/BlogBackHome';
 import BlogCopyright from '../../components/BlogCopyright';
 import BlogThemeSwither from '../../components/BlogThemeSwitcher';
+
+import { PostContent } from '../../utils/PostContent';
+import { getNotionPosts } from '../../utils/getNotionPosts';
+
+import siteConfig from '../../config/site.config';
 
 const notionAPI = new NotionAPI();
 
@@ -49,20 +50,23 @@ const BlogPost: FC<{ recordMap: ExtendedRecordMap; notionPost: PostContent }> = 
     return (
         <div>
             <Head>
-                <title>{notionPost.title} - Notion Blog React Example</title>
-                <meta name='description' content={`${notionPost.description} - Notion Blog React Example`} />
-                <meta name='keywords' content={`${notionPost.tag}, Harry Yep, Blog, Notion Blog React Example, Harrly`} />
+                <title>
+                    {notionPost.title} - {siteConfig.global.site.name}
+                </title>
 
-                <meta property='og:title' content={`${notionPost.title} - Notion Blog React Example`} />
-                <meta property='og:description' content={`${notionPost.title} - Notion Blog React Example`} />
-                <meta property='og:url' content={`https://react-notion-blog.demo.harisfox.com/posts/${notionPost.slug}`} />
+                <meta name='description' content={`${notionPost.description} - ${siteConfig.global.site.name}`} />
+                <meta name='keywords' content={`${notionPost.tag}, ${siteConfig.global.author}, Blog, ${siteConfig.global.site.name}`} />
+
+                <meta property='og:title' content={`${notionPost.title} - ${siteConfig.global.site.name}`} />
+                <meta property='og:description' content={`${notionPost.title} - ${siteConfig.global.site.name}`} />
+                <meta property='og:url' content={`${siteConfig.global.site.url}/posts/${notionPost.slug}`} />
                 <meta property='og:type' content='website' />
-                <meta property='og:site_name' content='Notion Blog React Example' />
+                <meta property='og:site_name' content={siteConfig.global.site.name} />
 
                 <meta name='twitter:card' content='summary_large_image' />
-                <meta name='twitter:title' content={`${notionPost.title} - Notion Blog React Example`} />
-                <meta name='twitter:description' content={`${notionPost.title} - Notion Blog React Example`} />
-                <meta name='twitter:url' content={`https://react-notion-blog.demo.harisfox.com/posts/${notionPost.slug}`} />
+                <meta name='twitter:title' content={`${notionPost.title} - ${siteConfig.global.site.name}`} />
+                <meta name='twitter:description' content={`${notionPost.title} - ${siteConfig.global.site.name}`} />
+                <meta name='twitter:url' content={`${siteConfig.global.site.url}/posts/${notionPost.slug}`} />
             </Head>
 
             <div id='notion-blog-post' className='min-h-screen flex flex-col dark:bg-[#23272d] font-Rubik'>

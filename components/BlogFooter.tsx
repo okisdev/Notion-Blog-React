@@ -12,7 +12,7 @@ const BlogFooter = () => {
                     {siteConfig.global.content.license.name}
                 </a>
                 <p>
-                    Copyright &#169; {currentYear} {siteConfig.global.author} All rights reserved.
+                    Copyright &#169; {currentYear} {siteConfig.global.author}. All rights reserved.
                 </p>
                 <p>
                     Made by Harry Yep with <span className='text-red-600'>♥</span>

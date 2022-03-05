@@ -8,7 +8,6 @@ import { BsPeople } from 'react-icons/bs';
 import { AiOutlineLoading3Quarters } from 'react-icons/ai';
 
 import { PostContent } from '../utils/PostContent';
-
 import getNotionPostSlug from '../utils/getNotionPostSlug';
 
 const BlogCard = ({ post }: { post: PostContent }) => {

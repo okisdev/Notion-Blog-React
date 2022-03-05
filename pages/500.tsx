@@ -4,11 +4,13 @@ import BlogNavBar from '../components/BlogNavBar';
 import BlogFooter from '../components/BlogFooter';
 import BlogThemeSwither from '../components/BlogThemeSwitcher';
 
+import siteConfig from '../config/site.config';
+
 const Error500 = () => {
     return (
         <div>
             <Head>
-                <title>500 - Notion Blog React Example</title>
+                <title>500 - {siteConfig.global.site.name}</title>
             </Head>
 
             <div id='notion-blog-500' className='min-h-screen flex flex-col dark:bg-[#23272d] font-Rubik'>
