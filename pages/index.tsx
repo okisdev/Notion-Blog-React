@@ -11,6 +11,8 @@ import { PostContent } from '../utils/PostContent';
 import { getNotionPosts } from '../utils/getNotionPosts';
 import BlogThemeSwither from '../components/BlogThemeSwitcher';
 
+import siteConfig from '../config/site.config';
+
 export const getStaticProps = async () => {
     const unSortedPosts = (await getNotionPosts()).filter((posts) => posts.published);
 
@@ -30,30 +32,30 @@ const BlogHomePage = ({ posts }: { posts: PostContent[] }) => {
     return (
         <div>
             <Head>
-                <title>Notion Blog React Example</title>
+                <title>{siteConfig.global.site.name}</title>
 
                 <meta charSet='UTF-8' />
                 <meta name='viewport' content='width=device-width, initial-scale=1' />
 
-                <meta name='author' content='Harry Yep' />
-                <meta name='description' content='Blog built with Notion, React, Next.js, tailwindcss, TypeScript, Notion-Api-Worker and more.' />
+                <meta name='author' content={siteConfig.global.author} />
+                <meta name='description' content={siteConfig.global.site.description} />
                 <meta httpEquiv='Content-Type' content='text/html' />
                 <meta httpEquiv='X-UA-Compatible' content='IE=Edge' />
 
-                <meta property='og:title' content='Notion Blog React Example' />
-                <meta property='og:description' content='Blog built with Notion, React, Next.js, tailwindcss, TypeScript, Notion-Api-Worker and more.' />
-                <meta property='og:url' content='https://react-notion-blog.demo.harisfox.com/' />
+                <meta property='og:title' content={siteConfig.global.site.name} />
+                <meta property='og:description' content={siteConfig.global.site.description} />
+                <meta property='og:url' content={siteConfig.global.site.url} />
 
-                <meta property='og:image' content={`https://cdn.harrly.com/project/GitHub/Notion-Blog-React/img/Notion-Blog-React.Banner.png`} />
-                <meta property='og:url' content={`https://react-notion-blog.demo.harisfox.com/`} />
+                <meta property='og:image' content={siteConfig.global.site.banner_img} />
+                <meta property='og:url' content={siteConfig.global.site.url} />
                 <meta property='og:type' content='website' />
-                <meta property='og:site_name' content='Notion Blog React Example' />
+                <meta property='og:site_name' content={siteConfig.global.site.name} />
 
                 <meta name='twitter:card' content='summary_large_image' />
-                <meta name='twitter:title' content={`Notion Blog React Example`} />
-                <meta name='twitter:description' content={`Blog built with Notion, React, Next.js, tailwindcss, TypeScript, Notion-Api-Worker and more.`} />
-                <meta name='twitter:image' content={`https://cdn.harrly.com/project/GitHub/Notion-Blog-React/img/Notion-Blog-React.Banner.png`} />
-                <meta name='twitter:url' content={`https://react-notion-blog.demo.harisfox.com/`} />
+                <meta name='twitter:title' content={siteConfig.global.site.name} />
+                <meta name='twitter:description' content={siteConfig.global.site.description} />
+                <meta name='twitter:image' content={siteConfig.global.site.banner_img} />
+                <meta name='twitter:url' content={siteConfig.global.site.url} />
             </Head>
 
             <div id='notion-blog-homepage' className='min-h-screen flex flex-col dark:bg-[#23272d] font-Rubik'>

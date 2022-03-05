@@ -1,5 +1,7 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document';
 
+import siteConfig from '../config/site.config';
+
 class MyDocument extends Document {
     render() {
         return (
@@ -20,16 +22,16 @@ class MyDocument extends Document {
                         rel='stylesheet'
                     />
 
-                    <script data-token={`${process.env.SPLITBEE_ANALYTICS_CODE}`} async src='https://cdn.splitbee.io/sb.js'></script>
+                    <script data-token={siteConfig.global.analytics.splitbee} async src='https://cdn.splitbee.io/sb.js'></script>
 
-                    <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS_CODE}`} />
+                    <script async src={`https://www.googletagmanager.com/gtag/js?id=${siteConfig.global.analytics.google}`} />
                     <script
                         dangerouslySetInnerHTML={{
                             __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', '${process.env.GOOGLE_ANALYTICS_CODE}', {
+            gtag('config', '${siteConfig.global.analytics.google}', {
               page_path: window.location.pathname,
             });
           `,

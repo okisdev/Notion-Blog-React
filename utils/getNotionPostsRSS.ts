@@ -4,8 +4,10 @@ import { PostContent } from './PostContent';
 
 import getNotionPostSlug from '../utils/getNotionPostSlug';
 
-const domain = 'https://' + process.env.PUBLISH_DOMAIN;
-const author = process.env.BLOG_AUTHOR;
+import siteConfig from '../config/site.config';
+
+const domain = siteConfig.global.site.url;
+const author = siteConfig.global.author;
 
 const getNotionPostsRSS = (posts: PostContent[]) => {
     const currentYear = new Date().getFullYear();

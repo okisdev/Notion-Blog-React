@@ -1,3 +1,5 @@
+import siteConfig from '../config/site.config';
+
 const BlogCopyright = ({ notionPost }) => {
     const publishDomain = typeof window !== 'undefined' ? window.location.origin : 'https://react-notion-blog.demo.harisfox.com';
 
@@ -40,12 +42,12 @@ const BlogCopyright = ({ notionPost }) => {
                         <span>License</span>
                         <span className='font-bold'>
                             <a
-                                href='https://creativecommons.org/licenses/by-nc-sa/4.0/'
+                                href={siteConfig.global.content.license.url}
                                 target='_blank'
                                 rel='noopener noreferrer'
                                 className='transition duration-500 underline hover:bg-yellow-500 dark:hover:bg-yellow-600'
                             >
-                                CC BY-NC-SA 4.0
+                                {siteConfig.global.content.license.name}
                             </a>
                         </span>
                     </div>
