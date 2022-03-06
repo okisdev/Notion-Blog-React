@@ -1,7 +1,11 @@
+import { useTranslation } from 'next-i18next';
+
 import siteConfig from '../config/site.config';
 
 const BlogCopyright = ({ notionPost }) => {
     const publishDomain = typeof window !== 'undefined' ? window.location.origin : 'https://react-notion-blog.demo.harisfox.com';
+
+    const { t } = useTranslation('common');
 
     return (
         <div id='notion-blog-copyright' className='my-3 mx-auto md:w-3/5'>
@@ -25,7 +29,7 @@ const BlogCopyright = ({ notionPost }) => {
                 </div>
                 <div id='notion-blog-copyright-body' className='flex flew-row space-x-3'>
                     <div id='notion-blog-copyright-author' className='flex flex-col'>
-                        <span>Author</span>
+                        <span>{t('Author')}</span>
                         {notionPost.author.map((author) => (
                             <div key={author.id}>
                                 <span className='flex flex-col'>
@@ -35,11 +39,11 @@ const BlogCopyright = ({ notionPost }) => {
                         ))}
                     </div>
                     <div id='notion-blog-copyright-date' className='flex flex-col'>
-                        <span>Date</span>
+                        <span>{t('Date')}</span>
                         <span className='font-bold'>{notionPost.date}</span>
                     </div>
                     <div id='notion-blog-copyright-license' className='flex flex-col'>
-                        <span>License</span>
+                        <span>{t('License')}</span>
                         <span className='font-bold'>
                             <a
                                 href={siteConfig.global.content.license.url}
@@ -54,7 +58,7 @@ const BlogCopyright = ({ notionPost }) => {
                 </div>
                 <div id='notion-blog-copyright-footer'>
                     <p id='notion-blog-copyright-reminder' className='text-sm'>
-                        * When reposting, sharing or citing this article, please abide by the license agreement and indicate the source of the article.
+                        {t('* When reposting, sharing or citing this article, please abide by the license agreement and indicate the source of the article.')}
                     </p>
                 </div>
             </div>

@@ -5,6 +5,7 @@ import { FC } from 'react';
 import { NotionAPI } from 'notion-client';
 import { ExtendedRecordMap } from 'notion-types';
 import { NotionRenderer, Code, Equation } from 'react-notion-x';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 import Error404 from '../404';
 
@@ -21,7 +22,9 @@ import siteConfig from '../../config/site.config';
 
 const notionAPI = new NotionAPI();
 
-export const getServerSideProps = async ({ params: { slug } }: { params: { slug: string } }) => {
+export const getServerSideProps = async ({ params, locale }) => {
+    const { slug } = params as { slug: string };
+
     const notionPosts = (await getNotionPosts()).filter((posts) => posts.published);
 
     const notionPostIndex = notionPosts.findIndex((post) => post.slug === slug);
@@ -34,6 +37,7 @@ export const getServerSideProps = async ({ params: { slug } }: { params: { slug:
         props: {
             notionPost,
             recordMap,
+            ...(await serverSideTranslations(locale, ['common'])),
         },
     };
 };

@@ -2,6 +2,8 @@ import Head from 'next/head';
 
 import { Toaster } from 'react-hot-toast';
 
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
 import BlogNavBar from '../components/BlogNavBar';
 import BlogHeader from '../components/BlogHeader';
 import BlogCard from '../components/BlogCard';
@@ -13,7 +15,7 @@ import BlogThemeSwither from '../components/BlogThemeSwitcher';
 
 import siteConfig from '../config/site.config';
 
-export const getStaticProps = async () => {
+export const getStaticProps = async ({ locale }) => {
     const unSortedPosts = (await getNotionPosts()).filter((posts) => posts.published);
 
     const posts = unSortedPosts.sort(function (a, b) {
@@ -23,6 +25,7 @@ export const getStaticProps = async () => {
     return {
         props: {
             posts,
+            ...(await serverSideTranslations(locale, ['common', 'footer'])),
         },
         revalidate: 60,
     };

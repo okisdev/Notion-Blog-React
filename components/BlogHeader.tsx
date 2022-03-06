@@ -1,3 +1,5 @@
+import { useTranslation } from 'next-i18next';
+
 import siteConfig from '../config/site.config';
 
 const stringToJSX = () => {
@@ -7,6 +9,8 @@ const stringToJSX = () => {
 };
 
 const BlogHeader = () => {
+    const { t } = useTranslation('common');
+
     return (
         <div id='notion-blog-header' className='flex flex-row justify-center items-center my-10 space-x-2 md:space-x-8 dark:text-[#adbac7]'>
             <div id='notion-blog-header-avatar'>

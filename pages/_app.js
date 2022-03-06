@@ -5,6 +5,8 @@ import 'prismjs/themes/prism-tomorrow.css';
 import 'katex/dist/katex.min.css';
 import 'tailwindcss/tailwind.css';
 
+import { appWithTranslation } from 'next-i18next';
+
 import { ThemeProvider } from 'next-themes';
 
 function MyApp({ Component, pageProps }) {
@@ -15,4 +17,4 @@ function MyApp({ Component, pageProps }) {
     );
 }
 
-export default MyApp;
+export default appWithTranslation(MyApp);

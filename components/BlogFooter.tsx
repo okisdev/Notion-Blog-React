@@ -1,9 +1,13 @@
+import { useTranslation } from 'next-i18next';
+
 import PoweredByVercel from 'powered-by-vercel';
 
 import siteConfig from '../config/site.config';
 
 const BlogFooter = () => {
     const currentYear = new Date().getFullYear();
+
+    const { t } = useTranslation('common');
 
     return (
         <div id='notion-blog-footer' className='leading-relaxed h-auto text-sm dark:text-[#adbac7]'>

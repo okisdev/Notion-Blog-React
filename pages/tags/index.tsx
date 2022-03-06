@@ -1,19 +1,22 @@
 import Head from 'next/head';
 
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
 import BlogNavBar from '../../components/BlogNavBar';
 import BlogFooter from '../../components/BlogFooter';
+import BlogThemeSwither from '../../components/BlogThemeSwitcher';
 
 import { getNotionPosts } from '../../utils/getNotionPosts';
-import BlogThemeSwither from '../../components/BlogThemeSwitcher';
 
 import siteConfig from '../../config/site.config';
 
-export const getStaticProps = async () => {
+export const getStaticProps = async ({ locale }) => {
     const posts = (await getNotionPosts()).filter((posts) => posts.published);
 
     return {
         props: {
             posts,
+            ...(await serverSideTranslations(locale, ['common', 'footer'])),
         },
         revalidate: 60,
     };

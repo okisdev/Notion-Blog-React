@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 import toast from 'react-hot-toast';
+import { useTranslation } from 'next-i18next';
 
 import { IoMdPricetags, IoIosPaper } from 'react-icons/io';
 import { MdDateRange } from 'react-icons/md';
@@ -11,6 +12,8 @@ import { PostContent } from '../utils/PostContent';
 import getNotionPostSlug from '../utils/getNotionPostSlug';
 
 const BlogCard = ({ post }: { post: PostContent }) => {
+    const { t } = useTranslation('common');
+
     return (
         <div id='notion-blog-body-card' className='transition duration-500 ease-in-out p-3 my-5 border-2 rounded-lg bg-white dark:bg-gray-500 hover:shadow-2xl'>
             <div id='notion-blog-body-card-content'>
@@ -18,7 +21,7 @@ const BlogCard = ({ post }: { post: PostContent }) => {
                     <IoIosPaper />
                     <div
                         onClick={() => {
-                            toast(`Loading...`, {
+                            toast(t('Loading...'), {
                                 icon: <AiOutlineLoading3Quarters className='animate-spin' />,
                                 style: {
                                     borderRadius: '15px',
