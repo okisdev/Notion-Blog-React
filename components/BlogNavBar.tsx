@@ -1,6 +1,7 @@
 import { Fragment } from 'react';
 
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 import { Menu, Transition, Disclosure } from '@headlessui/react';
 
@@ -19,6 +20,8 @@ function classNames(...classes: any[]) {
 }
 
 const BlogNavBar = () => {
+    const { asPath } = useRouter();
+
     return (
         <div id='notion-blog-navbar' className='sticky top-0 z-50'>
             <div className='bg-white dark:bg-gray-500'>
@@ -91,9 +94,9 @@ const BlogNavBar = () => {
                                             return (
                                                 <Menu.Item key={index}>
                                                     {({ active }) => (
-                                                        <a href={item.code} className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}>
-                                                            {item.name}
-                                                        </a>
+                                                        <Link href={item.code} as={asPath} locale={item.code}>
+                                                            <a className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}>{item.name}</a>
+                                                        </Link>
                                                     )}
                                                 </Menu.Item>
                                             );
