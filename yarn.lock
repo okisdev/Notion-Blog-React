@@ -2071,23 +2071,10 @@ notion-client@4.17.0:
     notion-utils "^4.17.0"
     p-map "^4.0.0"
 
-notion-types@^4.16.0:
-  version "4.16.0"
-  resolved "https://registry.yarnpkg.com/notion-types/-/notion-types-4.16.0.tgz#617df1996b47678d02917d968fea2a2fc3208add"
-  integrity sha512-guqtW8JdoIBnTyIO79gmqQzAe3SDeHX2hxf/kYMYlSpuzu7km2HUDMUVWmPmQRsAAMVF2atueZdH5INuG59kAg==
-
 notion-types@^4.17.0:
   version "4.17.0"
   resolved "https://registry.yarnpkg.com/notion-types/-/notion-types-4.17.0.tgz#aff50a6dd2e15e4e8d6b3691a3087ad5eaa89538"
   integrity sha512-j0PXawUD5/eY9ant7dQUVecZZfvJ/DlLZ4ic0ysfV0M0z+ndh7IaGjix1/rJmnaf5BpkjCXzlxj8DV2VfaJghQ==
-
-notion-utils@^4.16.0:
-  version "4.16.0"
-  resolved "https://registry.yarnpkg.com/notion-utils/-/notion-utils-4.16.0.tgz#3f022ebc9f3235edd106b51b6f45a53886d6f6fe"
-  integrity sha512-+jhUEIQjnTfKjXvY9CZAEotea5+pjo3V/yIi2PrqQuXiQfL28Dn09VnVNQ5fWTEtyoQEENkyNmMoBI0Nzn4Xiw==
-  dependencies:
-    notion-types "^4.16.0"
-    p-queue "6"
 
 notion-utils@^4.17.0:
   version "4.17.0"
