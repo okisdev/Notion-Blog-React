@@ -2071,23 +2071,15 @@ notion-client@4.19.1:
     notion-utils "^4.19.1"
     p-map "^4.0.0"
 
-notion-types@^4.18.0:
-  version "4.18.0"
-  resolved "https://registry.yarnpkg.com/notion-types/-/notion-types-4.18.0.tgz#d1a6b9876d1bcad46c188f29bb3491453b8269ff"
-  integrity sha512-BWkflecQYXPdX+OZ458A6lgxLJeZ0DmOUH4aNWbsChHIbBTndf7a82+zzwXANgeOPC46ukaWXQIH6Jnl4Z7fIw==
-
 notion-types@^4.19.1:
   version "4.19.1"
   resolved "https://registry.yarnpkg.com/notion-types/-/notion-types-4.19.1.tgz#9093d801ae109a169729f67091255ca948696413"
   integrity sha512-yAUPiw4lx1n+MQ0KhfJc6Rbf3pafgxxBmAOcJTvmwayUboHBu/ghuNeNeHLFvZsJsdc9k4aL2SWaMGrJqT1QUA==
 
-notion-utils@^4.18.0:
-  version "4.18.0"
-  resolved "https://registry.yarnpkg.com/notion-utils/-/notion-utils-4.18.0.tgz#22f39d8fa93139cd5d04385901b6b148196edd8d"
-  integrity sha512-eoybBgb1fne35FF2BIMhEDihuaRlgnf2wF8DTnu+AvB8O1ttcPXcvp0lR4/gfWD5f7CFTA7KuhF1s7RY1NRIxA==
-  dependencies:
-    notion-types "^4.18.0"
-    p-queue "6"
+notion-types@^4.19.8:
+  version "4.19.8"
+  resolved "https://registry.yarnpkg.com/notion-types/-/notion-types-4.19.8.tgz#2e89d93a1cdcc85ede8b70a48baa32e5d6ab4db8"
+  integrity sha512-KLszLpe2UtejnX0bCoLe8JFZPeQyUS15F29LW4iRPFwnlNZePWz0h303F0IBhxOXQRiWIwy4mEGzRDu45a+dhA==
 
 notion-utils@^4.19.1:
   version "4.19.1"
@@ -2095,6 +2087,14 @@ notion-utils@^4.19.1:
   integrity sha512-jrlG6Kqu+MVmGIM3gNf/pST3a36kGDxnv/HNCEObNUuznfChtdLRxeD9ie+B69dEzINPRwJG4ssQK/669RSkag==
   dependencies:
     notion-types "^4.19.1"
+    p-queue "6"
+
+notion-utils@^4.19.8:
+  version "4.19.8"
+  resolved "https://registry.yarnpkg.com/notion-utils/-/notion-utils-4.19.8.tgz#afda224b20def44922c4214e4e9c4df225bf48b1"
+  integrity sha512-d85bSrfr58/vReesEALiZcDcczRa/iiBZagmoNFjLX87ooMeJoPs9CLwGuCg0inhDFFqAU8c4PJgAc7/FNOM/A==
+  dependencies:
+    notion-types "^4.19.8"
     p-queue "6"
 
 object-assign@^4.1.1:
@@ -2274,10 +2274,10 @@ path-type@^4.0.0:
   resolved "https://registry.yarnpkg.com/path-type/-/path-type-4.0.0.tgz#84ed01c0a7ba380afe09d90a8c180dcd9d03043b"
   integrity sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
 
-pdfjs-dist@2.9.359:
-  version "2.9.359"
-  resolved "https://registry.yarnpkg.com/pdfjs-dist/-/pdfjs-dist-2.9.359.tgz#e67bafebf20e50fc41f1a5c189155ad008ac4f81"
-  integrity sha512-P2nYtkacdlZaNNwrBLw1ZyMm0oE2yY/5S/GDCAmMJ7U4+ciL/D0mrlEC/o4HZZc/LNE3w8lEVzBEyVgEQlPVKQ==
+pdfjs-dist@2.12.313:
+  version "2.12.313"
+  resolved "https://registry.yarnpkg.com/pdfjs-dist/-/pdfjs-dist-2.12.313.tgz#62f2273737bb956267ae2e02cdfaddcb1099819c"
+  integrity sha512-1x6iXO4Qnv6Eb+YFdN5JdUzt4pAkxSp3aLAYPX93eQCyg/m7QFzXVWJHJVtoW48CI8HCXju4dSkhQZwoheL5mA==
 
 picocolors@^1.0.0:
   version "1.0.0"
@@ -2584,10 +2584,10 @@ react-modal@^3.14.3:
     react-lifecycles-compat "^3.0.0"
     warning "^4.0.3"
 
-react-notion-x@4.18.2:
-  version "4.18.2"
-  resolved "https://registry.yarnpkg.com/react-notion-x/-/react-notion-x-4.18.2.tgz#4e9dd70ce00565a2c958dfcc06d14025596b3d47"
-  integrity sha512-nmSoyZ+jwgXz5JpTGeEhrHNKjIej6Kp2Qrp4kPSaF0zMCMe+hgnIe5n0+wLnJ/wnIUErDWGch7D4ulWtrPMPMA==
+react-notion-x@4.19.8:
+  version "4.19.8"
+  resolved "https://registry.yarnpkg.com/react-notion-x/-/react-notion-x-4.19.8.tgz#9492ea4d80f348b36abd72026d307fd352ba2374"
+  integrity sha512-dbLAyGa0gDrdrK+DyuZ3imTyvEs16w+PbhHAIqjkJqnvQU5myudzkOioi2XdO1mIYeiTxgTFvnThErxYmi3T9w==
   dependencies:
     "@matejmazur/react-katex" "^3.1.3"
     date-fns "^2.15.0"
@@ -2596,8 +2596,8 @@ react-notion-x@4.18.2:
     katex "^0.13.18"
     lodash.throttle "^4.1.1"
     medium-zoom "^1.0.6"
-    notion-types "^4.18.0"
-    notion-utils "^4.18.0"
+    notion-types "^4.19.8"
+    notion-utils "^4.19.8"
     prismjs "^1.20.0"
     rc-dropdown "^3.1.2"
     rc-menu "^9.0.14"
@@ -2605,13 +2605,13 @@ react-notion-x@4.18.2:
     react-image "^4.0.3"
     react-lazy-images "^1.1.0"
     react-modal "^3.14.3"
-    react-pdf "^5.4.1"
+    react-pdf "^5.7.1"
     react-use "^17.3.1"
 
-react-pdf@^5.4.1:
-  version "5.4.1"
-  resolved "https://registry.yarnpkg.com/react-pdf/-/react-pdf-5.4.1.tgz#b60924ea1ca9310ceca27ff64baa022691c5bd43"
-  integrity sha512-/MsRwGF9j+mPlPVMiwHejH92T55MmwpHfdRjobWxPbMGOY8bMq6zsTrKd+FMrZI0uhC1q8FNW40lBQ8rfY4R8Q==
+react-pdf@^5.7.1:
+  version "5.7.1"
+  resolved "https://registry.yarnpkg.com/react-pdf/-/react-pdf-5.7.1.tgz#d540cee152b2747763b0173ed70ab69be5b64a5b"
+  integrity sha512-0G0Yb5Lx/B52+AJcLoJ3181IOet4ug7hgyE/U3/0QHcj5lK8i0DYZJSnE3KowAi0p8FBfUhp6QngUgJZGmuKIQ==
   dependencies:
     "@babel/runtime" "^7.0.0"
     file-loader "^6.0.0"
@@ -2619,8 +2619,10 @@ react-pdf@^5.4.1:
     make-event-props "^1.1.0"
     merge-class-names "^1.1.1"
     merge-refs "^1.0.0"
-    pdfjs-dist "2.9.359"
+    pdfjs-dist "2.12.313"
     prop-types "^15.6.2"
+    tiny-invariant "^1.0.0"
+    tiny-warning "^1.0.0"
 
 react-universal-interface@^0.6.2:
   version "0.6.2"
@@ -2999,6 +3001,16 @@ throttle-debounce@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/throttle-debounce/-/throttle-debounce-3.0.1.tgz#32f94d84dfa894f786c9a1f290e7a645b6a19abb"
   integrity sha512-dTEWWNu6JmeVXY0ZYoPuH5cRIwc0MeGbJwah9KUNYSJwommQpCzTySTpEe8Gs1J23aeWEuAobe4Ag7EHVt/LOg==
+
+tiny-invariant@^1.0.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/tiny-invariant/-/tiny-invariant-1.2.0.tgz#a1141f86b672a9148c72e978a19a73b9b94a15a9"
+  integrity sha512-1Uhn/aqw5C6RI4KejVeTg6mIS7IqxnLJ8Mv2tV5rTc0qWobay7pDUz6Wi392Cnc8ak1H0F2cjoRzb2/AW4+Fvg==
+
+tiny-warning@^1.0.0:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/tiny-warning/-/tiny-warning-1.0.3.tgz#94a30db453df4c643d0fd566060d60a875d84754"
+  integrity sha512-lBN9zLN/oAf68o3zNXYrdCt1kP8WsiGW8Oo2ka41b2IM5JL/S1CTyX1rW0mb/zSuJun0ZUrDxx4sqvYS2FWzPA==
 
 to-regex-range@^5.0.1:
   version "5.0.1"
