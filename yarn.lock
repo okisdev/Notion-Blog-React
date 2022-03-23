@@ -2061,33 +2061,20 @@ normalize-url@^6.0.1:
   resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-6.1.0.tgz#40d0885b535deffe3f3147bec877d05fe4c5668a"
   integrity sha512-DlL+XwOy3NxAQ8xuC0okPgK46iuVNAK01YN7RueYBqqFeGsBjV9XmCAzAdgt+667bCl5kPh9EqKKDwnaPG1I7A==
 
-notion-client@4.19.1:
-  version "4.19.1"
-  resolved "https://registry.yarnpkg.com/notion-client/-/notion-client-4.19.1.tgz#481a3051df07425987c530a51e349d58e296a8da"
-  integrity sha512-yj6UjCX+s/xTox3BFTsN6o3Ub8/Aa7lO/A96xXR/Pr1R67z8TXb72ul3VXywJQSlpFG/9tSv7GoaZPHFQQYl5A==
+notion-client@4.19.8:
+  version "4.19.8"
+  resolved "https://registry.yarnpkg.com/notion-client/-/notion-client-4.19.8.tgz#dd5b5236aa82cee05a597b98ab31ea58701e1f8e"
+  integrity sha512-be9hMYILCKH8kQIUhNJKTBj5VWKufRvnMIRcP1Rj2nxdXW6w0vyTeL6akqYrdMoIJq1wxL3eFFwhB7Ji7b0cdQ==
   dependencies:
     got "^11.8.1"
-    notion-types "^4.19.1"
-    notion-utils "^4.19.1"
+    notion-types "^4.19.8"
+    notion-utils "^4.19.8"
     p-map "^4.0.0"
-
-notion-types@^4.19.1:
-  version "4.19.1"
-  resolved "https://registry.yarnpkg.com/notion-types/-/notion-types-4.19.1.tgz#9093d801ae109a169729f67091255ca948696413"
-  integrity sha512-yAUPiw4lx1n+MQ0KhfJc6Rbf3pafgxxBmAOcJTvmwayUboHBu/ghuNeNeHLFvZsJsdc9k4aL2SWaMGrJqT1QUA==
 
 notion-types@^4.19.8:
   version "4.19.8"
   resolved "https://registry.yarnpkg.com/notion-types/-/notion-types-4.19.8.tgz#2e89d93a1cdcc85ede8b70a48baa32e5d6ab4db8"
   integrity sha512-KLszLpe2UtejnX0bCoLe8JFZPeQyUS15F29LW4iRPFwnlNZePWz0h303F0IBhxOXQRiWIwy4mEGzRDu45a+dhA==
-
-notion-utils@^4.19.1:
-  version "4.19.1"
-  resolved "https://registry.yarnpkg.com/notion-utils/-/notion-utils-4.19.1.tgz#7343810420ebbb8b2f8722402e53f50b0b18a628"
-  integrity sha512-jrlG6Kqu+MVmGIM3gNf/pST3a36kGDxnv/HNCEObNUuznfChtdLRxeD9ie+B69dEzINPRwJG4ssQK/669RSkag==
-  dependencies:
-    notion-types "^4.19.1"
-    p-queue "6"
 
 notion-utils@^4.19.8:
   version "4.19.8"
