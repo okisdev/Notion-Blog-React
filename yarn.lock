@@ -364,13 +364,13 @@ acorn@^8.7.0:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.7.0.tgz#90951fde0f8f09df93549481e5fc141445b791cf"
   integrity sha512-V/LGr1APy+PXIwKebEWrkZPwoeoF+w1jiOBUmuxuiUIaOHtob8Qc9BTrYo7VuI5fR8tqsy+buA2WFooR5olqvQ==
 
-aggregate-error@^3.0.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/aggregate-error/-/aggregate-error-3.1.0.tgz#92670ff50f5359bdb7a3e0d40d0ec30c5737687a"
-  integrity sha512-4I7Td01quW/RpocfNayFdFVk1qSuoh0E7JrbRJ16nH01HhKFQ88INq9Sd+nd72zqRySlr9BmDA8xlEJ6vJMrYA==
+aggregate-error@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/aggregate-error/-/aggregate-error-4.0.0.tgz#83dbdb53a0d500721281d22e19eee9bc352a89cd"
+  integrity sha512-8DGp7zUt1E9k0NE2q4jlXHk+V3ORErmwolEdRz9iV+LKJ40WhMHh92cxAvhqV2I+zEn/gotIoqoMs0NjF3xofg==
   dependencies:
-    clean-stack "^2.0.0"
-    indent-string "^4.0.0"
+    clean-stack "^4.0.0"
+    indent-string "^5.0.0"
 
 ajv-keywords@^3.5.2:
   version "3.5.2"
@@ -635,10 +635,12 @@ classnames@2.x, classnames@^2.2.1, classnames@^2.2.6:
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.1.tgz#dfcfa3891e306ec1dad105d0e88f4417b8535e8e"
   integrity sha512-OlQdbZ7gLfGarSqxesMesDa5uz7KFbID8Kpq/SxIoNGDqY8lSYs0D+hhtBXhcdB3rcbXArFr7vlHheLk1voeNA==
 
-clean-stack@^2.0.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/clean-stack/-/clean-stack-2.2.0.tgz#ee8472dbb129e727b31e8a10a427dee9dfe4008b"
-  integrity sha512-4diC9HaTE+KRAMWhDhrGOECgWZxoevMc5TlkObMqNSsVU62PYzXZ/SMTjzyGAFF1YusgxGcSWTEXBhp0CPwQ1A==
+clean-stack@^4.0.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/clean-stack/-/clean-stack-4.1.0.tgz#5ce5a2fd19a12aecdce8570daefddb7ac94b6b4e"
+  integrity sha512-dxXQYI7mfQVcaF12s6sjNFoZ6ZPDQuBBLp3QJ5156k9EvUFClUoZ11fo8HnLQO241DDVntHEug8MOuFO5PSfRg==
+  dependencies:
+    escape-string-regexp "5.0.0"
 
 clone-response@^1.0.2:
   version "1.0.2"
@@ -948,6 +950,11 @@ escalade@^3.1.1:
   resolved "https://registry.yarnpkg.com/escalade/-/escalade-3.1.1.tgz#d8cfdc7000965c5a0174b4a82eaa5c0552742e40"
   integrity sha512-k0er2gUkLf8O0zKJiAhmkTnJlTvINGv7ygDNPbeIsX/TJjGJZHuh9B2UxbsaEkmlEo9MfhrSzmhIlhRlI2GXnw==
 
+escape-string-regexp@5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-5.0.0.tgz#4683126b500b61762f2dbebace1806e8be31b1c8"
+  integrity sha512-/veY75JbMK4j1yjvuUxuVsiS/hr/4iHs9FTT6cgTexxdE0Ly/glccBAkloH/DofkjRbZU3bnoj38mOmhkZ0lHw==
+
 escape-string-regexp@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
@@ -1172,7 +1179,7 @@ esutils@^2.0.2:
   resolved "https://registry.yarnpkg.com/esutils/-/esutils-2.0.3.tgz#74d2eb4de0b8da1293711910d50775b9b710ef64"
   integrity sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==
 
-eventemitter3@^4.0.4:
+eventemitter3@^4.0.4, eventemitter3@^4.0.7:
   version "4.0.7"
   resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-4.0.7.tgz#2de9b68f6528d5644ef5c59526a1b4a07306169f"
   integrity sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw==
@@ -1543,10 +1550,10 @@ imurmurhash@^0.1.4:
   resolved "https://registry.yarnpkg.com/imurmurhash/-/imurmurhash-0.1.4.tgz#9218b9b2b928a238b13dc4fb6b6d576f231453ea"
   integrity sha1-khi5srkoojixPcT7a21XbyMUU+o=
 
-indent-string@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/indent-string/-/indent-string-4.0.0.tgz#624f8f4497d619b2d9768531d58f4122854d7251"
-  integrity sha512-EdDDZu4A2OyIK7Lr/2zG+w5jmbuk1DVBnEwREQvBzspBJkCEbRa8GxU1lghYcaGJCnRWibjDXlq779X1/y5xwg==
+indent-string@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/indent-string/-/indent-string-5.0.0.tgz#4fd2980fccaf8622d14c64d694f4cf33c81951a5"
+  integrity sha512-m6FAo/spmsW2Ab2fU35JTYwtOKa2yAwXSwgjSv1TJzh4Mh7mC3lzAOVLBprb72XsTrgkEIsl7YrFNAiDiRhIGg==
 
 inflight@^1.0.4:
   version "1.0.6"
@@ -2061,20 +2068,25 @@ normalize-url@^6.0.1:
   resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-6.1.0.tgz#40d0885b535deffe3f3147bec877d05fe4c5668a"
   integrity sha512-DlL+XwOy3NxAQ8xuC0okPgK46iuVNAK01YN7RueYBqqFeGsBjV9XmCAzAdgt+667bCl5kPh9EqKKDwnaPG1I7A==
 
-notion-client@4.19.8:
-  version "4.19.8"
-  resolved "https://registry.yarnpkg.com/notion-client/-/notion-client-4.19.8.tgz#dd5b5236aa82cee05a597b98ab31ea58701e1f8e"
-  integrity sha512-be9hMYILCKH8kQIUhNJKTBj5VWKufRvnMIRcP1Rj2nxdXW6w0vyTeL6akqYrdMoIJq1wxL3eFFwhB7Ji7b0cdQ==
+notion-client@6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/notion-client/-/notion-client-6.0.0.tgz#cf6ec7df9c0298b29ba83157a67e0634a52f8ffc"
+  integrity sha512-EKiClsRXKmV10QLH0jLTJ6kZrs/xYr0GNxLZJXpMwmOXOYbTdw/n40o0zunGg/eH0vuTn+xVvL4guXO8MfzLaA==
   dependencies:
     got "^11.8.1"
-    notion-types "^4.19.8"
-    notion-utils "^4.19.8"
-    p-map "^4.0.0"
+    notion-types "^6.0.0"
+    notion-utils "^6.0.0"
+    p-map "^5.3.0"
 
 notion-types@^4.19.8:
   version "4.19.8"
   resolved "https://registry.yarnpkg.com/notion-types/-/notion-types-4.19.8.tgz#2e89d93a1cdcc85ede8b70a48baa32e5d6ab4db8"
   integrity sha512-KLszLpe2UtejnX0bCoLe8JFZPeQyUS15F29LW4iRPFwnlNZePWz0h303F0IBhxOXQRiWIwy4mEGzRDu45a+dhA==
+
+notion-types@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/notion-types/-/notion-types-6.0.0.tgz#3456431f0120e52e220f5b580c36e6570e468a07"
+  integrity sha512-tpWzsj38rpYf608Fx7eNIhFBr6s6pIcmibn1h192S60b9Rq28A3PDOPThSrGHThPEfyMf1wU6EtAWaHwTjnbdA==
 
 notion-utils@^4.19.8:
   version "4.19.8"
@@ -2083,6 +2095,14 @@ notion-utils@^4.19.8:
   dependencies:
     notion-types "^4.19.8"
     p-queue "6"
+
+notion-utils@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/notion-utils/-/notion-utils-6.0.0.tgz#89273dce117a7f792c40535540c721828925509c"
+  integrity sha512-nKgZ5yOuBFxxKbdCzdxfF4p5NoMG0QIef/lbOIE/Rkbk+MzcS5TrRrtfZsTbgi1Ra2tu3825dtrouRLooffDIw==
+  dependencies:
+    notion-types "^6.0.0"
+    p-queue "^7.2.0"
 
 object-assign@^4.1.1:
   version "4.1.1"
@@ -2192,12 +2212,12 @@ p-locate@^2.0.0:
   dependencies:
     p-limit "^1.1.0"
 
-p-map@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/p-map/-/p-map-4.0.0.tgz#bb2f95a5eda2ec168ec9274e06a747c3e2904d2b"
-  integrity sha512-/bjOqmgETBYB5BoEeGVea8dmvHb2m9GLy1E9W43yeyfP6QQCZGFNa+XRceJEuDB6zqr+gKpIAmlLebMpykw/MQ==
+p-map@^5.3.0:
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/p-map/-/p-map-5.3.0.tgz#2204823bc9f37f17ddc9e7f446293c4530b8a4cf"
+  integrity sha512-SRbIQFoLYNezHkqZslqeg963HYUtqOrfMCxjNrFOpJ19WTYuq26rQoOXeX8QQiMLUlLqdYV/7PuDsdYJ7hLE1w==
   dependencies:
-    aggregate-error "^3.0.0"
+    aggregate-error "^4.0.0"
 
 p-queue@6:
   version "6.6.2"
@@ -2207,12 +2227,25 @@ p-queue@6:
     eventemitter3 "^4.0.4"
     p-timeout "^3.2.0"
 
+p-queue@^7.2.0:
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/p-queue/-/p-queue-7.2.0.tgz#e1430e4432f09b43aa8b4913d4c2ff7fdd685479"
+  integrity sha512-Kvv7p13M46lTYLQ/PsZdaj/1Vj6u/8oiIJgyQyx4oVkOfHdd7M2EZvXigDvcsSzRwanCzQirV5bJPQFoSQt5MA==
+  dependencies:
+    eventemitter3 "^4.0.7"
+    p-timeout "^5.0.2"
+
 p-timeout@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/p-timeout/-/p-timeout-3.2.0.tgz#c7e17abc971d2a7962ef83626b35d635acf23dfe"
   integrity sha512-rhIwUycgwwKcP9yTOOFK/AKsAopjjCakVqLHePO3CC6Mir1Z99xT+R63jZxAT5lFZLa2inS5h+ZS2GvR99/FBg==
   dependencies:
     p-finally "^1.0.0"
+
+p-timeout@^5.0.2:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/p-timeout/-/p-timeout-5.0.2.tgz#d12964c4b2f988e15f72b455c2c428d82a0ec0a0"
+  integrity sha512-sEmji9Yaq+Tw+STwsGAE56hf7gMy9p0tQfJojIAamB7WHJYJKf1qlsg9jqBWG8q9VCxKPhZaP/AcXwEoBcYQhQ==
 
 p-try@^1.0.0:
   version "1.0.0"
