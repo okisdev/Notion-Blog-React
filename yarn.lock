@@ -2607,7 +2607,7 @@ react-modal@^3.14.3:
     react-lifecycles-compat "^3.0.0"
     warning "^4.0.3"
 
-react-notion-x@^6.0.9:
+react-notion-x@6.0.9:
   version "6.0.9"
   resolved "https://registry.yarnpkg.com/react-notion-x/-/react-notion-x-6.0.9.tgz#d8737dbdc433ea9ddda5b5743efae19f4833329a"
   integrity sha512-n5aI/TlRxc09RoNltMRlDONSV2Fa97k49O9lfLiRNTMZv6qJ2/fDsAIOpvYtgTcqzM/x6yKwOOKN983AfpruCA==
