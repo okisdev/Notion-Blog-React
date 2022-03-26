@@ -1,10 +1,11 @@
-import Head from 'next/head';
-
 import { FC } from 'react';
+
+import Head from 'next/head';
+import dynamic from 'next/dynamic';
 
 import { NotionAPI } from 'notion-client';
 import { ExtendedRecordMap } from 'notion-types';
-import { NotionRenderer, Code, Equation } from 'react-notion-x';
+import { NotionRenderer } from 'react-notion-x';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 import Error404 from '../404';
@@ -21,6 +22,16 @@ import { getNotionPosts } from '../../utils/getNotionPosts';
 import siteConfig from '../../config/site.config';
 
 const notionAPI = new NotionAPI();
+
+const Code = dynamic(() => import('react-notion-x/build/third-party/code').then((m) => m.Code));
+const Collection = dynamic(() => import('react-notion-x/build/third-party/collection').then((m) => m.Collection));
+const Equation = dynamic(() => import('react-notion-x/build/third-party/equation').then((m) => m.Equation));
+const Pdf = dynamic(() => import('react-notion-x/build/third-party/pdf').then((m) => m.Pdf), {
+    ssr: false,
+});
+const Modal = dynamic(() => import('react-notion-x/build/third-party/modal').then((m) => m.Modal), {
+    ssr: false,
+});
 
 export const getServerSideProps = async ({ params, locale }) => {
     const { slug } = params as { slug: string };
@@ -83,7 +94,13 @@ const BlogPost: FC<{ recordMap: ExtendedRecordMap; notionPost: PostContent }> = 
                                 recordMap={recordMap}
                                 fullPage={true}
                                 showTableOfContents={true}
-                                components={{ code: Code, equation: Equation }}
+                                components={{
+                                    Code,
+                                    Collection,
+                                    Equation,
+                                    Modal,
+                                    Pdf,
+                                }}
                                 className='dark:text-[#adbac7]'
                             ></NotionRenderer>
                         </article>
