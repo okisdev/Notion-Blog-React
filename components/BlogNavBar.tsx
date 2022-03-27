@@ -3,7 +3,7 @@ import { Fragment } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-import { Menu, Transition, Disclosure } from '@headlessui/react';
+import { Menu, Transition } from '@headlessui/react';
 
 import { RiRssFill } from 'react-icons/ri';
 import { FiGithub } from 'react-icons/fi';
@@ -35,23 +35,9 @@ const BlogNavBar = () => {
                                     </a>
                                 </Link>
                             </div>
-                            <div className='mx-3'>
-                                <Link href='/tags' passHref>
-                                    <a title='Tags'>
-                                        <FaTags className='h-6 w-6' />
-                                    </a>
-                                </Link>
-                            </div>
                         </div>
 
                         <div id='notion-blog-navbar-end' className='flex items-end'>
-                            <div className='mx-3'>
-                                <Link href='https://www.harrly.com' passHref>
-                                    <a title='Home'>
-                                        <CgHomeAlt className='h-6 w-6' />
-                                    </a>
-                                </Link>
-                            </div>
                             <div className='mx-3'>
                                 <Link href='./atom.xml' passHref>
                                     <a title='RSS'>
