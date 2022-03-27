@@ -2115,15 +2115,6 @@ notion-utils@^6.0.11:
     notion-types "^6.0.6"
     p-queue "^7.2.0"
 
-notion-utils@^6.0.8:
-  version "6.0.8"
-  resolved "https://registry.yarnpkg.com/notion-utils/-/notion-utils-6.0.8.tgz#ab0dcb5d7273949938185bdd8a86edab3c339cb3"
-  integrity sha512-YW5HKRv9hzL/UuQzXAq872L7lizfo1z0UoTPD+5w+FASnbjwSwQfiO0nVXuxWTZoPxJxRfDC64b25JxJsLOHng==
-  dependencies:
-    is-url-superb "^6.1.0"
-    notion-types "^6.0.6"
-    p-queue "^7.2.0"
-
 object-assign@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
