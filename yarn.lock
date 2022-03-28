@@ -2116,14 +2116,14 @@ normalize-url@^7.0.3:
   resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-7.0.3.tgz#12e56889f7a54b2d5b09616f36c442a9063f61af"
   integrity sha512-RiCOdwdPnzvwcBFJE4iI1ss3dMVRIrEzFpn8ftje6iBfzBInqlnRrNhxcLwBEKjPPXQKzm1Ptlxtaiv9wdcj5w==
 
-notion-client@6.0.14:
-  version "6.0.14"
-  resolved "https://registry.yarnpkg.com/notion-client/-/notion-client-6.0.14.tgz#711cdbcd670223e4980a56bd7a41d69c8019e8bc"
-  integrity sha512-zjODOnayDJNfrz7HKjAk/+L8QAyNugT90dtV8baUMigZuVATBT6JlT1ERM+TiNI3/p56Wyt3fXQNL0HhhELWNQ==
+notion-client@6.0.17:
+  version "6.0.17"
+  resolved "https://registry.yarnpkg.com/notion-client/-/notion-client-6.0.17.tgz#4a8202ca77d5df47a8ad8bd3b3bba70f9a7b8310"
+  integrity sha512-mc0yLqnxh4RZsVvobaDwhxEix5PyEFrkhabMmikugklJFhHeNSYZNcQ7be0TJPhx5mqjMC58lg14Hm00ergWMg==
   dependencies:
     got "^11.8.1"
-    notion-types "^6.0.6"
-    notion-utils "^6.0.14"
+    notion-types "^6.0.17"
+    notion-utils "^6.0.17"
     p-map "^5.3.0"
 
 notion-types@^6.0.17:
