@@ -25,7 +25,7 @@
         "react-dom": "18.0.0",
         "react-hot-toast": "2.2.0",
         "react-icons": "4.3.1",
-        "react-notion-x": "6.1.0"
+        "react-notion-x": "6.1.2"
     },
     "devDependencies": {
         "@types/react": "17.0.43",
