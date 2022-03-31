@@ -217,6 +217,7 @@
 .notion-aside {
     position: sticky;
     top: 148px;
+    z-index: 101;
     /* top: calc((100vh - 48px - 100%) / 2); */
 
     align-self: flex-start;
@@ -232,9 +233,10 @@
     flex-direction: column;
     align-items: center;
     max-height: calc(100vh - 148px - 16px);
-    overflow: hidden auto;
     min-width: 222px;
     overflow: auto;
+    background: var(--bg-color);
+    border-radius: 4px;
 }
 
 .notion-aside-table-of-contents-header {
@@ -1444,6 +1446,7 @@ svg.notion-page-icon {
 .notion-property-multi_select {
     display: flex;
     flex-wrap: wrap;
+    gap: 6px;
 }
 
 .notion-property-select-item,
@@ -1457,14 +1460,6 @@ svg.notion-page-icon {
     overflow: hidden;
     text-overflow: ellipsis;
     line-height: 120%;
-}
-
-.notion-property-multi_select-item {
-    margin: 0 6px 6px 0;
-}
-
-.notion-collection-card .notion-property-multi_select-item {
-    margin: 0 6px 0 0;
 }
 
 .notion-property-file {
