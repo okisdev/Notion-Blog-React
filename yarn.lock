@@ -2090,36 +2090,20 @@ normalize-url@^7.0.3:
   resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-7.0.3.tgz#12e56889f7a54b2d5b09616f36c442a9063f61af"
   integrity sha512-RiCOdwdPnzvwcBFJE4iI1ss3dMVRIrEzFpn8ftje6iBfzBInqlnRrNhxcLwBEKjPPXQKzm1Ptlxtaiv9wdcj5w==
 
-notion-client@6.2.0:
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/notion-client/-/notion-client-6.2.0.tgz#580fe0bb12deb06e169be6782fc3c7cb191dd771"
-  integrity sha512-OioUNz9SO2iMtediJIgiWszIFdLj9WINJI7zseRc7yasp8ATs66hHI7AqXPiMG5QMoyjkrayctMR0p0U5VVzQw==
+notion-client@6.5.0:
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/notion-client/-/notion-client-6.5.0.tgz#58debb6b2b7128a1ededc9b5cd61fc8ff1868219"
+  integrity sha512-UmUBZw5QTDtc7t3BK5gNc2+I9GekDUpsTxNRi9EuADlMDp5iUoU2uZ5ez1oEXu2mBy8X440Y3VjPGgQ9B5vHoQ==
   dependencies:
     got "^11.8.1"
-    notion-types "^6.2.0"
-    notion-utils "^6.2.0"
+    notion-types "^6.5.0"
+    notion-utils "^6.5.0"
     p-map "^5.3.0"
-
-notion-types@^6.2.0:
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/notion-types/-/notion-types-6.2.0.tgz#710f3654d6c7e92c837fab617e1a217302493dc7"
-  integrity sha512-HcY9Ng3XAGIPhMs15wsQZ4Fm73DcxHbgaTsqiWtfAdiWlPI5BCY9UVYqnTUVArup311h8Wzos43JFSTZJWsCPQ==
 
 notion-types@^6.5.0:
   version "6.5.0"
   resolved "https://registry.yarnpkg.com/notion-types/-/notion-types-6.5.0.tgz#1805bda87ce91d822af989945ddf9ca6bd5bd537"
   integrity sha512-o02kATNmB4r90FlC3nZU9lLvzhNYU1CDWGAirazp1EouS1uFPEw1OxJU6/ISvH5GAz3Ch9VCj3Zqr0qapAakLQ==
-
-notion-utils@^6.2.0:
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/notion-utils/-/notion-utils-6.2.0.tgz#e928694af413a57a608d26dc7ee7dc1bb4106ea4"
-  integrity sha512-UqJq7g9KJUx3cNjneO+Y2eF0wA2xB9QR888lDMOFZlLC04Co/lGdy0PRnkLQtai6ihzitRIoGCwgXgPptVi14w==
-  dependencies:
-    is-url-superb "^6.1.0"
-    mem "^9.0.2"
-    normalize-url "^7.0.3"
-    notion-types "^6.2.0"
-    p-queue "^7.2.0"
 
 notion-utils@^6.5.0:
   version "6.5.0"
