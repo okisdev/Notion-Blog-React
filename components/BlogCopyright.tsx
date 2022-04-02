@@ -8,8 +8,8 @@ const BlogCopyright = ({ notionPost }) => {
     const { t } = useTranslation('common');
 
     return (
-        <div id='notion-blog-copyright' className='my-3 mx-auto md:w-3/5'>
-            <div className='rounded border-2 p-3 space-y-3 dark:text-[#adbac7]'>
+        <div id='notion-blog-copyright' className='container mx-auto px-6 sm:px-8 my-3'>
+            <div className='mx-auto md:w-7/12 rounded border-2 p-3 space-y-3 dark:text-[#adbac7]'>
                 <div id='notion-blog-copyright-header'>
                     <div id='notion-blog-copyright-title'>
                         <span>{notionPost.title}</span>

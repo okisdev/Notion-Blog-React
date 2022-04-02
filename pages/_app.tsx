@@ -2,8 +2,6 @@ import '../styles/globals.css';
 
 import '../styles/notion.css';
 
-import 'tailwindcss/tailwind.css';
-
 // used for code syntax highlighting (optional)
 import 'prismjs/themes/prism-tomorrow.css';
 
