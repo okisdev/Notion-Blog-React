@@ -70,7 +70,7 @@ const BlogCard = ({ post }: { post: PostContent }) => {
                                 <IoMdPricetags />
                                 <span className='flex flex-row space-x-1'>
                                     {post.tag.map((tag) => (
-                                        <div id='notion-blog-body-card-tags-item' key={post.id} className='rounded p-1 bg-gray-100 dark:bg-[#adbac7]'>
+                                        <div id='notion-blog-body-card-tags-item' key={post.id} className='bg-blue-200 dark:bg-[#728796] px-2 rounded-xl'>
                                             <span className='text-sm dark:text-gray-300'>{tag}</span>
                                         </div>
                                     ))}
