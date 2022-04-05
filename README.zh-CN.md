@@ -44,7 +44,7 @@ And also, you can...
 -   [Splitee Blog](https://splitbee.io/blog) (using React-Notion, contributor of React-Notion)
 -   [timo.sh](https://timo.sh/) (using React-Notion, contributor of React-Notion)
 -   [TransitiveBullsh.it](https://transitivebullsh.it/) (using React-Notion-X, contributor of React-Notion-X)
--   [Spencerwoo's Blog](https://blog.spencerwoo.com/) (using React-Notion-X)
+-   [Spencerwoo's Blog](https://spencerwoo.com/blog) (using Notion Official API)
 -   [Vercel](https://vercel.com)
 -   [Cloudflare Workers](https://workers.dev)
 -   [React](https://reactjs.org)
