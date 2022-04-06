@@ -2390,10 +2390,10 @@ notion-utils@^6.5.0:
     notion-types "^6.5.0"
     p-queue "^7.2.0"
 
-notion-utils@^6.7.0-alpha.1:
-  version "6.7.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/notion-utils/-/notion-utils-6.7.0-alpha.1.tgz#8f63c80c7ada746127c4679540149fc45a871150"
-  integrity sha512-rsKo9x5nYBpyTeWbMC9HaOzpeQSO9o7z+H3FZBE/+G0oqOGCw1V9cYClEXbd1cT9Uzs3izpBIB9OC/jiqDDnoA==
+notion-utils@^6.7.0-alpha.2:
+  version "6.7.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/notion-utils/-/notion-utils-6.7.0-alpha.2.tgz#3413d6e95d3f9eaebe2069e0ad9d2e1184850bb2"
+  integrity sha512-jxehpnG8ZDzVkZBw7sXDt+M/cz7/Hd2jjrcIho3DvFY6njE6W3K1euUlxbXn65G/RAcugl5WKR+Ls7IDQLRxkw==
   dependencies:
     is-url-superb "^6.1.0"
     mem "^9.0.2"
@@ -2800,17 +2800,17 @@ react-modal@^3.14.3:
     react-lifecycles-compat "^3.0.0"
     warning "^4.0.3"
 
-react-notion-x@6.7.0-alpha.1:
-  version "6.7.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/react-notion-x/-/react-notion-x-6.7.0-alpha.1.tgz#395292c452f0cac8d55132f3e95ff064ad42b6b9"
-  integrity sha512-U4nJCYYTAhzHiKxyOOYQjrkJXnyMMvxWHZ8F60QGgOhM5Zw6DQCDcpXwNccOuBfPM0YgfvqN9hgJRHUvebTXDw==
+react-notion-x@6.7.0-alpha.2:
+  version "6.7.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/react-notion-x/-/react-notion-x-6.7.0-alpha.2.tgz#ede46bec478e4847a8c792f6de0fddb0b936f371"
+  integrity sha512-SDbN9w6y1sbG4IkqE83RQy0oaaOefVbsScRvaaXqafnYsHkUeg4WPCO1IbdEP7A/0huZ7LqkhUTjow7vzi3/jA==
   dependencies:
     "@matejmazur/react-katex" "^3.1.3"
     "@radix-ui/react-dropdown-menu" "^0.1.6"
     katex "^0.13.18"
     medium-zoom "^1.0.6"
     notion-types "^6.7.0-alpha.0"
-    notion-utils "^6.7.0-alpha.1"
+    notion-utils "^6.7.0-alpha.2"
     prismjs "^1.27.0"
     react-fast-compare "^3.2.0"
     react-hotkeys-hook "^3.0.3"
