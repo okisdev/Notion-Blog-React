@@ -45,13 +45,11 @@ module.exports = {
         },
     },
     posts: {
-        display: {
-            collection: {
-                shown: false,
-            },
-            toc: {
-                shown: true,
-            },
+        collection: {
+            shown: false,
+        },
+        toc: {
+            shown: true,
         },
     },
 };
