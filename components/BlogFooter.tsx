@@ -1,13 +1,10 @@
-import { useTranslation } from 'next-i18next';
-
 import PoweredByVercel from 'powered-by-vercel';
 
 import siteConfig from '../config/site.config';
+import modeConfig from '../config/mode.config';
 
 const BlogFooter = () => {
     const currentYear = new Date().getFullYear();
-
-    const { t } = useTranslation('common');
 
     return (
         <div id='notion-blog-footer' className='leading-relaxed h-auto text-sm dark:text-[#adbac7]'>
@@ -16,7 +13,7 @@ const BlogFooter = () => {
                     {siteConfig.global.content.license.name}
                 </a>
                 <p>
-                    Copyright &#169; {currentYear} {siteConfig.global.author}. All rights reserved.
+                    Copyright &#169; {currentYear} {siteConfig.global.author.name}. All rights reserved.
                 </p>
                 <p>
                     Made by Harry Yep with <span className='text-red-600'>♥</span>
@@ -39,12 +36,14 @@ const BlogFooter = () => {
                         TypeScript
                     </a>
                 </p>
-                <PoweredByVercel
-                    className='flex items-center justify-center my-1'
-                    svgProps={{
-                        width: 150,
-                    }}
-                />
+                {modeConfig.global.footer.poweredByVercel.shown && (
+                    <PoweredByVercel
+                        className='flex items-center justify-center my-1'
+                        svgProps={{
+                            width: 150,
+                        }}
+                    />
+                )}
             </div>
         </div>
     );

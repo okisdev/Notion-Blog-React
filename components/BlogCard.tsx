@@ -14,7 +14,7 @@ import getNotionPostSlug from '../utils/getNotionPostSlug';
 import modeConfig from '../config/mode.config';
 
 const BlogCard = ({ post }: { post: PostContent }) => {
-    const { t } = useTranslation('common');
+    const { t } = useTranslation();
 
     return (
         <div id='notion-blog-body-card' className='transition duration-500 ease-in-out p-3 my-5 border-2 rounded-lg bg-white dark:bg-gray-500 hover:shadow-2xl'>

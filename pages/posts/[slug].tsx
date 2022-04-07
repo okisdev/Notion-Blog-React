@@ -20,10 +20,12 @@ import { PostContent } from '../../utils/PostContent';
 import { getNotionPosts } from '../../utils/getNotionPosts';
 
 import siteConfig from '../../config/site.config';
+import modeConfig from '../../config/mode.config';
 
 const notionAPI = new NotionAPI();
 
 const Code = dynamic(() => import('react-notion-x/build/third-party/code').then((m) => m.Code));
+const Collection = modeConfig.posts.display.collection.shown ? dynamic(() => import('react-notion-x/build/third-party/collection').then((m) => m.Collection)) : null;
 const Equation = dynamic(() => import('react-notion-x/build/third-party/equation').then((m) => m.Equation));
 const Pdf = dynamic(() => import('react-notion-x/build/third-party/pdf').then((m) => m.Pdf), {
     ssr: false,
@@ -92,10 +94,11 @@ const BlogPost: FC<{ recordMap: ExtendedRecordMap; notionPost: PostContent }> = 
                             <NotionRenderer
                                 recordMap={recordMap}
                                 fullPage={true}
-                                showTableOfContents={true}
+                                showTableOfContents={modeConfig.posts.display.toc.shown}
                                 components={{
                                     Code,
                                     Equation,
+                                    Collection,
                                     Modal,
                                     Pdf,
                                 }}

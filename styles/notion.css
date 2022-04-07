@@ -2078,7 +2078,8 @@ svg.notion-page-icon {
     align-items: center;
     width: 160px;
     height: 34px;
-    color: var(--fg-color-3);
+    /* Changed */
+    /* color: var(--fg-color-3); */
     padding: 0 6px;
 }
 
@@ -2308,7 +2309,8 @@ svg.notion-page-icon {
     white-space: nowrap;
     text-overflow: ellipsis;
 
-    color: var(--fg-color);
+    /* Changed */
+    /* color: var(--fg-color); */
     text-decoration: none;
     margin: 1px 0px;
     padding: 4px 6px;

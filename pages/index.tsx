@@ -25,7 +25,7 @@ export const getStaticProps = async ({ locale }) => {
     return {
         props: {
             posts,
-            ...(await serverSideTranslations(locale, ['common', 'footer'])),
+            ...(await serverSideTranslations(locale, ['common'])),
         },
         revalidate: 60,
     };
@@ -40,7 +40,7 @@ const BlogHomePage = ({ posts }: { posts: PostContent[] }) => {
                 <meta charSet='UTF-8' />
                 <meta name='viewport' content='width=device-width, initial-scale=1' />
 
-                <meta name='author' content={siteConfig.global.author} />
+                <meta name='author' content={siteConfig.global.author.name} />
                 <meta name='description' content={siteConfig.global.site.description} />
                 <meta httpEquiv='Content-Type' content='text/html' />
                 <meta httpEquiv='X-UA-Compatible' content='IE=Edge' />

@@ -1,6 +1,13 @@
+// Before you make changes to this document, please read https://docs.harrly.com/docs/notion-blog-react#change-the-site-configuration
+
 module.exports = {
     global: {
-        author: 'Harry Yep',
+        author: {
+            name: 'Harry Yep',
+            github: 'https://github.com/Harry-Yep/Notion-Blog-React',
+            email: 'hi@harrly.com',
+            privacy_policy: 'https://www.harrly.com/privacy-policy',
+        },
         site: {
             name: 'Notion Blog React Example',
             description: 'Blog built with Notion, React, Next.js, tailwindcss, TypeScript, Notion-Api-Worker and more.',

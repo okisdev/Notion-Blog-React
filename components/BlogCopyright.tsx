@@ -5,14 +5,14 @@ import siteConfig from '../config/site.config';
 const BlogCopyright = ({ notionPost }) => {
     const publishDomain = typeof window !== 'undefined' ? window.location.origin : 'https://react-notion-blog.demo.harisfox.com';
 
-    const { t } = useTranslation('common');
+    const { t } = useTranslation();
 
     return (
         <div id='notion-blog-copyright' className='container mx-auto px-6 sm:px-8 my-3'>
             <div className='mx-auto md:w-7/12 rounded border-2 p-3 space-y-3 dark:text-[#adbac7]'>
                 <div id='notion-blog-copyright-header'>
                     <div id='notion-blog-copyright-title'>
-                        <span>{notionPost.title}</span>
+                        <span className='font-bold'>{notionPost.title}</span>
                     </div>
                     <div id='notion-blog-copyright-url'>
                         <span>
