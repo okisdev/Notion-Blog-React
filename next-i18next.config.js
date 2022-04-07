@@ -1,6 +1,6 @@
 const path = require('path');
 
-import modeConfig from './config/mode.config';
+const modeConfig = require('./config/mode.config');
 
 module.exports = {
     i18n: {
