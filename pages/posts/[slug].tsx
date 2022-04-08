@@ -2,6 +2,8 @@ import { FC } from 'react';
 
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
+import Image from 'next/image';
+import Link from 'next/link';
 
 import { NotionAPI } from 'notion-client';
 import { ExtendedRecordMap } from 'notion-types';
@@ -101,16 +103,18 @@ const BlogPost: FC<{ recordMap: ExtendedRecordMap; notionPost: PostContent }> = 
                                     Collection,
                                     Modal,
                                     Pdf,
+                                    nextImage: Image,
+                                    nextLink: Link,
                                 }}
                                 className='dark:text-[#adbac7]'
                             ></NotionRenderer>
                         </article>
-
-                        <BlogCopyright notionPost={notionPost}></BlogCopyright>
-
-                        <BlogBackHome></BlogBackHome>
                     </div>
                 </div>
+
+                <BlogCopyright notionPost={notionPost}></BlogCopyright>
+
+                <BlogBackHome></BlogBackHome>
 
                 <BlogFooter></BlogFooter>
 
