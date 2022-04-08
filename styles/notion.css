@@ -551,7 +551,7 @@
     padding-top: 96px;
 }
 
-.notion-page-has-cover.notion-page-has-text-icon {
+.notion-page-has-cover.notion-page-has-icon.notion-page-has-text-icon {
     padding-top: 64px;
 }
 
@@ -2059,12 +2059,12 @@ svg.notion-page-icon {
 .notion-collection-row-body {
     display: flex;
     flex-direction: column;
+    gap: 4px;
 }
 
 .notion-collection-row-property {
     display: flex;
     align-items: center;
-    margin-bottom: 4px;
 }
 
 .notion-collection-row-value {
