@@ -1376,10 +1376,10 @@ eslint-visitor-keys@^3.3.0:
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-3.3.0.tgz#f6480fa6b1f30efe2d1968aa8ac745b862469826"
   integrity sha512-mQ+suqKJVyeuwGYHAdjMFqjCyfl8+Ldnxuyp3ldiMBFKkvytrXUZWaiPCEav8qDHKty44bD+qV1IP4T+w+xXRA==
 
-eslint@8.12.0:
-  version "8.12.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-8.12.0.tgz#c7a5bd1cfa09079aae64c9076c07eada66a46e8e"
-  integrity sha512-it1oBL9alZg1S8UycLm5YDMAkIhtH6FtAzuZs6YvoGVldWjbS08BkAdb/ymP9LlAyq8koANu32U7Ib/w+UNh8Q==
+eslint@8.13.0:
+  version "8.13.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-8.13.0.tgz#6fcea43b6811e655410f5626cfcf328016badcd7"
+  integrity sha512-D+Xei61eInqauAyTJ6C0q6x9mx7kTUC1KZ0m0LSEexR0V+e94K12LmWX076ZIsldwfQ2RONdaJe0re0TRGQbRQ==
   dependencies:
     "@eslint/eslintrc" "^1.2.1"
     "@humanwhocodes/config-array" "^0.9.2"
@@ -2373,17 +2373,6 @@ notion-types@^6.7.0:
   version "6.7.0"
   resolved "https://registry.yarnpkg.com/notion-types/-/notion-types-6.7.0.tgz#f5ccb8ef701389b2bf52e5561bd31bc60c49ccdf"
   integrity sha512-j7O6juQDOPgAinELMMpvVn0c8Vgr+Dhqm7UTTnhILnBhbOtQKaIYPCNKA4AJw/OPzzy1iEJ6KrthTEkPbQYEeg==
-
-notion-utils@^6.8.3:
-  version "6.8.3"
-  resolved "https://registry.yarnpkg.com/notion-utils/-/notion-utils-6.8.3.tgz#efc5973722517efa3e8cc915978996d689d84663"
-  integrity sha512-Nwqw19txK8WTHT5BhJLJ9BCqRkz7b1LdbCR3LeQuIhfs2zOHd56gWENT6jh5mmKrQn3PlinVjWo2pl3HwGKd3A==
-  dependencies:
-    is-url-superb "^6.1.0"
-    mem "^9.0.2"
-    normalize-url "^7.0.3"
-    notion-types "^6.7.0"
-    p-queue "^7.2.0"
 
 notion-utils@^6.9.2:
   version "6.9.2"
