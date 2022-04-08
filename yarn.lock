@@ -2374,10 +2374,10 @@ notion-types@^6.7.0:
   resolved "https://registry.yarnpkg.com/notion-types/-/notion-types-6.7.0.tgz#f5ccb8ef701389b2bf52e5561bd31bc60c49ccdf"
   integrity sha512-j7O6juQDOPgAinELMMpvVn0c8Vgr+Dhqm7UTTnhILnBhbOtQKaIYPCNKA4AJw/OPzzy1iEJ6KrthTEkPbQYEeg==
 
-notion-utils@^6.7.0:
-  version "6.7.0"
-  resolved "https://registry.yarnpkg.com/notion-utils/-/notion-utils-6.7.0.tgz#f94669447ec62dd0c3477410643c542629e49939"
-  integrity sha512-wIBFkZK46QigaflnwrebRfZgFPATpg8IDF8xhpsx0vkNaqaPQqA90PruERV/fCnV35xKo8UFZKHuKLzTB1UYXQ==
+notion-utils@^6.8.3:
+  version "6.8.3"
+  resolved "https://registry.yarnpkg.com/notion-utils/-/notion-utils-6.8.3.tgz#efc5973722517efa3e8cc915978996d689d84663"
+  integrity sha512-Nwqw19txK8WTHT5BhJLJ9BCqRkz7b1LdbCR3LeQuIhfs2zOHd56gWENT6jh5mmKrQn3PlinVjWo2pl3HwGKd3A==
   dependencies:
     is-url-superb "^6.1.0"
     mem "^9.0.2"
@@ -2385,10 +2385,10 @@ notion-utils@^6.7.0:
     notion-types "^6.7.0"
     p-queue "^7.2.0"
 
-notion-utils@^6.8.3:
-  version "6.8.3"
-  resolved "https://registry.yarnpkg.com/notion-utils/-/notion-utils-6.8.3.tgz#efc5973722517efa3e8cc915978996d689d84663"
-  integrity sha512-Nwqw19txK8WTHT5BhJLJ9BCqRkz7b1LdbCR3LeQuIhfs2zOHd56gWENT6jh5mmKrQn3PlinVjWo2pl3HwGKd3A==
+notion-utils@^6.9.2:
+  version "6.9.2"
+  resolved "https://registry.yarnpkg.com/notion-utils/-/notion-utils-6.9.2.tgz#d295a10fcef28a1b75bd8e8dd4bb319554eb0719"
+  integrity sha512-bk2lbxARjZawqLjnmjH4uICHQAKFOTuu1j842ZC5XYq1DKZtatwZamTc4wwWQ9yQHyDAsY03cV9EQisUOnZLvQ==
   dependencies:
     is-url-superb "^6.1.0"
     mem "^9.0.2"
@@ -2795,17 +2795,17 @@ react-modal@^3.14.3:
     react-lifecycles-compat "^3.0.0"
     warning "^4.0.3"
 
-react-notion-x@6.8.4:
-  version "6.8.4"
-  resolved "https://registry.yarnpkg.com/react-notion-x/-/react-notion-x-6.8.4.tgz#5ef6ae3ac4ee5cd320fbcca7cd2e1f6aa47c1123"
-  integrity sha512-a3C2mApZrfUuoqjfM6xfSYL5dsHlgOp6smcfgFLHYDbdmg/XBih2/hBgw1CGhKcRa7L5EBVbwuOUkA0z2GDpLg==
+react-notion-x@6.9.2:
+  version "6.9.2"
+  resolved "https://registry.yarnpkg.com/react-notion-x/-/react-notion-x-6.9.2.tgz#463a07d701cbbbf27d7b0cb245af861b546d5a07"
+  integrity sha512-2AqaGCYIw6wZa4KLg+HkPC00n99L+cJjcts6f51QuWTS0gsAd6m2Va3qHzpkkFIRBL+e82TK1fXAnvcI1/jvfA==
   dependencies:
     "@matejmazur/react-katex" "^3.1.3"
     "@radix-ui/react-dropdown-menu" "^0.1.6"
     katex "^0.13.18"
     medium-zoom "^1.0.6"
     notion-types "^6.7.0"
-    notion-utils "^6.8.3"
+    notion-utils "^6.9.2"
     prismjs "^1.27.0"
     react-fast-compare "^3.2.0"
     react-hotkeys-hook "^3.0.3"
