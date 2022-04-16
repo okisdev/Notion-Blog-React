@@ -16,17 +16,17 @@
         "@headlessui/react": "1.5.0",
         "axios": "0.26.1",
         "feed": "4.2.2",
-        "katex": "^0.15.3",
+        "katex": "0.15.3",
         "next": "12.1.5",
         "next-i18next": "11.0.0",
         "next-themes": "0.1.1",
-        "notion-client": "6.10.0",
+        "notion-client": "6.11.0",
         "powered-by-vercel": "1.1.0",
         "react": "18.0.0",
         "react-dom": "18.0.0",
         "react-hot-toast": "2.2.0",
         "react-icons": "4.3.1",
-        "react-notion-x": "^6.10.0"
+        "react-notion-x": "6.11.0"
     },
     "devDependencies": {
         "@types/react": "17.0.44",
