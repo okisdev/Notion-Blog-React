@@ -6,6 +6,8 @@
 
 A Blog powered by [Notion](https://notion.so), built with [React](https://reactjs.org), [Next.js](https://nextjs.org), [tailwindcss](https://tailwindcss.com), [TypeScript](https://www.typescriptlang.org/), [Notion-Api-Worker](https://github.com/splitbee/notion-api-worker), [React-Notion-X](https://github.com/NotionX/react-notion-x/) and more.
 
+> See [Notion Photo React](https://github.com/Harry-Yep/Notion-Photo-React), if you would like to create a personal photo gallery website powered by Notion.
+
 ## Features
 
 Please see the **[features section](https://github.com/NotionX/react-notion-x#features)** on React-Notion-X by [NotionX](https://github.com/NotionX/).
