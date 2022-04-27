@@ -2292,20 +2292,25 @@ normalize-url@^7.0.3:
   resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-7.0.3.tgz#12e56889f7a54b2d5b09616f36c442a9063f61af"
   integrity sha512-RiCOdwdPnzvwcBFJE4iI1ss3dMVRIrEzFpn8ftje6iBfzBInqlnRrNhxcLwBEKjPPXQKzm1Ptlxtaiv9wdcj5w==
 
-notion-client@6.12.0:
-  version "6.12.0"
-  resolved "https://registry.yarnpkg.com/notion-client/-/notion-client-6.12.0.tgz#f9617b3cea1dc5f1b2e616b7c293bf552bf36367"
-  integrity sha512-1qx8D/lyQo6jnPnhSnAHfTOcoUDq2ssrdinU+pYhJsljvMcnYFyS90QMOuOkgRsMTBvx/MJJGY9dYnpOmvZYhg==
+notion-client@6.12.6:
+  version "6.12.6"
+  resolved "https://registry.yarnpkg.com/notion-client/-/notion-client-6.12.6.tgz#bd215e8ea371b099fe0dc3172a16389f71f30f53"
+  integrity sha512-aacCgfgJ1UzD2PRLNufSvYVDvzWYBI2vDZJHNaJi8PK9TocG4u2RU+tdC0lVD7aOCr2CP0dOvB8sYehZZIgq8g==
   dependencies:
     got "^11.8.1"
-    notion-types "^6.11.0"
-    notion-utils "^6.11.0"
+    notion-types "^6.12.6"
+    notion-utils "^6.12.6"
     p-map "^5.3.0"
 
 notion-types@^6.11.0:
   version "6.11.0"
   resolved "https://registry.yarnpkg.com/notion-types/-/notion-types-6.11.0.tgz#3da05375e3ee3334ef0e9f705ff9ffdd880f2fdc"
   integrity sha512-a8Q5Tmgf4lywP57uk4o6UeuxFgswXPul5SYTAWK8spnppMUC3ax5woZcltTHQMvqsP6ZVEqjqDl82lMEL4VD7A==
+
+notion-types@^6.12.6:
+  version "6.12.6"
+  resolved "https://registry.yarnpkg.com/notion-types/-/notion-types-6.12.6.tgz#48677bc7f156966bfd95036e9b54d53f1c5b8926"
+  integrity sha512-UBbhnzKgn48SVTkMP5It3heODrf8gAPb6O5vLna9pi9zdAtfSjmGmn5//C0P1rF/ppX7cCfgX964g+8VLUBOag==
 
 notion-utils@^6.11.0:
   version "6.11.0"
@@ -2316,6 +2321,17 @@ notion-utils@^6.11.0:
     mem "^9.0.2"
     normalize-url "^7.0.3"
     notion-types "^6.11.0"
+    p-queue "^7.2.0"
+
+notion-utils@^6.12.6:
+  version "6.12.6"
+  resolved "https://registry.yarnpkg.com/notion-utils/-/notion-utils-6.12.6.tgz#9f9065883dc27058b23721d0c88bb05521b14949"
+  integrity sha512-QrduKoNyB5XNNk+vIZrQ+niSdnldXk9WUCd2/jUWjCq6dBSL8w9Md2/VE/U5WO1t5ahBr9h2iKaMbQDsF8jT5A==
+  dependencies:
+    is-url-superb "^6.1.0"
+    mem "^9.0.2"
+    normalize-url "^7.0.3"
+    notion-types "^6.12.6"
     p-queue "^7.2.0"
 
 object-assign@^4.1.1:
