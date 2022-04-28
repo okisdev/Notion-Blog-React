@@ -750,10 +750,10 @@ axe-core@^4.3.5:
   resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-4.3.5.tgz#78d6911ba317a8262bfee292aeafcc1e04b49cc5"
   integrity sha512-WKTW1+xAzhMS5dJsxWkliixlO/PqC4VhmO9T4juNYcaTg9jzWiJsou6m5pxWYGfigWbwzJWeFY6z47a+4neRXA==
 
-axios@0.27.0:
-  version "0.27.0"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-0.27.0.tgz#973ca980dee9077410189340390ea77964af6b29"
-  integrity sha512-XV/WrPxXfzgZ8j4lcB5i6LyaXmi90yetmV/Fem0kmglGx+mpY06CiweL3YxU6wOTNLmqLUePW4G8h45nGZ/+pA==
+axios@0.27.2:
+  version "0.27.2"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.27.2.tgz#207658cc8621606e586c85db4b41a750e756d972"
+  integrity sha512-t+yRIyySRTp/wua5xEr+z1q60QmLq8ABsS5O9Me1AsE5dfKqgnCFzwiCZZ/cGNd1lq4/7akDWMxdhVlucjmnOQ==
   dependencies:
     follow-redirects "^1.14.9"
     form-data "^4.0.0"
@@ -2302,26 +2302,10 @@ notion-client@6.12.6:
     notion-utils "^6.12.6"
     p-map "^5.3.0"
 
-notion-types@^6.11.0:
-  version "6.11.0"
-  resolved "https://registry.yarnpkg.com/notion-types/-/notion-types-6.11.0.tgz#3da05375e3ee3334ef0e9f705ff9ffdd880f2fdc"
-  integrity sha512-a8Q5Tmgf4lywP57uk4o6UeuxFgswXPul5SYTAWK8spnppMUC3ax5woZcltTHQMvqsP6ZVEqjqDl82lMEL4VD7A==
-
 notion-types@^6.12.6:
   version "6.12.6"
   resolved "https://registry.yarnpkg.com/notion-types/-/notion-types-6.12.6.tgz#48677bc7f156966bfd95036e9b54d53f1c5b8926"
   integrity sha512-UBbhnzKgn48SVTkMP5It3heODrf8gAPb6O5vLna9pi9zdAtfSjmGmn5//C0P1rF/ppX7cCfgX964g+8VLUBOag==
-
-notion-utils@^6.11.0:
-  version "6.11.0"
-  resolved "https://registry.yarnpkg.com/notion-utils/-/notion-utils-6.11.0.tgz#2252f8a59d6597141aa026137f4a4edd068119a3"
-  integrity sha512-xP58mT0p4mWwrF1TbkV5r/En9XstnQHW75vpsYP+Ghg7TRt80cPzUgRx/lDRaWAkWXN7G+mUZIVU/eQgNonU8w==
-  dependencies:
-    is-url-superb "^6.1.0"
-    mem "^9.0.2"
-    normalize-url "^7.0.3"
-    notion-types "^6.11.0"
-    p-queue "^7.2.0"
 
 notion-utils@^6.12.6:
   version "6.12.6"
