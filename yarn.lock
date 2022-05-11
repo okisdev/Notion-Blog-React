@@ -2303,14 +2303,14 @@ normalize-url@^7.0.3:
   resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-7.0.3.tgz#12e56889f7a54b2d5b09616f36c442a9063f61af"
   integrity sha512-RiCOdwdPnzvwcBFJE4iI1ss3dMVRIrEzFpn8ftje6iBfzBInqlnRrNhxcLwBEKjPPXQKzm1Ptlxtaiv9wdcj5w==
 
-notion-client@6.12.6:
-  version "6.12.6"
-  resolved "https://registry.yarnpkg.com/notion-client/-/notion-client-6.12.6.tgz#bd215e8ea371b099fe0dc3172a16389f71f30f53"
-  integrity sha512-aacCgfgJ1UzD2PRLNufSvYVDvzWYBI2vDZJHNaJi8PK9TocG4u2RU+tdC0lVD7aOCr2CP0dOvB8sYehZZIgq8g==
+notion-client@6.12.9:
+  version "6.12.9"
+  resolved "https://registry.yarnpkg.com/notion-client/-/notion-client-6.12.9.tgz#58cd8d62ce34a3200cb0334c5d1e684b177f93ba"
+  integrity sha512-bF1YKk76pxyynQ+Nni23K5HH1CTtZYsiEpuBvJfQAd3bEXGaqUri9StmdWLMob7+6rP57D6dgFQpI/SdGZ/jfw==
   dependencies:
     got "^11.8.1"
     notion-types "^6.12.6"
-    notion-utils "^6.12.6"
+    notion-utils "^6.12.9"
     p-map "^5.3.0"
 
 notion-types@^6.12.6:
@@ -2322,6 +2322,17 @@ notion-utils@^6.12.6:
   version "6.12.6"
   resolved "https://registry.yarnpkg.com/notion-utils/-/notion-utils-6.12.6.tgz#9f9065883dc27058b23721d0c88bb05521b14949"
   integrity sha512-QrduKoNyB5XNNk+vIZrQ+niSdnldXk9WUCd2/jUWjCq6dBSL8w9Md2/VE/U5WO1t5ahBr9h2iKaMbQDsF8jT5A==
+  dependencies:
+    is-url-superb "^6.1.0"
+    mem "^9.0.2"
+    normalize-url "^7.0.3"
+    notion-types "^6.12.6"
+    p-queue "^7.2.0"
+
+notion-utils@^6.12.9:
+  version "6.12.9"
+  resolved "https://registry.yarnpkg.com/notion-utils/-/notion-utils-6.12.9.tgz#f55cf940c8c3c05e697d3210d5a1b284b56f9c6c"
+  integrity sha512-VSVBfaQ5hDtDwLsOMyp16etp2jNslyXTCmoQ5T8YBCGh4wpRAYsVsuaO+QUG5lrbAK32hE6N6HF2rUr/Qa1dyQ==
   dependencies:
     is-url-superb "^6.1.0"
     mem "^9.0.2"
