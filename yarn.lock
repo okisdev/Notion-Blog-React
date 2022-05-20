@@ -2009,10 +2009,10 @@ jsx-ast-utils@^3.2.1:
     array-includes "^3.1.3"
     object.assign "^4.1.2"
 
-katex@0.15.5:
-  version "0.15.5"
-  resolved "https://registry.yarnpkg.com/katex/-/katex-0.15.5.tgz#74ace869357c72d926a5cdced290f5a5d2ce29e3"
-  integrity sha512-wsZmnaHDSpYQ8feadF6H6nez4VBVeeTQRmBFEppWFliXg+5sDgjvF/rQNocToih/4qMvSRZRi2kQ/IR5/siyRg==
+katex@0.15.6:
+  version "0.15.6"
+  resolved "https://registry.yarnpkg.com/katex/-/katex-0.15.6.tgz#c4e2f6ced2ac4de1ef6f737fe7c67d3026baa0e5"
+  integrity sha512-UpzJy4yrnqnhXvRPhjEuLA4lcPn6eRngixW7Q3TJErjg3Aw2PuLFBzTkdUb89UtumxjhHTqL3a5GDGETMSwgJA==
   dependencies:
     commander "^8.0.0"
 
