@@ -8,6 +8,10 @@ A Blog powered by [Notion](https://notion.so), built with [React](https://reactj
 
 > See [Notion Photo React](https://github.com/Harry-Yep/Notion-Photo-React), if you would like to create a personal photo gallery website powered by Notion.
 
+## Demo
+
+-   [nbr.okis.dev](https://nbr.okis.dev)
+
 ## Features
 
 Please see the **[features section](https://github.com/NotionX/react-notion-x#features)** on React-Notion-X by [NotionX](https://github.com/NotionX/).
@@ -33,6 +37,11 @@ And also, you can...
 ## How to deploy
 
 Please visit Notion Blog React [Documentation](https://docs.harrly.com/docs/notion-blog-react) for more details.
+
+## Problem(s) with deployment
+
+-   email: [hi#harrly.com](mailto:hi@harrly.com)
+-   Telegram: [@Harry_Yep](https://t.me/Harry_Yep)
 
 ## Improvement / Plans
 

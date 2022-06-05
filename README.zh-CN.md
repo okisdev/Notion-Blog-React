@@ -6,6 +6,10 @@
 
 A Blog powered by [Notion](https://notion.so), built with [React](https://reactjs.org), [Next.js](https://nextjs.org), [tailwindcss](https://tailwindcss.com), [TypeScript](https://www.typescriptlang.org/), [Notion-Api-Worker](https://github.com/splitbee/notion-api-worker), [React-Notion-X](https://github.com/NotionX/react-notion-x/) and more.
 
+## Demo
+
+-   [nbr.okis.dev](https://nbr.okis.dev)
+
 ## 特点
 
 Please see the **[features section](https://github.com/NotionX/react-notion-x#features)** on React-Notion-X by [NotionX](https://github.com/NotionX/).
@@ -31,6 +35,11 @@ And also, you can...
 ## 如何部署
 
 请访问 Notion Blog React [说明文档](https://docs.harrly.com/zh-CN/docs/notion-blog-react)查看更多。
+
+## 部署出现问题？
+
+-   email: [hi#harrly.com](mailto:hi@harrly.com)
+-   Telegram: [@Harry_Yep](https://t.me/Harry_Yep)
 
 ## 日后计划
 
