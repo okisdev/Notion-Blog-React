@@ -61,16 +61,16 @@ const BlogHomePage = ({ posts }: { posts: PostContent[] }) => {
                 <meta name='twitter:url' content={siteConfig.global.site.url} />
             </Head>
 
-            <div id='notion-blog-homepage' className='min-h-screen flex flex-col dark:bg-[#23272d] font-Rubik'>
+            <div id='notion-blog-homepage' className='flex min-h-screen flex-col font-Rubik dark:bg-[#23272d]'>
                 <Toaster />
 
                 <BlogNavBar></BlogNavBar>
 
-                <div className='container mx-auto px-4 sm:px-6 justify-center flex-grow max-w-3xl'>
+                <div className='container mx-auto max-w-3xl flex-grow justify-center px-4 sm:px-6'>
                     <div id='notion-blog-content' className='my-16'>
                         <BlogHeader></BlogHeader>
 
-                        <div id='notion-blog-body' className='flex flex-col mt-12'>
+                        <div id='notion-blog-body' className='mt-12 flex flex-col'>
                             {posts.map((post) => post.published && <BlogCard key={post.id} post={post} />)}
                         </div>
                     </div>

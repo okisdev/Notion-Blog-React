@@ -87,11 +87,11 @@ const BlogPost: FC<{ recordMap: ExtendedRecordMap; notionPost: PostContent }> = 
                 <meta name='twitter:url' content={`${siteConfig.global.site.url}/posts/${notionPost.slug}`} />
             </Head>
 
-            <div id='notion-blog-post' className='min-h-screen flex flex-col dark:bg-[#23272d] font-Rubik'>
+            <div id='notion-blog-post' className='flex min-h-screen flex-col font-Rubik dark:bg-[#23272d]'>
                 <BlogNavBar></BlogNavBar>
 
                 <div className='container mx-auto px-6 sm:px-8'>
-                    <div id='notion-blog-post-body-content' className='my-6 md:my-20 leading-6'>
+                    <div id='notion-blog-post-body-content' className='my-6 leading-6 md:my-20'>
                         <article id='notion-blog-post-article'>
                             <NotionRenderer
                                 recordMap={recordMap}

@@ -8,9 +8,9 @@ const BlogThemeSwither = () => {
     const { theme, setTheme } = useTheme();
 
     return (
-        <div id='notion-blog-theme-switcher' className='flex items-center justify-center my-3'>
+        <div id='notion-blog-theme-switcher' className='my-3 flex items-center justify-center'>
             {modeConfig.global.footer.themeSwitcher.shown && (
-                <div className='flex rounded border-2 p-1 transition duration-500 ease-in-out hover:ring-2 hover:bg-[#23272d] hover:text-[#adbac7] dark:hover:bg-white dark:hover:text-[#23272d]'>
+                <div className='flex rounded border-2 p-1 transition duration-500 ease-in-out hover:bg-[#23272d] hover:text-[#adbac7] hover:ring-2 dark:hover:bg-white dark:hover:text-[#23272d]'>
                     {theme === 'dark' ? (
                         <button
                             onClick={() => {

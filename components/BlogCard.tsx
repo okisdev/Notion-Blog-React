@@ -17,9 +17,9 @@ const BlogCard = ({ post }: { post: PostContent }) => {
     const { t } = useTranslation();
 
     return (
-        <div id='notion-blog-body-card' className='transition duration-500 ease-in-out p-3 my-5 border-2 rounded-lg bg-white dark:bg-gray-500 hover:shadow-2xl'>
+        <div id='notion-blog-body-card' className='my-5 rounded-lg border-2 bg-white p-3 transition duration-500 ease-in-out hover:shadow-2xl dark:bg-gray-500'>
             <div id='notion-blog-body-card-content'>
-                <div id='notion-blog-body-card-title' className='flex items-center font-bold text-lg mb-2 space-x-3 dark:text-blue-200 transition duration-500 ease-in-out hover:text-blue-400'>
+                <div id='notion-blog-body-card-title' className='mb-2 flex items-center space-x-3 text-lg font-bold transition duration-500 ease-in-out hover:text-blue-400 dark:text-blue-200'>
                     <IoIosPaper />
                     <div
                         onClick={() => {
@@ -70,7 +70,7 @@ const BlogCard = ({ post }: { post: PostContent }) => {
                                 <IoMdPricetags />
                                 <span className='flex flex-row space-x-1'>
                                     {post.tag.map((tag) => (
-                                        <div id='notion-blog-body-card-tags-item' key={post.id} className='bg-blue-200 dark:bg-[#728796] px-2 rounded-xl'>
+                                        <div id='notion-blog-body-card-tags-item' key={post.id} className='rounded-xl bg-blue-200 px-2 dark:bg-[#728796]'>
                                             <span className='text-sm dark:text-gray-300'>{tag}</span>
                                         </div>
                                     ))}
@@ -92,7 +92,7 @@ const BlogCard = ({ post }: { post: PostContent }) => {
                             ))}
                             <div>•</div>
                             {post.tag.map((tag: any) => (
-                                <div id='notion-blog-body-card-tags-item' key={post.id} className='bg-blue-200 dark:bg-[#728796] px-2 rounded-xl'>
+                                <div id='notion-blog-body-card-tags-item' key={post.id} className='rounded-xl bg-blue-200 px-2 dark:bg-[#728796]'>
                                     <span className='text-sm dark:text-gray-300'>{tag}</span>
                                 </div>
                             ))}
