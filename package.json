@@ -22,8 +22,8 @@
         "next-themes": "0.2.0",
         "notion-client": "6.12.9",
         "powered-by-vercel": "1.1.0",
-        "react": "18.1.0",
-        "react-dom": "18.1.0",
+        "react": "18.2.0",
+        "react-dom": "18.2.0",
         "react-hot-toast": "2.2.0",
         "react-icons": "4.4.0",
         "react-notion-x": "6.12.10"
