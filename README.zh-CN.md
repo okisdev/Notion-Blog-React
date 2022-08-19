@@ -34,7 +34,7 @@ And also, you can...
 
 ## 如何部署
 
-请访问 Notion Blog React [说明文档](https://docs.harrly.com/zh-CN/docs/notion-blog-react)查看更多。
+请访问 Notion Blog React [说明文档](https://docs.okis.dev/zh-CN/docs/notion-blog-react)查看更多。
 
 ## 部署出现问题？
 

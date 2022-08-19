@@ -36,7 +36,7 @@ And also, you can...
 
 ## How to deploy
 
-Please visit Notion Blog React [Documentation](https://docs.harrly.com/docs/notion-blog-react) for more details.
+Please visit Notion Blog React [Documentation](https://docs.okis.dev/docs/notion-blog-react) for more details.
 
 ## Problem(s) with deployment
 

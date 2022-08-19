@@ -1,4 +1,4 @@
-// Before you make changes to this document, please read https://docs.harrly.com/docs/notion-blog-react#change-the-site-configuration
+// Before you make changes to this document, please read https://docs.okis.dev/docs/notion-blog-react#change-the-site-configuration
 
 module.exports = {
     global: {

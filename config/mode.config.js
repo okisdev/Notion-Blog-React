@@ -1,4 +1,4 @@
-// Before you make changes to this document, please read https://docs.harrly.com/docs/notion-blog-react/advanced-configuration
+// Before you make changes to this document, please read https://docs.okis.dev/docs/notion-blog-react/advanced-configuration
 
 module.exports = {
     global: {
