@@ -31,7 +31,7 @@
     "devDependencies": {
         "@types/react": "17.0.50",
         "autoprefixer": "10.4.11",
-        "eslint": "8.23.1",
+        "eslint": "8.24.0",
         "eslint-config-next": "12.3.1",
         "postcss": "8.4.16",
         "prettier": "2.7.1",
