@@ -2490,10 +2490,10 @@ normalize-url@^7.0.3:
   resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-7.0.3.tgz#12e56889f7a54b2d5b09616f36c442a9063f61af"
   integrity sha512-RiCOdwdPnzvwcBFJE4iI1ss3dMVRIrEzFpn8ftje6iBfzBInqlnRrNhxcLwBEKjPPXQKzm1Ptlxtaiv9wdcj5w==
 
-notion-client@6.13.8:
-  version "6.13.8"
-  resolved "https://registry.yarnpkg.com/notion-client/-/notion-client-6.13.8.tgz#00e57dd23eee021ab5bc8f927c394715eef26a11"
-  integrity sha512-E65Cvq+qSL3oifwb9F/8pw1wrPr1zKOofY6mJZCGlb/ujrZZWm+fO3J8TBj9UEcQmMKWdGKbA1Eu1JhNDBuFeQ==
+notion-client@6.13.11:
+  version "6.13.11"
+  resolved "https://registry.yarnpkg.com/notion-client/-/notion-client-6.13.11.tgz#9db30b4652e5d28802a2e41807ff20cf4a0b1c58"
+  integrity sha512-5JkRXQkIJb1dwyuPOVO5Nji38p46of8bihkQVOzLAQYDtEhx04euyp8LDKZyUFkTOtea7/JrSUeCcQsAmjj8TA==
   dependencies:
     got "^11.8.1"
     notion-types "^6.13.4"
