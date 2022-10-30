@@ -40,8 +40,8 @@ Please visit Notion Blog React [Documentation](https://docs.okis.dev/docs/notion
 
 ## Problem(s) with deployment
 
--   email: [hi#harrly.com](mailto:hi@harrly.com)
--   Telegram: [@Harry_Yep](https://t.me/Harry_Yep)
+-   email: [hi@okis.dev](mailto:hi@okis.dev)
+-   Telegram: [@okisdev](https://t.me/okisdev)
 
 ## Improvement / Plans
 
@@ -55,7 +55,6 @@ Please visit Notion Blog React [Documentation](https://docs.okis.dev/docs/notion
 -   [Splitee Blog](https://splitbee.io/blog) (using React-Notion, contributor of React-Notion)
 -   [timo.sh](https://timo.sh/) (using React-Notion, contributor of React-Notion)
 -   [TransitiveBullsh.it](https://transitivebullsh.it/) (using React-Notion-X, contributor of React-Notion-X)
--   [Spencerwoo's Blog](https://spencerwoo.com/blog) (using Notion Official API)
 -   [Vercel](https://vercel.com)
 -   [Cloudflare Workers](https://workers.dev)
 -   [React](https://reactjs.org)
