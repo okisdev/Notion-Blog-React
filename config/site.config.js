@@ -10,7 +10,7 @@ module.exports = {
         },
         site: {
             name: 'Notion Blog React Example',
-            description: 'Blog built with Notion, React, Next.js, tailwindcss, TypeScript, Notion-Api-Worker and more.',
+            description: 'Blog built with Notion, React.JS, Next.JS, tailwindcss, TypeScript, notion-api-worker and more.',
             url: 'https://react-notion-blog.demo.harisfox.com/',
             banner_img: `https://cdn.harrly.com/project/GitHub/Notion-Blog-React/img/Notion-Blog-React.Banner.png`,
             language: [

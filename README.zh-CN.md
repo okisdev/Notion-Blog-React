@@ -4,17 +4,17 @@
 
 > 由 Notion 提供支持的快速无服务器博客。
 
-A Blog powered by [Notion](https://notion.so), built with [React](https://reactjs.org), [Next.js](https://nextjs.org), [tailwindcss](https://tailwindcss.com), [TypeScript](https://www.typescriptlang.org/), [Notion-Api-Worker](https://github.com/splitbee/notion-api-worker), [React-Notion-X](https://github.com/NotionX/react-notion-x/) and more.
+一个由 [Notion](https://notion.so) 提供支持的博客，使用 [React.JS](https://reactjs.org), [Next.JS](https://nextjs.org), [tailwindcss](https://tailwindcss.com), [TypeScript](https://www.typescriptlang.org/), [notion-api-worker](https://github.com/splitbee/notion-api-worker), [React-Notion-X](https://github.com/NotionX/react-notion-x/) 等构建。
 
-## Demo
+## 演示
 
 -   [nbr.okis.dev](https://nbr.okis.dev)
 
 ## 特点
 
-Please see the **[features section](https://github.com/NotionX/react-notion-x#features)** on React-Notion-X by [NotionX](https://github.com/NotionX/).
+请参阅 [NotionX](https://github.com/NotionX/) 的 React-Notion-X **[features section](https://github.com/NotionX/react-notion-x#features)** 部分。
 
-And also, you can...
+而且，你还可以...
 
 -   Easily change the things you want by editing [`.env`](./.env.example) file.
 -   Support [Google Analytics](https://analytics.google.com/) & [Splitbee Analytics](https://splitbee.io/).
