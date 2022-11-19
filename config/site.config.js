@@ -4,14 +4,14 @@ module.exports = {
     global: {
         author: {
             name: 'Harry Yep',
-            github: 'https://github.com/Harry-Yep/Notion-Blog-React',
-            email: 'hi@harrly.com',
-            privacy_policy: 'https://www.harrly.com/privacy-policy',
+            github: 'https://github.com/okisdev/Notion-Blog-React',
+            email: 'hi@okis.dev',
+            privacy_policy: 'https://vercel.com/legal/privacy-policy',
         },
         site: {
             name: 'Notion Blog React Example',
             description: 'Blog built with Notion, React.JS, Next.JS, tailwindcss, TypeScript, notion-api-worker and more.',
-            url: 'https://react-notion-blog.demo.harisfox.com/',
+            url: 'https://nbr.okis.dev/',
             banner_img: `https://cdn.harrly.com/project/GitHub/Notion-Blog-React/img/Notion-Blog-React.Banner.png`,
             language: [
                 { name: 'British English', code: 'en-GB' },
