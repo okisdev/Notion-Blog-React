@@ -31,6 +31,10 @@ module.exports = {
         analytics: {
             google: '',
             splitbee: 'O1KKIQNSGP18',
+            umami: {
+                url: 'https://analytics.umami.is/script.js',
+                website_id: '6667f92e-b794-47f0-b484-7ad8a2a58360',
+            },
         },
     },
 };

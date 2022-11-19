@@ -23,7 +23,6 @@ class MyDocument extends Document {
                     />
 
                     <script data-token={siteConfig.global.analytics.splitbee} async src='https://cdn.splitbee.io/sb.js'></script>
-
                     <script async src={`https://www.googletagmanager.com/gtag/js?id=${siteConfig.global.analytics.google}`} />
                     <script
                         dangerouslySetInnerHTML={{
@@ -37,6 +36,8 @@ class MyDocument extends Document {
           `,
                         }}
                     />
+                    <script async defer src={siteConfig.global.analytics.umami.url} data-website-id={siteConfig.global.analytics.umami.website_id}></script>
+                    <script async defer data-website-id='d9734e29-e8a5-48c2-8cca-f5126da4109f' src='https://umami.harisfox.com/script.js'></script>
                 </Head>
                 <body>
                     <Main />
