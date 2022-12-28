@@ -1,9 +1,13 @@
+import { useEffect, useState } from 'react';
+
 import { useTranslation } from 'next-i18next';
 
 import siteConfig from '../config/site.config';
 
 const BlogCopyright = ({ notionPost }) => {
-    const publishDomain = typeof window !== 'undefined' ? window.location.origin : 'https://react-notion-blog.demo.harisfox.com';
+    const [publishDomain, setPublishDomain] = useState('https://react-notion-blog.demo.harisfox.com');
+
+    useEffect(() => setPublishDomain(window.location.origin), []);
 
     const { t } = useTranslation();
 
@@ -12,39 +16,37 @@ const BlogCopyright = ({ notionPost }) => {
             <div className='mx-auto space-y-3 rounded border-2 p-3 dark:text-[#adbac7] md:w-7/12'>
                 <div id='notion-blog-copyright-header'>
                     <div id='notion-blog-copyright-title'>
-                        <span className='font-bold'>{notionPost.title}</span>
+                        <p className='font-bold'>{notionPost.title}</p>
                     </div>
                     <div id='notion-blog-copyright-url'>
-                        <span>
-                            <a
-                                href={`${publishDomain}/posts/${notionPost.slug}`}
-                                target='_blank'
-                                rel='noopener noreferrer'
-                                className='underline transition duration-500 hover:bg-yellow-500 dark:hover:bg-yellow-600'
-                            >
-                                {publishDomain}/posts/{notionPost.slug}
-                            </a>
-                        </span>
+                        <a
+                            href={`${publishDomain}/posts/${notionPost.slug}`}
+                            target='_blank'
+                            rel='noopener noreferrer'
+                            className='underline transition duration-500 hover:bg-yellow-500 dark:hover:bg-yellow-600'
+                        >
+                            {publishDomain + '/posts/' + notionPost.slug}
+                        </a>
                     </div>
                 </div>
                 <div id='notion-blog-copyright-body' className='flew-row flex space-x-3'>
                     <div id='notion-blog-copyright-author' className='flex flex-col'>
-                        <span>{t('Author')}</span>
+                        <p>{t('Author')}</p>
                         {notionPost.author.map((author) => (
                             <div key={author.id}>
-                                <span className='flex flex-col'>
-                                    <span className='font-bold'>{author.fullName}</span>
-                                </span>
+                                <div className='flex flex-col'>
+                                    <p className='font-bold'>{author.fullName}</p>
+                                </div>
                             </div>
                         ))}
                     </div>
                     <div id='notion-blog-copyright-date' className='flex flex-col'>
-                        <span>{t('Date')}</span>
-                        <span className='font-bold'>{notionPost.date}</span>
+                        <p>{t('Date')}</p>
+                        <div className='font-bold'>{notionPost.date}</div>
                     </div>
                     <div id='notion-blog-copyright-license' className='flex flex-col'>
-                        <span>{t('License')}</span>
-                        <span className='font-bold'>
+                        <p>{t('License')}</p>
+                        <div className='font-bold'>
                             <a
                                 href={siteConfig.global.content.license.url}
                                 target='_blank'
@@ -53,7 +55,7 @@ const BlogCopyright = ({ notionPost }) => {
                             >
                                 {siteConfig.global.content.license.name}
                             </a>
-                        </span>
+                        </div>
                     </div>
                 </div>
                 <div id='notion-blog-copyright-footer'>

@@ -29,7 +29,7 @@ const BlogNavBar = () => {
                     <nav className='flex'>
                         <div id='notion-blog-navbar-start' className='mr-20 flex items-start md:mr-80'>
                             <div className='mx-3'>
-                                <Link href='/' passHref>
+                                <Link href='/' passHref legacyBehavior>
                                     <a title='Homepage'>
                                         <BiHome className='h-6 w-6' />
                                     </a>
@@ -40,7 +40,7 @@ const BlogNavBar = () => {
                         <div id='notion-blog-navbar-end' className='flex items-end'>
                             {modeConfig.global.navbar.atom.shown && (
                                 <div className='mx-3'>
-                                    <Link href='/atom.xml' passHref>
+                                    <Link href='/atom.xml' passHref legacyBehavior>
                                         <a title='RSS'>
                                             <RiRssFill className='h-6 w-6' />
                                         </a>
@@ -49,7 +49,7 @@ const BlogNavBar = () => {
                             )}
                             {modeConfig.global.navbar.github.shown && (
                                 <div className='mx-3'>
-                                    <Link href={siteConfig.global.author.github} passHref>
+                                    <Link href={siteConfig.global.author.github} passHref legacyBehavior>
                                         <a title='GitHub'>
                                             <FiGithub className='h-6 w-6' />
                                         </a>
@@ -58,7 +58,7 @@ const BlogNavBar = () => {
                             )}
                             {modeConfig.global.navbar.email.shown && (
                                 <div className='mx-3'>
-                                    <Link href={'mailto:' + siteConfig.global.author.email} passHref>
+                                    <Link href={'mailto:' + siteConfig.global.author.email} passHref legacyBehavior>
                                         <a title='email'>
                                             <HiOutlineMail className='h-6 w-6' />
                                         </a>
@@ -67,7 +67,7 @@ const BlogNavBar = () => {
                             )}
                             {modeConfig.global.navbar.privacy_policy.shown && (
                                 <div className='mx-3'>
-                                    <Link href={siteConfig.global.author.privacy_policy} passHref>
+                                    <Link href={siteConfig.global.author.privacy_policy} passHref legacyBehavior>
                                         <a title='Privacy Policy'>
                                             <AiOutlineSafety className='h-6 w-6' />
                                         </a>
@@ -96,7 +96,7 @@ const BlogNavBar = () => {
                                                 return (
                                                     <Menu.Item key={index}>
                                                         {({ active }) => (
-                                                            <Link href={item.code} as={asPath} locale={item.code}>
+                                                            <Link href={item.code} as={asPath} locale={item.code} passHref legacyBehavior>
                                                                 <a className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}>{item.name}</a>
                                                             </Link>
                                                         )}

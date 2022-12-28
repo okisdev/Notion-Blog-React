@@ -64,11 +64,11 @@ const BlogHomePage = ({ posts }: { posts: PostContent[] }) => {
             <div id='notion-blog-homepage' className='flex min-h-screen flex-col font-Rubik dark:bg-[#23272d]'>
                 <Toaster />
 
-                <BlogNavBar></BlogNavBar>
+                <BlogNavBar />
 
                 <div className='container mx-auto max-w-3xl flex-grow justify-center px-4 sm:px-6'>
                     <div id='notion-blog-content' className='my-16'>
-                        <BlogHeader></BlogHeader>
+                        <BlogHeader />
 
                         <div id='notion-blog-body' className='mt-12 flex flex-col'>
                             {posts.map((post) => post.published && <BlogCard key={post.id} post={post} />)}
@@ -76,9 +76,9 @@ const BlogHomePage = ({ posts }: { posts: PostContent[] }) => {
                     </div>
                 </div>
 
-                <BlogFooter></BlogFooter>
+                <BlogFooter />
 
-                <BlogThemeSwither></BlogThemeSwither>
+                <BlogThemeSwither />
             </div>
         </div>
     );

@@ -88,7 +88,7 @@ const BlogPost: FC<{ recordMap: ExtendedRecordMap; notionPost: PostContent }> = 
             </Head>
 
             <div id='notion-blog-post' className='flex min-h-screen flex-col font-Rubik dark:bg-[#23272d]'>
-                <BlogNavBar></BlogNavBar>
+                <BlogNavBar />
 
                 <div className='container mx-auto px-6 sm:px-8'>
                     <div id='notion-blog-post-body-content' className='my-6 leading-6 md:my-20'>
@@ -112,13 +112,13 @@ const BlogPost: FC<{ recordMap: ExtendedRecordMap; notionPost: PostContent }> = 
                     </div>
                 </div>
 
-                <BlogCopyright notionPost={notionPost}></BlogCopyright>
+                <BlogCopyright notionPost={notionPost} />
 
-                <BlogBackHome></BlogBackHome>
+                <BlogBackHome />
 
-                <BlogFooter></BlogFooter>
+                <BlogFooter />
 
-                <BlogThemeSwither></BlogThemeSwither>
+                <BlogThemeSwither />
             </div>
         </div>
     );

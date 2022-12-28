@@ -13,7 +13,7 @@ const BlogBackHome = () => {
                 <div className='flex'>
                     <div className='flex flex-row items-center space-x-2 underline transition duration-500 hover:bg-yellow-500 dark:hover:bg-yellow-600'>
                         <BiArrowBack />
-                        <Link href='/' passHref>
+                        <Link href='/' passHref legacyBehavior>
                             <a>{t('Back Home')}</a>
                         </Link>
                     </div>

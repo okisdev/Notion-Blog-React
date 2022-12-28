@@ -1,3 +1,71 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --bg-color: none !important;
+    --notion-header-height: 48px !important;
+}
+
+.notion {
+    font-family: 'Rubik', sans-serif !important;
+}
+
+.notion-aside-table-of-contents-header {
+    font-size: 1em !important;
+}
+
+.notion-page-icon-hero {
+    justify-content: left !important;
+}
+
+.notion-search .notion-page-icon {
+    fill: rgba(55, 53, 47, 0.8) !important;
+    color: rgb(55, 53, 47) !important;
+}
+
+.notion-quote {
+    font-size: 0.95em !important;
+}
+
+.notion-code-copy-button {
+    padding: 0.3em !important;
+}
+
+.notion-header {
+    position: relative !important;
+    top: 48px !important;
+    z-index: 10 !important;
+}
+
+.notion-page-link {
+    color: #adbac7 !important;
+}
+
+.notion-bookmark > div:first-child {
+    color: #adbac7 !important;
+}
+
+.notion-bookmark-link-text {
+    color: #adbac7 !important;
+}
+
+.notion-asset-caption {
+    color: #adbac7 !important;
+}
+
+.notion-file-size {
+    color: #adbac7 !important;
+}
+
+.notion-table-of-contents-item {
+    color: #adbac7 !important;
+}
+
+.notion-collection-row-property .notion-collection-column-title {
+    color: #adbac7 !important;
+}
+
+.notion-header .breadcrumb {
+    color: #adbac7 !important;
+}

@@ -33,7 +33,7 @@ const BlogCard = ({ post }: { post: PostContent }) => {
                             });
                         }}
                     >
-                        <Link href='/posts/[slug]' as={getNotionPostSlug(post.slug)} passHref>
+                        <Link href='/posts/[slug]' as={getNotionPostSlug(post.slug)} passHref legacyBehavior>
                             {post.title}
                         </Link>
                     </div>

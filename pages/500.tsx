@@ -24,7 +24,7 @@ const Error500 = () => {
             </Head>
 
             <div id='notion-blog-500' className='flex min-h-screen flex-col font-Rubik dark:bg-[#23272d]'>
-                <BlogNavBar></BlogNavBar>
+                <BlogNavBar />
 
                 <div id='notion-blog-500-content' className='mx-auto flex flex-grow leading-10 dark:text-[#adbac7]'>
                     <div className='container mx-auto flex flex-col justify-center text-center'>
@@ -33,9 +33,9 @@ const Error500 = () => {
                     </div>
                 </div>
 
-                <BlogFooter></BlogFooter>
+                <BlogFooter />
 
-                <BlogThemeSwither></BlogThemeSwither>
+                <BlogThemeSwither />
             </div>
         </div>
     );
