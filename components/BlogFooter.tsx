@@ -42,6 +42,7 @@ const BlogFooter = () => {
                         svgProps={{
                             width: 150,
                         }}
+                        aria-label='Powered By Vercel'
                     />
                 )}
             </div>

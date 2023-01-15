@@ -16,6 +16,7 @@ const BlogThemeSwither = () => {
                             onClick={() => {
                                 setTheme('light');
                             }}
+                            aria-label='light mode'
                         >
                             <BsSunFill />
                         </button>
@@ -24,6 +25,7 @@ const BlogThemeSwither = () => {
                             onClick={() => {
                                 setTheme('dark');
                             }}
+                            aria-label='dark mode'
                         >
                             <BsMoonFill />
                         </button>
