@@ -45,7 +45,7 @@ const BlogFooter = () => {
                         aria-label='Powered By Vercel'
                     />
                 )}
-                <a target='_blank' href='https://betteruptime.com/'>
+                <a target='_blank' rel='noreferrer' href='https://betteruptime.com/'>
                     <img className='mx-auto w-32' alt='Better Uptime Website Monitoring' src='https://betteruptime.com/assets/static_assets/badges/dark.png' />
                 </a>
             </div>
