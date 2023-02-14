@@ -2257,6 +2257,11 @@ notion-types@^6.15.4:
   resolved "https://registry.yarnpkg.com/notion-types/-/notion-types-6.15.6.tgz#eabbb28e1c514f421f0ffbf06ecdecd90e8ec8e3"
   integrity sha512-JgLWDN4oHg/1sNdHDCeKUfdPl1AYsjOTnYkq+Zn7vITPykxbhw7nIxbAJ7owWUTro1cYTPh+GVmdX0mPiZGujg==
 
+notion-types@^6.16.0:
+  version "6.16.0"
+  resolved "https://registry.yarnpkg.com/notion-types/-/notion-types-6.16.0.tgz#1c676b180095d14209a6760dd8586db55a115e91"
+  integrity sha512-Cv83GaAczx57q1qsnuG8DHOuOb63c83u9LX2IainG5aqBEB0GUuLZ4DUQfB6MaXt+FMY9fO+KTgPeZWwX9hbrQ==
+
 notion-utils@^6.15.8:
   version "6.15.8"
   resolved "https://registry.yarnpkg.com/notion-utils/-/notion-utils-6.15.8.tgz#6f2c9bb9e9bfc67a818523083979ca70a61ba35b"
@@ -2266,6 +2271,17 @@ notion-utils@^6.15.8:
     mem "^9.0.2"
     normalize-url "^7.0.3"
     notion-types "^6.15.4"
+    p-queue "^7.2.0"
+
+notion-utils@^6.16.0:
+  version "6.16.0"
+  resolved "https://registry.yarnpkg.com/notion-utils/-/notion-utils-6.16.0.tgz#b81567b9d8d7ee6199383b9b41f58f5f297a1c36"
+  integrity sha512-DxToriZAJW/64O1xlAjyU/50dRmkO1e54+i0dEAPDij0MlHyihEivAMsdEG/6/4eFC972BIsEKZ6BXsSTUYKlQ==
+  dependencies:
+    is-url-superb "^6.1.0"
+    mem "^9.0.2"
+    normalize-url "^7.0.3"
+    notion-types "^6.16.0"
     p-queue "^7.2.0"
 
 object-assign@^4.1.1:
@@ -2723,16 +2739,16 @@ react-modal@^3.14.3:
     react-lifecycles-compat "^3.0.0"
     warning "^4.0.3"
 
-react-notion-x@6.15.8:
-  version "6.15.8"
-  resolved "https://registry.yarnpkg.com/react-notion-x/-/react-notion-x-6.15.8.tgz#e3fb1062c432d19833fc1f3b1ee692ace75354fe"
-  integrity sha512-Gxl32peO8aTNNLNEuCVlviyYeufg9owyIx0vaecf6yKYFBZHyeadRIYlauT82/NrOX1HQzeXJxsNLm4BuzuxrQ==
+react-notion-x@6.16.0:
+  version "6.16.0"
+  resolved "https://registry.yarnpkg.com/react-notion-x/-/react-notion-x-6.16.0.tgz#48e70e90ab0f4a150b3379a928ac338e1e75dc2f"
+  integrity sha512-YdJikX38YNX5eIKAO9diw/tEhsc0ypnaqOqcdXEr7zFf0h/+eoppEzlLdzYJktnZy4n2q0z5ooXWAQi4QLi8Zw==
   dependencies:
     "@fisch0920/medium-zoom" "^1.0.7"
     "@matejmazur/react-katex" "^3.1.3"
     katex "^0.15.3"
-    notion-types "^6.15.4"
-    notion-utils "^6.15.8"
+    notion-types "^6.16.0"
+    notion-utils "^6.16.0"
     prismjs "^1.27.0"
     react-fast-compare "^3.2.0"
     react-hotkeys-hook "^3.0.3"
