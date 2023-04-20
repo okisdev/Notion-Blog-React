@@ -687,7 +687,7 @@ commander@^4.0.0:
   resolved "https://registry.yarnpkg.com/commander/-/commander-4.1.1.tgz#9fd602bd936294e9e9ef46a3f4d6964044b18068"
   integrity sha512-NOKm8xhkzAjzFx8B2v5OAHT+u5pRQc2UCa2Vq9jYL/31o2wi9mxBA7LIFs3sV5VSC49z6pEhfbMULvShKj26WA==
 
-commander@^8.0.0:
+commander@^8.0.0, commander@^8.3.0:
   version "8.3.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-8.3.0.tgz#4837ea1b2da67b9c616a67afbb0fafee567bca66"
   integrity sha512-OkTL9umf+He2DZkUq8f8J9of7yL6RJKI24dVITBmNfZBmri9zYZQrKkuXiKhyfPSu8tUhnVBB1iKXevvnlR4Ww==
@@ -1923,12 +1923,12 @@ jsx-ast-utils@^3.2.1:
     array-includes "^3.1.3"
     object.assign "^4.1.2"
 
-katex@0.16.4:
-  version "0.16.4"
-  resolved "https://registry.yarnpkg.com/katex/-/katex-0.16.4.tgz#87021bc3bbd80586ef715aeb476794cba6a49ad4"
-  integrity sha512-WudRKUj8yyBeVDI4aYMNxhx5Vhh2PjpzQw1GRu/LVGqL4m1AxwD1GcUp0IMbdJaf5zsjtj8ghP0DOQRYhroNkw==
+katex@0.16.6:
+  version "0.16.6"
+  resolved "https://registry.yarnpkg.com/katex/-/katex-0.16.6.tgz#cf06c11bdda435b5ae5cb06efa080f4a4fcadf23"
+  integrity sha512-XVB7X8jEogjJ+OY+a9JdE+VOk9i7znela0HP6WaDbpB4sUh8ghrG0Ccluu2MA2tcJbFAViBC9aVXus2UvkEr8A==
   dependencies:
-    commander "^8.0.0"
+    commander "^8.3.0"
 
 katex@^0.15.3:
   version "0.15.3"
