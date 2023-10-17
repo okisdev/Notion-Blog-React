@@ -1,7 +1,5 @@
 module.exports = {
-    plugins: [require('prettier-plugin-tailwindcss')],
-    tailwindConfig: './tailwind.config.js',
-    resolveGlobalModules: true,
+    plugins: ['prettier-plugin-tailwindcss'],
     tabWidth: 4,
     printWidth: 200,
     semi: true,
@@ -10,4 +8,5 @@ module.exports = {
     vueIndentScriptAndStyle: true,
     arrowParens: 'always',
     trailingComma: 'es5',
+    useTabs: false,
 };
