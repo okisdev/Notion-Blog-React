@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 
 import toast from 'react-hot-toast';
@@ -6,6 +8,7 @@ import toast from 'react-hot-toast';
 import { IoMdPricetags, IoIosPaper } from 'react-icons/io';
 import { MdDateRange } from 'react-icons/md';
 import { BsPeople } from 'react-icons/bs';
+
 import { AiOutlineLoading3Quarters } from 'react-icons/ai';
 
 import { PostContent } from '@/types/post';
