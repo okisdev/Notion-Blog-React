@@ -1,10 +1,8 @@
 'use client';
 
-import { Fragment } from 'react';
-
 import Link from 'next/link';
 
-import { Menu, Transition } from '@headlessui/react';
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 
 import { RiRssFill } from 'react-icons/ri';
 import { FiGithub } from 'react-icons/fi';
@@ -16,97 +14,68 @@ import { HiOutlineMail } from 'react-icons/hi';
 import siteConfig from '@/config/site.config';
 import modeConfig from '@/config/mode.config';
 
-function classNames(...classes: any[]) {
-    return classes.filter(Boolean).join(' ');
-}
+import { NavListItemProps } from '@/types/global';
+
+const NavList: NavListItemProps[] = [
+    {
+        name: 'Home',
+        href: '/',
+        icon: BiHome,
+        position: 'left',
+    },
+    {
+        name: 'RSS',
+        href: '/atom.xml',
+        icon: RiRssFill,
+        position: 'right',
+    },
+    {
+        name: 'GitHub',
+        href: siteConfig.global.author.github,
+        icon: FiGithub,
+        position: 'right',
+    },
+    {
+        name: 'Email',
+        href: 'mailto:' + siteConfig.global.author.email,
+        icon: HiOutlineMail,
+        position: 'right',
+    },
+    {
+        name: 'Privacy Policy',
+        href: siteConfig.global.author.privacy_policy,
+        icon: AiOutlineSafety,
+        position: 'right',
+    },
+];
 
 const BlogNavBar = () => {
     return (
-        <div id='notion-blog-navbar' className='sticky top-0 z-50'>
+        <div id='notion-blog-navbar' className='text-white bg-black'>
             <div className='bg-white dark:bg-gray-500'>
                 <div className='flex justify-center py-3'>
-                    <nav className='flex'>
-                        <div id='notion-blog-navbar-start' className='mr-20 flex items-start md:mr-80'>
-                            <div className='mx-3'>
-                                <Link href='/' passHref legacyBehavior>
-                                    <a title='Homepage'>
-                                        <BiHome className='h-6 w-6' />
+                    <nav className='flex space-x-3'>
+                        {NavList.map((item: NavListItemProps, index: number) => {
+                            return (
+                                <Link href={item.href} key={index} passHref legacyBehavior>
+                                    <a title={item.name}>
+                                        <item.icon className='h-6 w-6' />
                                     </a>
                                 </Link>
-                            </div>
-                        </div>
-
-                        <div id='notion-blog-navbar-end' className='flex items-end'>
-                            {modeConfig.global.navbar.atom.shown && (
-                                <div className='mx-3'>
-                                    <Link href='/atom.xml' passHref legacyBehavior>
-                                        <a title='RSS'>
-                                            <RiRssFill className='h-6 w-6' />
-                                        </a>
-                                    </Link>
-                                </div>
-                            )}
-                            {modeConfig.global.navbar.github.shown && (
-                                <div className='mx-3'>
-                                    <Link href={siteConfig.global.author.github} passHref legacyBehavior>
-                                        <a title='GitHub'>
-                                            <FiGithub className='h-6 w-6' />
-                                        </a>
-                                    </Link>
-                                </div>
-                            )}
-                            {modeConfig.global.navbar.email.shown && (
-                                <div className='mx-3'>
-                                    <Link href={'mailto:' + siteConfig.global.author.email} passHref legacyBehavior>
-                                        <a title='email'>
-                                            <HiOutlineMail className='h-6 w-6' />
-                                        </a>
-                                    </Link>
-                                </div>
-                            )}
-                            {modeConfig.global.navbar.privacy_policy.shown && (
-                                <div className='mx-3'>
-                                    <Link href={siteConfig.global.author.privacy_policy} passHref legacyBehavior>
-                                        <a title='Privacy Policy'>
-                                            <AiOutlineSafety className='h-6 w-6' />
-                                        </a>
-                                    </Link>
-                                </div>
-                            )}
-                            {modeConfig.global.navbar.language.shown && (
-                                <Menu as='div' className='relative mx-3 ml-3'>
-                                    <div>
-                                        <Menu.Button className='flex rounded-full text-sm'>
-                                            <span className='sr-only'>Open language menu</span>
-                                            <BsTranslate className='h-6 w-6' aria-hidden='true' />
-                                        </Menu.Button>
-                                    </div>
-                                    <Transition
-                                        as={Fragment}
-                                        enter='transition ease-out duration-100'
-                                        enterFrom='transform opacity-0 scale-95'
-                                        enterTo='transform opacity-100 scale-100'
-                                        leave='transition ease-in duration-75'
-                                        leaveFrom='transform opacity-100 scale-100'
-                                        leaveTo='transform opacity-0 scale-95'
-                                    >
-                                        <Menu.Items className='absolute right-0 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none'>
-                                            {siteConfig.global.site.language.map((item, index) => {
-                                                return (
-                                                    <Menu.Item key={index}>
-                                                        {({ active }) => (
-                                                            <Link href={item.code} passHref legacyBehavior>
-                                                                <a className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}>{item.name}</a>
-                                                            </Link>
-                                                        )}
-                                                    </Menu.Item>
-                                                );
-                                            })}
-                                        </Menu.Items>
-                                    </Transition>
-                                </Menu>
-                            )}
-                        </div>
+                            );
+                        })}
+                        {modeConfig.global.navbar.language.shown && (
+                            <DropdownMenu>
+                                <DropdownMenuTrigger>
+                                    <BsTranslate className='h-6 w-6' aria-hidden='true' />
+                                </DropdownMenuTrigger>
+                                <DropdownMenuContent>
+                                    {siteConfig.global.site.language.map((item, index) => {
+                                        return <DropdownMenuItem key={index}>{item.name}</DropdownMenuItem>;
+                                    })}
+                                </DropdownMenuContent>
+                            </DropdownMenu>
+                        )}
                     </nav>
                 </div>
             </div>

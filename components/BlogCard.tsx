@@ -2,14 +2,11 @@
 
 import Link from 'next/link';
 
-import toast from 'react-hot-toast';
 // import { useTranslations } from 'next-intl';
 
 import { IoMdPricetags, IoIosPaper } from 'react-icons/io';
 import { MdDateRange } from 'react-icons/md';
 import { BsPeople } from 'react-icons/bs';
-
-import { AiOutlineLoading3Quarters } from 'react-icons/ai';
 
 import { PostContent } from '@/types/post';
 import getNotionPostSlug from '@/utils/getNotionPostSlug';
@@ -20,22 +17,11 @@ const BlogCard = ({ post }: { post: PostContent }) => {
     // const t = useTranslations('');
 
     return (
-        <div id='notion-blog-body-card' className='my-5 rounded-lg border-2 bg-white p-3 transition duration-500 ease-in-out hover:shadow-2xl dark:bg-gray-500'>
+        <div id='notion-blog-body-card' className='my-5 bg-white p-3 dark:bg-gray-500'>
             <div id='notion-blog-body-card-content'>
                 <div id='notion-blog-body-card-title' className='mb-2 flex items-center space-x-3 text-lg font-bold transition duration-500 ease-in-out hover:text-blue-400 dark:text-blue-200'>
                     <IoIosPaper />
-                    <div
-                        onClick={() => {
-                            toast('Loading...', {
-                                icon: <AiOutlineLoading3Quarters className='animate-spin' />,
-                                style: {
-                                    borderRadius: '15px',
-                                    background: '#2d3748',
-                                    color: '#cadada',
-                                },
-                            });
-                        }}
-                    >
+                    <div>
                         <Link href='/posts/[slug]' as={getNotionPostSlug(post.slug)} passHref legacyBehavior>
                             {post.title}
                         </Link>
