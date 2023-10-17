@@ -1,20 +1,20 @@
 import Link from 'next/link';
 
 import toast from 'react-hot-toast';
-import { useTranslation } from 'next-i18next';
+// import { useTranslations } from 'next-intl';
 
 import { IoMdPricetags, IoIosPaper } from 'react-icons/io';
 import { MdDateRange } from 'react-icons/md';
 import { BsPeople } from 'react-icons/bs';
 import { AiOutlineLoading3Quarters } from 'react-icons/ai';
 
-import { PostContent } from '../utils/PostContent';
-import getNotionPostSlug from '../utils/getNotionPostSlug';
+import { PostContent } from '@/types/PostContent';
+import getNotionPostSlug from '@/utils/getNotionPostSlug';
 
-import modeConfig from '../config/mode.config';
+import modeConfig from '@/config/mode.config';
 
 const BlogCard = ({ post }: { post: PostContent }) => {
-    const { t } = useTranslation();
+    // const t = useTranslations('');
 
     return (
         <div id='notion-blog-body-card' className='my-5 rounded-lg border-2 bg-white p-3 transition duration-500 ease-in-out hover:shadow-2xl dark:bg-gray-500'>
@@ -23,7 +23,7 @@ const BlogCard = ({ post }: { post: PostContent }) => {
                     <IoIosPaper />
                     <div
                         onClick={() => {
-                            toast(t('Loading...'), {
+                            toast('Loading...', {
                                 icon: <AiOutlineLoading3Quarters className='animate-spin' />,
                                 style: {
                                     borderRadius: '15px',

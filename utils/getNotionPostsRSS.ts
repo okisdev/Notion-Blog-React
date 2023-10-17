@@ -1,10 +1,10 @@
 import { Feed } from 'feed';
 
-import { PostContent } from './PostContent';
+import getNotionPostSlug from '@/utils/getNotionPostSlug';
 
-import getNotionPostSlug from '../utils/getNotionPostSlug';
+import siteConfig from '@/config/site.config';
 
-import siteConfig from '../config/site.config';
+import { PostContent } from '@/types/post';
 
 const domain = siteConfig.global.site.url;
 const author = siteConfig.global.author;

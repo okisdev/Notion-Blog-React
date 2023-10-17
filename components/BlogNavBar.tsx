@@ -1,7 +1,8 @@
+'use client';
+
 import { Fragment } from 'react';
 
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 
 import { Menu, Transition } from '@headlessui/react';
 
@@ -12,16 +13,14 @@ import { AiOutlineSafety } from 'react-icons/ai';
 import { BsTranslate } from 'react-icons/bs';
 import { HiOutlineMail } from 'react-icons/hi';
 
-import siteConfig from '../config/site.config';
-import modeConfig from '../config/mode.config';
+import siteConfig from '@/config/site.config';
+import modeConfig from '@/config/mode.config';
 
 function classNames(...classes: any[]) {
     return classes.filter(Boolean).join(' ');
 }
 
 const BlogNavBar = () => {
-    const { asPath } = useRouter();
-
     return (
         <div id='notion-blog-navbar' className='sticky top-0 z-50'>
             <div className='bg-white dark:bg-gray-500'>
@@ -96,7 +95,7 @@ const BlogNavBar = () => {
                                                 return (
                                                     <Menu.Item key={index}>
                                                         {({ active }) => (
-                                                            <Link href={item.code} as={asPath} locale={item.code} passHref legacyBehavior>
+                                                            <Link href={item.code} passHref legacyBehavior>
                                                                 <a className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}>{item.name}</a>
                                                             </Link>
                                                         )}

@@ -1,4 +1,10 @@
-import { PostAuthor } from './PostAuthor';
+export interface PostAuthor {
+    id: string;
+    firstName: string;
+    lastName: string;
+    fullName: string;
+    profilePhoto: string;
+}
 
 export interface PostContent {
     id: string;

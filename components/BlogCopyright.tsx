@@ -1,15 +1,15 @@
 import { useEffect, useState } from 'react';
 
-import { useTranslation } from 'next-i18next';
+// import { useTranslations } from 'next-intl';
 
-import siteConfig from '../config/site.config';
+import siteConfig from '@/config/site.config';
 
-const BlogCopyright = ({ notionPost }) => {
+const BlogCopyright = ({ notionPost }: { notionPost: any }) => {
     const [publishDomain, setPublishDomain] = useState('https://react-notion-blog.demo.harisfox.com');
 
     useEffect(() => setPublishDomain(window.location.origin), []);
 
-    const { t } = useTranslation();
+    // const t = useTranslations('');
 
     return (
         <div id='notion-blog-copyright' className='container mx-auto my-3 px-6 sm:px-8'>
@@ -31,8 +31,8 @@ const BlogCopyright = ({ notionPost }) => {
                 </div>
                 <div id='notion-blog-copyright-body' className='flew-row flex space-x-3'>
                     <div id='notion-blog-copyright-author' className='flex flex-col'>
-                        <p>{t('Author')}</p>
-                        {notionPost.author.map((author) => (
+                        <p>{'Author'}</p>
+                        {notionPost.author.map((author: any) => (
                             <div key={author.id}>
                                 <div className='flex flex-col'>
                                     <p className='font-bold'>{author.fullName}</p>
@@ -41,11 +41,11 @@ const BlogCopyright = ({ notionPost }) => {
                         ))}
                     </div>
                     <div id='notion-blog-copyright-date' className='flex flex-col'>
-                        <p>{t('Date')}</p>
+                        <p>{'Date'}</p>
                         <div className='font-bold'>{notionPost.date}</div>
                     </div>
                     <div id='notion-blog-copyright-license' className='flex flex-col'>
-                        <p>{t('License')}</p>
+                        <p>{'License'}</p>
                         <div className='font-bold'>
                             <a
                                 href={siteConfig.global.content.license.url}
@@ -60,7 +60,7 @@ const BlogCopyright = ({ notionPost }) => {
                 </div>
                 <div id='notion-blog-copyright-footer'>
                     <p id='notion-blog-copyright-reminder' className='text-sm'>
-                        {t('* When reposting, sharing or citing this article, please abide by the license agreement and indicate the source of the article.')}
+                        {'* When reposting, sharing or citing this article, please abide by the license agreement and indicate the source of the article.'}
                     </p>
                 </div>
             </div>

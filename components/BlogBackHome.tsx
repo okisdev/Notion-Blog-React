@@ -1,11 +1,11 @@
 import Link from 'next/link';
 
-import { useTranslation } from 'next-i18next';
+// import { useTranslations } from 'next-intl';
 
 import { BiArrowBack } from 'react-icons/bi';
 
 const BlogBackHome = () => {
-    const { t } = useTranslation('common');
+    // const t = useTranslations('');
 
     return (
         <div id='notion-blog-back-home' className='container mx-auto my-3 px-6 sm:px-8'>
@@ -14,7 +14,7 @@ const BlogBackHome = () => {
                     <div className='flex flex-row items-center space-x-2 underline transition duration-500 hover:bg-yellow-500 dark:hover:bg-yellow-600'>
                         <BiArrowBack />
                         <Link href='/' passHref legacyBehavior>
-                            <a>{t('Back Home')}</a>
+                            <a>{'Back Home'}</a>
                         </Link>
                     </div>
                 </div>

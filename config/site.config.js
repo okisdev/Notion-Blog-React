@@ -6,7 +6,7 @@ module.exports = {
             name: 'Harry Yep',
             github: 'https://github.com/okisdev/Notion-Blog-React',
             email: 'hi@okis.dev',
-            privacy_policy: 'https://vercel.com/legal/privacy-policy',
+            privacy_policy: 'https://www.harrly.com/privacy-policy',
         },
         site: {
             name: 'Notion Blog React Example',
@@ -29,11 +29,9 @@ module.exports = {
             },
         },
         analytics: {
-            google: '',
-            splitbee: 'O1KKIQNSGP18',
             umami: {
-                url: 'https://analytics.umami.is/script.js',
-                website_id: '6667f92e-b794-47f0-b484-7ad8a2a58360',
+                url: 'https://umami.harisfox.com/script.js',
+                website_id: 'd9734e29-e8a5-48c2-8cca-f5126da4109f',
             },
         },
     },

@@ -1,7 +1,7 @@
 import PoweredByVercel from 'powered-by-vercel';
 
-import siteConfig from '../config/site.config';
-import modeConfig from '../config/mode.config';
+import siteConfig from '@/config/site.config';
+import modeConfig from '@/config/mode.config';
 
 const BlogFooter = () => {
     const currentYear = new Date().getFullYear();

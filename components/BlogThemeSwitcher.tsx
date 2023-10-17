@@ -1,8 +1,10 @@
+'use client';
+
 import { useTheme } from 'next-themes';
 
 import { BsSunFill, BsMoonFill } from 'react-icons/bs';
 
-import modeConfig from '../config/mode.config';
+import modeConfig from '@/config/mode.config';
 
 const BlogThemeSwither = () => {
     const { theme, setTheme } = useTheme();

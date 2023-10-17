@@ -1,5 +1,5 @@
-import siteConfig from '../config/site.config';
-import modeConfig from '../config/mode.config';
+import siteConfig from '@/config/site.config';
+import modeConfig from '@/config/mode.config';
 
 const stringToJSX = () => {
     return {
