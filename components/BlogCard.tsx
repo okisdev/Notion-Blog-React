@@ -8,7 +8,7 @@ import { MdDateRange } from 'react-icons/md';
 import { BsPeople } from 'react-icons/bs';
 import { AiOutlineLoading3Quarters } from 'react-icons/ai';
 
-import { PostContent } from '@/types/PostContent';
+import { PostContent } from '@/types/post';
 import getNotionPostSlug from '@/utils/getNotionPostSlug';
 
 import modeConfig from '@/config/mode.config';
