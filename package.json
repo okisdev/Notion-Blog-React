@@ -1,8 +1,8 @@
 {
     "name": "notion-blog-react",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "description": "Blog built with Notion, React, Next.js, tailwindcss, TypeScript, Notion-Api-Worker and more.",
-    "repository": "https://github.com/Harry-Yep/Notion-Blog-React",
+    "repository": "https://github.com/okisdev/Notion-Blog-React",
     "author": "Harry Yep",
     "license": "MIT",
     "private": true,
@@ -10,7 +10,8 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "lint": "next lint"
+        "lint": "next lint",
+        "prettier": "prettier --write ."
     },
     "dependencies": {
         "@headlessui/react": "1.7.17",

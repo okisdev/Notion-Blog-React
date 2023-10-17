@@ -6,6 +6,8 @@
 
 一个由 [Notion](https://notion.so) 提供支持的博客，使用 [React.JS](https://reactjs.org), [Next.JS](https://nextjs.org), [tailwindcss](https://tailwindcss.com), [TypeScript](https://www.typescriptlang.org/), [notion-api-worker](https://github.com/splitbee/notion-api-worker), [React-Notion-X](https://github.com/NotionX/react-notion-x/) 等构建。
 
+> 如果您想创建一个由 Notion 支持的个人图片库网站，请参阅 [Notion Photo React](https://github.com/okisdev/Notion-Photo-React)。
+
 ## 演示
 
 -   [nbr.okis.dev](https://nbr.okis.dev)
