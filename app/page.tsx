@@ -1,5 +1,5 @@
-import BlogCard from '@/components/BlogCard';
-import BlogHeader from '@/components/BlogHeader';
+import HomeBlogCard from '@/components/home/blog-card';
+import GlobalHeader from '@/components/global/header';
 
 import { getNotionPosts } from '@/utils/getNotionPosts';
 
@@ -15,14 +15,9 @@ export default async function Home() {
     const posts = await getPosts();
 
     return (
-        <main className='container mx-auto max-w-3xl flex-grow justify-center px-4 sm:px-6'>
-            <div id='notion-blog-content' className='my-16'>
-                <BlogHeader />
-
-                <div id='notion-blog-body' className='mt-12 flex flex-col'>
-                    {posts.map((post: any) => post.published && <BlogCard key={post.id} post={post} />)}
-                </div>
-            </div>
+        <main>
+            <GlobalHeader />
+            <div>{posts.map((post: any) => post.published && <HomeBlogCard key={post.id} post={post} />)}</div>
         </main>
     );
 }

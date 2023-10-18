@@ -1,13 +1,16 @@
 import type { Metadata } from 'next';
-import { Rubik } from 'next/font/google';
+import { Merriweather } from 'next/font/google';
 
 import '@/styles/globals.css';
 
 import { Toaster } from 'react-hot-toast';
 
-import BlogFooter from '@/components/BlogFooter';
+import GlobalFooter from '@/components/global/footer';
 
-const rubik = Rubik({ subsets: ['latin'] });
+const merriweather = Merriweather({
+    weight: ['300', '400', '700', '900'],
+    subsets: ['latin'],
+});
 
 export const metadata: Metadata = {
     title: 'Notion Blog React',
@@ -17,14 +20,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang='en-GB'>
-            <body className={rubik.className}>
-                <div className='bg-black min-h-screen'>
-                    <Toaster />
+            <body className={`${merriweather.className} bg-black min-h-screen text-zinc-200`}>
+                <Toaster />
 
-                    {children}
+                {children}
 
-                    <BlogFooter />
-                </div>
+                <GlobalFooter />
             </body>
         </html>
     );

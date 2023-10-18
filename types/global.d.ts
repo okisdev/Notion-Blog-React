@@ -4,5 +4,4 @@ interface NavListItemProps {
     name: string;
     href: string;
     icon: IconType;
-    position: 'left' | 'right';
 }
