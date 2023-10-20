@@ -21,14 +21,14 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "feed": "^4.2.2",
-    "lucide-react": "^0.287.0",
-    "next": "13.5.5",
+    "lucide-react": "^0.288.0",
+    "next": "13.5.6",
     "next-themes": "^0.2.1",
     "notion-client": "^6.16.0",
     "prettier": "^3.0.3",
     "prettier-plugin-tailwindcss": "^0.5.6",
-    "react": "^18",
-    "react-dom": "^18",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-hot-toast": "^2.4.1",
     "react-icons": "^4.11.0",
     "react-notion-x": "^6.16.0",
@@ -36,14 +36,14 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "autoprefixer": "^10",
-    "postcss": "^8",
-    "tailwindcss": "^3",
-    "eslint": "^8",
-    "eslint-config-next": "13.5.5"
+    "@types/node": "^20.8.7",
+    "@types/react": "^18.2.30",
+    "@types/react-dom": "^18.2.14",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.51.0",
+    "eslint-config-next": "13.5.6",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.2.2"
   }
 }
