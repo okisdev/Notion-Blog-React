@@ -1,0 +1,55 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "ui": "tui",
+  "tasks": {
+    "build": {
+      "dependsOn": [
+        "^build"
+      ],
+      "inputs": [
+        "$TURBO_DEFAULT$",
+        ".env*"
+      ],
+      "outputs": [
+        ".next/**",
+        "!.next/cache/**"
+      ],
+      "env": []
+    },
+    "lint": {
+      "dependsOn": [
+        "^lint"
+      ]
+    },
+    "check-types": {
+      "dependsOn": [
+        "^check-types"
+      ]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "start": {
+      "cache": false,
+      "persistent": true
+    },
+    "deps:check": {
+      "dependsOn": [
+        "^deps:check"
+      ]
+    },
+    "deps:update": {
+      "dependsOn": [
+        "^deps:update"
+      ]
+    }
+  },
+  "globalEnv": [
+    "NODE_ENV",
+    "NOTION_API_KEY",
+    "NOTION_DATABASE_ID",
+    "REDIS_URL",
+    "REDIS_TOKEN"
+  ]
+}
