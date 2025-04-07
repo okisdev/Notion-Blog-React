@@ -1,4 +1,5 @@
 import NewsletterForm from '@/components/shared/newsletter-form';
+import { config } from '@/config';
 import { getAllPosts } from '@/lib/notion';
 import { format } from 'date-fns';
 import { Link } from 'next-view-transitions';
@@ -9,8 +10,8 @@ export default async function Home() {
   return (
     <div className='mx-auto min-h-screen max-w-2xl px-4 py-10'>
       <header className='mb-10'>
-        <h1 className='mb-1 font-medium text-2xl text-foreground'>Notion Blog React</h1>
-        <p className='text-muted-foreground text-sm'>A simple blog powered by Notion</p>
+        <h1 className='mb-1 font-medium text-2xl text-foreground'>{config.site.name}</h1>
+        <p className='text-muted-foreground text-sm'>{config.site.description}</p>
       </header>
 
       <section className='mb-10'>
@@ -48,20 +49,7 @@ export default async function Home() {
         <NewsletterForm />
       </section>
 
-      <section>
-        <p className='mb-2 font-medium text-muted-foreground text-sm'>More</p>
-        <p className='text-muted-foreground text-sm'>
-          Follow Harry Yep on{' '}
-          <a href='https://twitter.com/okisdev' className='text-foreground transition-colors hover:text-muted-foreground'>
-            Twitter
-          </a>{' '}
-          and{' '}
-          <a href='https://github.com/okisdev' className='text-foreground transition-colors hover:text-muted-foreground'>
-            GitHub
-          </a>
-          .
-        </p>
-      </section>
+      {config.home.extraSection}
     </div>
   );
 }
