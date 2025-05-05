@@ -20,7 +20,7 @@
     "deps:update": "bunx npm-check-updates -u && bun install"
   },
   "dependencies": {
-    "@notionhq/client": "^2.3.0",
+    "@notionhq/client": "^3.0.0",
     "@radix-ui/react-slot": "^1.1.2",
     "@t3-oss/env-nextjs": "^0.12.0",
     "@upstash/redis": "^1.34.6",
