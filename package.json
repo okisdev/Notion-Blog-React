@@ -29,7 +29,7 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "date-fns": "^4.1.0",
-    "lucide-react": "^0.487.0",
+    "lucide-react": "^0.510.0",
     "next": "15.2.4",
     "next-mdx-remote": "^5.0.0",
     "next-nprogress-bar": "^2.4.7",
