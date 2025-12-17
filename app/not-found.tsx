@@ -1,9 +1,9 @@
 import Link from 'next/link';
 
 export const generateMetadata = async () => ({
-    title: '404',
-    description: 'Page not found',
-  });
+  title: '404',
+  description: 'Page not found',
+});
 
 export default async function NotFound() {
   return (
@@ -13,8 +13,8 @@ export default async function NotFound() {
         <p className='text-muted-foreground'>Page not found</p>
       </div>
       <Link
-        href='/'
         className='text-muted-foreground text-sm transition duration-300 hover:text-primary'
+        href='/'
       >
         Go back to home
       </Link>

@@ -1,11 +1,11 @@
+import { notFound } from 'next/navigation';
+import { Suspense } from 'react';
 import { PostContent } from '@/components/post/content';
+import { PostFooter } from '@/components/post/footer';
 import { PostHeader } from '@/components/post/header';
 import { PostSkeleton } from '@/components/post/loading';
 import { RelatedPosts } from '@/components/post/related';
-import { config } from '@/config';
 import { getPostBySlug } from '@/lib/notion';
-import { notFound } from 'next/navigation';
-import { Suspense } from 'react';
 
 export async function generateMetadata({
   params,
@@ -16,7 +16,9 @@ export async function generateMetadata({
 
   const post = await getPostBySlug(slug);
 
-  if (!post) return notFound();
+  if (!post) {
+    return notFound();
+  }
 
   return {
     title: post.title,
@@ -45,7 +47,7 @@ export default async function PostPage({
             <div className='border-tertiary border-b' />
             <RelatedPosts slug={slug} />
             <div className='border-tertiary border-b' />
-            {config.post.footer}
+            <PostFooter />
           </Suspense>
         </Suspense>
       </Suspense>
