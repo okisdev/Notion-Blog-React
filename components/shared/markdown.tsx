@@ -40,7 +40,9 @@ export const components = {
     );
   },
   h2: (props: HeadingProps) => {
-    const id = JSON.parse(JSON.stringify(props.children))?.props?.children?.toLowerCase().replace(/\s+/g, '-');
+    const id = JSON.parse(JSON.stringify(props.children))
+      ?.props?.children?.toLowerCase()
+      .replace(/\s+/g, '-');
 
     return (
       <h2 id={id} className='text-lg text-primary'>
@@ -51,7 +53,9 @@ export const components = {
     );
   },
   h3: (props: HeadingProps) => {
-    const id = JSON.parse(JSON.stringify(props.children))?.props?.children?.toLowerCase().replace(/\s+/g, '-');
+    const id = JSON.parse(JSON.stringify(props.children))
+      ?.props?.children?.toLowerCase()
+      .replace(/\s+/g, '-');
 
     return (
       <h3 id={id} className='text-base text-primary'>
@@ -62,7 +66,9 @@ export const components = {
     );
   },
   h4: (props: HeadingProps) => {
-    const id = JSON.parse(JSON.stringify(props.children))?.props?.children?.toLowerCase().replace(/\s+/g, '-');
+    const id = JSON.parse(JSON.stringify(props.children))
+      ?.props?.children?.toLowerCase()
+      .replace(/\s+/g, '-');
 
     return (
       <h4 id={id} className='text-primary text-sm'>
@@ -73,15 +79,38 @@ export const components = {
     );
   },
   p: (props: ParagraphProps) => <p className='mb-4 text-primary' {...props} />,
-  ol: (props: ListProps) => <ol className='mb-4 list-decimal space-y-2 pl-5 text-muted-foreground' {...props} />,
-  ul: (props: ListProps) => <ul className='mb-4 list-disc space-y-2 pl-5 text-muted-foreground' {...props} />,
-  li: (props: ListItemProps) => <li className='pl-1 text-muted-foreground' {...props} />,
-  em: (props: ComponentPropsWithoutRef<'em'>) => <em className='font-medium text-primary' {...props} />,
-  strong: (props: ComponentPropsWithoutRef<'strong'>) => <strong className='font-semibold text-primary' {...props} />,
+  ol: (props: ListProps) => (
+    <ol
+      className='mb-4 list-decimal space-y-2 pl-5 text-muted-foreground'
+      {...props}
+    />
+  ),
+  ul: (props: ListProps) => (
+    <ul
+      className='mb-4 list-disc space-y-2 pl-5 text-muted-foreground'
+      {...props}
+    />
+  ),
+  li: (props: ListItemProps) => (
+    <li className='pl-1 text-muted-foreground' {...props} />
+  ),
+  em: (props: ComponentPropsWithoutRef<'em'>) => (
+    <em className='font-medium text-primary' {...props} />
+  ),
+  strong: (props: ComponentPropsWithoutRef<'strong'>) => (
+    <strong className='font-semibold text-primary' {...props} />
+  ),
   a: ({ href, children, className, ...props }: AnchorProps) => {
     if (href?.startsWith('/')) {
       return (
-        <Link href={href} className={cn('text-accent decoration-accent transition-colors hover:bg-accent hover:text-white', className)} {...props}>
+        <Link
+          href={href}
+          className={cn(
+            'text-accent decoration-accent transition-colors hover:bg-accent hover:text-white',
+            className
+          )}
+          {...props}
+        >
           {children}
         </Link>
       );
@@ -89,7 +118,14 @@ export const components = {
 
     if (href?.startsWith('#')) {
       return (
-        <Link href={href} className={cn('text-accent decoration-accent transition-colors hover:bg-accent hover:text-white', className)} {...props}>
+        <Link
+          href={href}
+          className={cn(
+            'text-accent decoration-accent transition-colors hover:bg-accent hover:text-white',
+            className
+          )}
+          {...props}
+        >
           {children}
         </Link>
       );
@@ -97,7 +133,14 @@ export const components = {
 
     if (href) {
       return (
-        <Link href={href} className={cn('text-accent decoration-accent transition-colors hover:bg-accent hover:text-white', className)} {...props}>
+        <Link
+          href={href}
+          className={cn(
+            'text-accent decoration-accent transition-colors hover:bg-accent hover:text-white',
+            className
+          )}
+          {...props}
+        >
           {children}
         </Link>
       );
@@ -147,8 +190,18 @@ export const components = {
     return (
       <>
         {/* biome-ignore lint/a11y/useAltText: <explanation> */}
-        <img src={src} alt={alt || 'Image'} aria-label={alt || 'Image'} className='my-2 w-full overflow-hidden rounded-lg object-cover' {...props} />
-        {alt && <span className='mt-2 text-center text-muted-foreground text-sm'>{alt}</span>}
+        <img
+          src={src}
+          alt={alt || 'Image'}
+          aria-label={alt || 'Image'}
+          className='my-2 w-full overflow-hidden rounded-lg object-cover'
+          {...props}
+        />
+        {alt && (
+          <span className='mt-2 text-center text-muted-foreground text-sm'>
+            {alt}
+          </span>
+        )}
       </>
     );
   },
@@ -158,7 +211,10 @@ export const components = {
         <thead className='border-tertiary border-b'>
           <tr>
             {data.headers.map((header) => (
-              <th key={header.id} className='p-4 text-left font-semibold text-primary text-sm'>
+              <th
+                key={header.id}
+                className='p-4 text-left font-semibold text-primary text-sm'
+              >
                 {header.content}
               </th>
             ))}
@@ -178,10 +234,18 @@ export const components = {
       </table>
     </div>
   ),
-  blockquote: (props: BlockquoteProps) => <blockquote className='my-6 border-accent border-l-4 bg-accent/10 px-6 py-4 text-muted-foreground' {...props} />,
+  blockquote: (props: BlockquoteProps) => (
+    <blockquote
+      className='my-6 border-accent border-l-4 bg-accent/10 px-6 py-4 text-muted-foreground'
+      {...props}
+    />
+  ),
   hr: () => <hr className='my-8 border-tertiary border-t' />,
   pre: ({ children, ...props }: ComponentPropsWithoutRef<'pre'>) => (
-    <pre className='my-2 overflow-x-auto rounded-lg bg-accent/10 p-1 md:my-4 md:p-4' {...props}>
+    <pre
+      className='my-2 overflow-x-auto rounded-lg bg-accent/10 p-1 md:my-4 md:p-4'
+      {...props}
+    >
       {children}
     </pre>
   ),

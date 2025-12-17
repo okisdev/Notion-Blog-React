@@ -1,94 +1,80 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
-  "vcs": {
-    "enabled": true,
-    "clientKind": "git",
-    "useIgnoreFile": true
-  },
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "extends": [
+    "ultracite/core",
+    "ultracite/react",
+    "ultracite/next"
+  ],
   "formatter": {
-    "enabled": true,
-    "formatWithErrors": false,
     "indentStyle": "space",
-    "indentWidth": 2,
-    "lineEnding": "lf",
-    "lineWidth": 200,
-    "attributePosition": "auto"
-  },
-  "organizeImports": {
-    "enabled": true
-  },
-  "linter": {
-    "enabled": true,
-    "rules": {
-      "recommended": true,
-      "correctness": {
-        "noUnusedImports": "error",
-        "noUnusedVariables": "warn",
-        "useExhaustiveDependencies": "off"
-      },
-      "suspicious": {
-        "noConsoleLog": "warn",
-        "noExplicitAny": "warn"
-      },
-      "nursery": {
-        "useSortedClasses": "warn"
-      },
-      "performance": {
-        "noBarrelFile": "error"
-      }
-    },
-    "ignore": [
-      "**/.gitignore"
-    ]
+    "indentWidth": 2
   },
   "javascript": {
     "formatter": {
       "jsxQuoteStyle": "single",
-      "quoteProperties": "asNeeded",
-      "trailingCommas": "es5",
-      "semicolons": "always",
-      "arrowParentheses": "always",
-      "bracketSpacing": true,
-      "bracketSameLine": false,
       "quoteStyle": "single",
-      "attributePosition": "auto"
+      "trailingCommas": "es5"
     }
   },
-  "overrides": [
-    {
-      "include": [
-        "*.ts",
-        "*.tsx",
-        "*.js"
-      ]
-    },
-    {
-      "include": [
-        "*.js",
-        "*.jsx",
-        "*.ts",
-        "*.tsx"
-      ],
-      "linter": {
-        "rules": {}
-      }
-    },
-    {
-      "include": [
-        "*.json"
-      ],
-      "formatter": {
-        "enabled": false
+  "linter": {
+    "rules": {
+      "correctness": {
+        "noUnusedImports": {
+          "level": "warn",
+          "fix": "none",
+          "options": {}
+        },
+        "noUnusedVariables": {
+          "level": "warn",
+          "fix": "none",
+          "options": {}
+        },
+        "noUnusedFunctionParameters": "warn",
+        "useExhaustiveDependencies": {
+          "level": "warn",
+          "fix": "none",
+          "options": {}
+        },
+        "useSingleJsDocAsterisk": "off",
+        "useJsonImportAttributes": "off"
+      },
+      "complexity": {
+        "noExcessiveCognitiveComplexity": "warn",
+        "noStaticOnlyClass": "off"
+      },
+      "nursery": {
+        "noShadow": "warn",
+        "useMaxParams": "off"
+      },
+      "suspicious": {
+        "noExplicitAny": "warn",
+        "useAwait": "off",
+        "noConsole": "off",
+        "noArrayIndexKey": "off"
+      },
+      "style": {
+        "noEnum": "off",
+        "noMagicNumbers": "off",
+        "noNestedTernary": "warn",
+        "noExportedImports": "off",
+        "useNamingConvention": "off",
+        "useConsistentTypeDefinitions": "off"
+      },
+      "performance": {
+        "useTopLevelRegex": "warn",
+        "noNamespaceImport": "warn",
+        "noBarrelFile": "warn"
       }
     }
-  ],
+  },
+  "json": {
+    "formatter": {
+      "lineWidth": 1
+    }
+  },
   "files": {
-    "ignore": [
-      "**/node_modules/**",
-      "**/.next/**",
-      "**/.turbo/**",
-      "**/dist/**",
-      "**/drizzle/meta/**"
+    "includes": [
+      "!**/components/ui"
     ]
   }
 }

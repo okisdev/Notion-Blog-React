@@ -13,11 +13,17 @@ export const config = {
         <p className='mb-2 font-medium text-muted-foreground text-sm'>More</p>
         <p className='text-muted-foreground text-sm'>
           Follow Harry Yep on{' '}
-          <a href='https://twitter.com/okisdev' className='text-foreground transition-colors hover:text-muted-foreground'>
+          <a
+            href='https://twitter.com/okisdev'
+            className='text-foreground transition-colors hover:text-muted-foreground'
+          >
             Twitter
           </a>{' '}
           and{' '}
-          <a href='https://github.com/okisdev' className='text-foreground transition-colors hover:text-muted-foreground'>
+          <a
+            href='https://github.com/okisdev'
+            className='text-foreground transition-colors hover:text-muted-foreground'
+          >
             GitHub
           </a>
           .
@@ -29,7 +35,9 @@ export const config = {
     footer: (
       <footer>
         <div className='flex items-center justify-between'>
-          <p className='text-muted-foreground text-sm'>Copyright © 2025 Harry Yep. All rights reserved.</p>
+          <p className='text-muted-foreground text-sm'>
+            Copyright © 2025 Harry Yep. All rights reserved.
+          </p>
         </div>
       </footer>
     ),

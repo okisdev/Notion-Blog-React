@@ -16,14 +16,32 @@ export const metadata: Metadata = {
   description: 'A Notion Blog powered by Next.js',
 };
 
-export default async function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <ViewTransitions>
       <html lang='en' suppressHydrationWarning>
         <head>
-          <meta name='theme-color' media='(prefers-color-scheme: light)' content='white' />
-          <meta name='theme-color' media='(prefers-color-scheme: dark)' content='black' />
-          {env.NEXT_PUBLIC_UMAMI_URL && <Script defer src={env.NEXT_PUBLIC_UMAMI_URL} data-website-id={env.NEXT_PUBLIC_UMAMI_WEBSITE_ID} />}
+          <meta
+            name='theme-color'
+            media='(prefers-color-scheme: light)'
+            content='white'
+          />
+          <meta
+            name='theme-color'
+            media='(prefers-color-scheme: dark)'
+            content='black'
+          />
+          {env.NEXT_PUBLIC_UMAMI_URL && (
+            <Script
+              defer
+              src={env.NEXT_PUBLIC_UMAMI_URL}
+              data-website-id={env.NEXT_PUBLIC_UMAMI_WEBSITE_ID}
+            />
+          )}
         </head>
 
         <ReactScan />

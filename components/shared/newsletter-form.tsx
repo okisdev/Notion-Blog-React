@@ -5,13 +5,15 @@ import { useState } from 'react';
 
 export default function NewsletterForm() {
   const [email, setEmail] = useState('');
-  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+  const [status, setStatus] = useState<
+    'idle' | 'loading' | 'success' | 'error'
+  >('idle');
   const [message, setMessage] = useState('');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (!email || !email.includes('@')) {
+    if (!(email && email.includes('@'))) {
       setStatus('error');
       setMessage('Please enter a valid email address');
       return;
@@ -37,8 +39,12 @@ export default function NewsletterForm() {
 
   return (
     <div>
-      <p className='mb-2 font-medium text-muted-foreground text-sm'>Newsletter</p>
-      <p className='mb-3 text-muted-foreground text-sm'>Get exclusive content once a month.</p>
+      <p className='mb-2 font-medium text-muted-foreground text-sm'>
+        Newsletter
+      </p>
+      <p className='mb-3 text-muted-foreground text-sm'>
+        Get exclusive content once a month.
+      </p>
 
       <form onSubmit={handleSubmit} className='flex flex-col gap-2'>
         <div className='flex gap-2'>
@@ -51,12 +57,22 @@ export default function NewsletterForm() {
             required
             disabled={status === 'loading'}
           />
-          <button type='submit' className='rounded-md bg-primary px-4 py-1.5 text-primary-foreground text-sm transition-colors hover:bg-primary/90 disabled:opacity-50' disabled={status === 'loading'}>
+          <button
+            type='submit'
+            className='rounded-md bg-primary px-4 py-1.5 text-primary-foreground text-sm transition-colors hover:bg-primary/90 disabled:opacity-50'
+            disabled={status === 'loading'}
+          >
             {status === 'loading' ? 'Subscribing...' : 'Subscribe'}
           </button>
         </div>
 
-        {message && <p className={`text-sm ${status === 'error' ? 'text-red-500' : 'text-green-500'}`}>{message}</p>}
+        {message && (
+          <p
+            className={`text-sm ${status === 'error' ? 'text-red-500' : 'text-green-500'}`}
+          >
+            {message}
+          </p>
+        )}
       </form>
     </div>
   );
