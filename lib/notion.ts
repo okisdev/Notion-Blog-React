@@ -5,7 +5,7 @@ export const notion = new Client({
   auth: env.NOTION_API_KEY,
 });
 
-export const BLOG_TABLE_ID = env.NOTION_DATABASE_ID;
+export const BLOG_DATA_SOURCE_ID = env.NOTION_DATA_SOURCE_ID;
 
 export interface BlogPost {
   id: string;
@@ -20,8 +20,8 @@ export interface BlogPost {
 
 export async function getAllPosts(): Promise<BlogPost[]> {
   try {
-    const response = await notion.databases.query({
-      database_id: BLOG_TABLE_ID,
+    const response = await notion.dataSources.query({
+      data_source_id: BLOG_DATA_SOURCE_ID,
       filter: {
         property: 'published',
         checkbox: {
@@ -52,8 +52,8 @@ export async function getAllPosts(): Promise<BlogPost[]> {
 // Function to fetch a single blog post by slug
 export async function getPostBySlug(slug: string): Promise<BlogPost | null> {
   try {
-    const response = await notion.databases.query({
-      database_id: BLOG_TABLE_ID,
+    const response = await notion.dataSources.query({
+      data_source_id: BLOG_DATA_SOURCE_ID,
       filter: {
         property: 'slug',
         rich_text: {
