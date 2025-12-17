@@ -9,7 +9,10 @@ export async function PostContent({ slug }: { slug: string }) {
 
   return (
     <article>
-      <MarkdownRenderer content={post.content || ''} className='prose prose-neutral dark:prose-invert max-w-none' />
+      <MarkdownRenderer
+        content={post.content || ''}
+        className='prose prose-neutral dark:prose-invert max-w-none'
+      />
     </article>
   );
 }

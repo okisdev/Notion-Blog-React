@@ -12,10 +12,20 @@ export default function BodyProvider({
   children: React.ReactNode;
 }>) {
   return (
-    <ThemeProvider attribute='class' defaultTheme='system' value={{ light: 'light', dark: 'dark' }} disableTransitionOnChange>
+    <ThemeProvider
+      attribute='class'
+      defaultTheme='system'
+      value={{ light: 'light', dark: 'dark' }}
+      disableTransitionOnChange
+    >
       {children}
 
-      <ProgressBar height='2px' color='hsl(var(--foreground))' options={{ showSpinner: false }} shallowRouting />
+      <ProgressBar
+        height='2px'
+        color='hsl(var(--foreground))'
+        options={{ showSpinner: false }}
+        shallowRouting
+      />
 
       <Toaster richColors position='top-right' />
 

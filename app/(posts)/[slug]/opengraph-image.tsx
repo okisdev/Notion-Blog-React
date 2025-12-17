@@ -40,7 +40,12 @@ export default async function Image({ params }: { params: { slug: string } }) {
         }}
       >
         {/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
-        <svg height={40} viewBox='0 0 75 65' fill='black' style={{ marginRight: '20px' }}>
+        <svg
+          height={40}
+          viewBox='0 0 75 65'
+          fill='black'
+          style={{ marginRight: '20px' }}
+        >
           <path d='M37.59.25l36.95 64H.64l36.95-64z' />
         </svg>
         <div
@@ -87,7 +92,11 @@ export default async function Image({ params }: { params: { slug: string } }) {
             color: '#666',
           }}
         >
-          {post.date && <div style={{ marginRight: '20px' }}>{format(new Date(post.date), 'MMMM d, yyyy')}</div>}
+          {post.date && (
+            <div style={{ marginRight: '20px' }}>
+              {format(new Date(post.date), 'MMMM d, yyyy')}
+            </div>
+          )}
 
           {post.tag && post.tag.length > 0 && (
             <div style={{ display: 'flex', gap: '10px' }}>

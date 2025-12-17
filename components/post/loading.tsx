@@ -32,7 +32,7 @@ export function ContentSkeleton() {
   );
 }
 
-export function RelatedPostsSkeleton() {
+export function RelatedSkeleton() {
   return (
     <section className='flex w-full flex-col gap-4 md:flex-row md:items-center md:justify-between'>
       <div className='block'>
@@ -55,14 +55,37 @@ export function RelatedPostsSkeleton() {
   );
 }
 
+/**
+ * Progressive skeleton for streaming.
+ * Shows remaining sections that haven't loaded yet.
+ */
+export function PostSkeleton({
+  sections,
+}: {
+  sections: ('header' | 'content' | 'related')[];
+}) {
+  return (
+    <>
+      {sections.includes('header') && <HeaderSkeleton />}
+      {sections.includes('content') && <ContentSkeleton />}
+      {sections.includes('related') && (
+        <>
+          <div className='border-tertiary border-b' />
+          <RelatedSkeleton />
+          <div className='border-tertiary border-b' />
+        </>
+      )}
+    </>
+  );
+}
+
+/**
+ * Full page skeleton for loading.tsx
+ */
 export function PostLoadingSkeleton() {
   return (
     <div className='space-y-6'>
-      <HeaderSkeleton />
-      <ContentSkeleton />
-      <div className='border-tertiary border-b' />
-      <RelatedPostsSkeleton />
-      <div className='border-tertiary border-b' />
+      <PostSkeleton sections={['header', 'content', 'related']} />
     </div>
   );
 }

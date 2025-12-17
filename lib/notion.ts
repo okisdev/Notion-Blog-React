@@ -5,7 +5,7 @@ export const notion = new Client({
   auth: env.NOTION_API_KEY,
 });
 
-export const BLOG_TABLE_ID = env.NOTION_DATABASE_ID;
+export const BLOG_DATA_SOURCE_ID = env.NOTION_DATA_SOURCE_ID;
 
 export interface BlogPost {
   id: string;
@@ -20,8 +20,8 @@ export interface BlogPost {
 
 export async function getAllPosts(): Promise<BlogPost[]> {
   try {
-    const response = await notion.databases.query({
-      database_id: BLOG_TABLE_ID,
+    const response = await notion.dataSources.query({
+      data_source_id: BLOG_DATA_SOURCE_ID,
       filter: {
         property: 'published',
         checkbox: {
@@ -40,7 +40,7 @@ export async function getAllPosts(): Promise<BlogPost[]> {
         slug: properties.slug?.rich_text[0]?.plain_text || '',
         date: properties.date?.date?.start || '',
         tag: properties.tag?.multi_select?.map((tag: any) => tag.name) || [],
-        published: properties.published?.checkbox || false,
+        published: properties.published?.checkbox,
       };
     });
   } catch (error) {
@@ -52,8 +52,8 @@ export async function getAllPosts(): Promise<BlogPost[]> {
 // Function to fetch a single blog post by slug
 export async function getPostBySlug(slug: string): Promise<BlogPost | null> {
   try {
-    const response = await notion.databases.query({
-      database_id: BLOG_TABLE_ID,
+    const response = await notion.dataSources.query({
+      data_source_id: BLOG_DATA_SOURCE_ID,
       filter: {
         property: 'slug',
         rich_text: {
@@ -79,7 +79,9 @@ export async function getPostBySlug(slug: string): Promise<BlogPost | null> {
     const content = blocks.results
       .map((block: any) => {
         if (block.type === 'paragraph') {
-          return block.paragraph.rich_text.map((text: any) => text.plain_text).join('');
+          return block.paragraph.rich_text
+            .map((text: any) => text.plain_text)
+            .join('');
         }
 
         if (block.type === 'heading_1') {
@@ -142,7 +144,7 @@ export async function getPostBySlug(slug: string): Promise<BlogPost | null> {
       date: properties.date?.date?.start || '',
       content,
       tag: properties.tag?.multi_select?.map((tag: any) => tag.name) || [],
-      published: properties.published?.checkbox || false,
+      published: properties.published?.checkbox,
     };
   } catch (error) {
     console.error(`Error fetching post with slug ${slug} from Notion:`, error);
